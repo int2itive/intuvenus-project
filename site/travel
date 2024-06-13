@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IntUVenus - Travel With...</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>IntUVenus - Travel</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js" defer></script>
+        <script src="https://unpkg.com/split-type" defer></script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+          <nav>
+            <div class="logo">
+        <!--       <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/Current/DWP/sound-of-mind-still_sm_DSa1-eB4-_1__MiSgZdA9p.png" alt="" width="40" height="40"> -->
+              <span class="logo-text">IntUVenus</span>
+            </div>
+            <div class="menu-btn">
+              <div class="menu-btn__burger">
 
-  </body>
+              </div>
+            </div>
+
+          </nav>
+          <div class="progress--bar"></div>
+        </header>
+        <div class="header">
+          <div class="header--content-grid">
+            <h2>Travel with IntUVenus</h2>
+            <p>Why is just the sky your limit, when there's a whole Universe within, that you can see come alive?</p>
+          </div>
+        </div>
+        <div class="article--content">
+          <h2>Stop Being Loyal to your Last Level</h2>
+          <div class="content--sub-hdr">
+            <h3>Why is just the sky your limit, when there's a whole Universe within, that you can see come alive? Travel Beyond the bounds of possibility...</h3>    
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur elit labore, neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ex. ...</p>
+        </div>
+        <footer>
+          <div class="footer--container">
+            <nav>
+              <div class="logo">
+          <!--       <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/Current/DWP/sound-of-mind-still_sm_DSa1-eB4-_1__MiSgZdA9p.png" alt="" width="40" height="40"> -->
+                <span class="logo-text">IntUVenus</span>
+              </div>
+            </nav>
+            <div class="footer-content">
+
+            </div>
+          </div>
+        </footer>
+    </body>
 </html>
