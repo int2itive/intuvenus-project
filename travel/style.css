@@ -117,7 +117,7 @@ background-clip: text;
 /*   height: 500px; */
   background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg);
   background-position: center -90px;
-  background-position: center center;
+  background-position: 47.5% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -144,7 +144,7 @@ background-clip: text;
 
 .header--content-grid {
   display: grid;
-  grid-templat-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 100px);
   padding: 2rem;
 /*   border: 1px solid firebrick; */
@@ -243,7 +243,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
 
 .footer-content {
   display: grid;
-  grid-template-column: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 @keyframes moveHeaderUp {
