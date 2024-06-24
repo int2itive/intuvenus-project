@@ -444,13 +444,13 @@ background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 
   line-height: 1.1;
   justify-self: end;
 /*   background-color: #c0c0c0; */
-background: url(https://images.unsplash.com/photo-1507880572231-f85401ce76e6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+background: url('https://images.unsplash.com/photo-1507880572231-f85401ce76e6?ixlib=rb-1.2.1&q=85&fm=jpg');
 /* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); */
-/*     background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */ */
-  background-size: cover;
+/*     background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://bit.ly/2rlzaXi"); /* The least supported option. */
+    background-size: cover;
     color: #fff;
     color: hsl(90.6,54.8%,36.5%);
-background-clip: text;
+  background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
