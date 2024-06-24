@@ -27,6 +27,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px;
   padding: 10px;
+  padding: 5px;
   align-items: center;
   justify-content: space-between;
 }
