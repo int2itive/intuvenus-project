@@ -15,6 +15,7 @@
   --clr-intu-gold-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-green-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-main-1: hsl(42, 62.5%, 39.2%);
+  --clr-intu-accent-1: hsl(42, 62.5%, 55.9%);
 }
 
 body {
@@ -185,6 +186,9 @@ background-clip: text;
 /*   transform: translateX(37px); */
   width: max-content;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .container .content h1 {
@@ -210,10 +214,16 @@ background-clip: text;
     text-align: center;
   }
   .container .content p {
-    width: 45ch;
+    width: 43ch;
     font-size: .9rem;
+    line-height: 1.2;
     margin-bottom: 6rem;
+    align-self: center;
+    order: 1;
     padding: 0 1rem;
+  }
+  .container .content .meta--social-icon {
+    align-self: center;
   }
 }
 
@@ -308,7 +318,7 @@ background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 
 }
 
 .creatives header h1 {
-  font-size: 3.775rem;
+  font-size: clamp(1.5rem, (1rem + 5vw), 3.775rem);
   color: var(--clr-intu-gold-1);
   line-height: .9;
   margin-bottom: 2.75rem;
