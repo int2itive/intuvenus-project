@@ -273,33 +273,11 @@ background-clip: text;
   z-index: 1;
 }
 
-.alt-hero {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  background-image: url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg');
-/*   background-size: 150%; */
-/*   background-position: -400px -1700px; */
-  background-position: center;
-  background-repeat: no-repeat;
-/*   opacity: .7; */
-}
-
-.alt-hero::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient( to top, #000 1%, hsla(244.9,100%,26.3%, .3) 80%);
-}
-
 .creatives {
   width: 100%;
-  padding: 3rem;
+  padding: .75rem;
   background-color: #000;
-background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 0.9)), url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
+  background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 0.9)), url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
   background-position: center center;
   background-size: 300%;
   background-repeat: no-repeat;  
@@ -319,14 +297,15 @@ background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 
 
 .creatives header h1 {
   font-size: clamp(1.5rem, (1rem + 5vw), 3.775rem);
-  color: var(--clr-intu-gold-1);
+  color: var(--clr-intu-accent-1);
   line-height: .9;
   margin-bottom: 2.75rem;
 }
 
 .creatives header p {
   width: 30ch;
-  font-size: 1.55rem;
+  /* font-size: 1.55rem; */
+  font-size: clamp(.7rem, (.8rem + 2vw), 1.55rem);
   line-height: 1.1;
   justify-self: end;
 /*   background-color: #c0c0c0; */
@@ -342,27 +321,36 @@ background-clip: text;
 }
 
 .creatives .content {
+  container: grid-content / inline-size;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  padding-bottom: 5.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+  /*   display: flex; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto repeat(3, 40px);
+  gap: 10px;
 }
 
 .creatives .content p {
   position: relative;
   color: #c0c0c0;
-  width: 550px;
-  align-self: flex-end;
+  color: hsl(43.8, 0%, 85.4%);
+  width: 100%;
+  grid-column: 4 / -1;
+  grid-row: 1;
+/*   grid-row: 2; */
+  text-align: right;
+  align-self: center;
+/*   align-self: end; */
   z-index: 10;
 }
 
 .creatives .content .img--creative {
-  position: absolute;
-/*   display: block; */
-  top: -80px;
-  left: 80px;
-  width: 440px;
+  position: relative;
+  width: 100%;
+  grid-column: 1 / 6;
+  grid-row: 1;
   border-radius: 6px;
 /*   z-index: -1; */
 /*   box-shadow: rgba(250, 250, 250, 0.16) 0px 10px 36px 0px, rgba(250, 250, 250, 0.06) 0px 0px 0px 1px; */
@@ -385,7 +373,6 @@ background-clip: text;
   background-color: rgba(0, 0, 0, .4);
   background-image: linear-gradient( to top, #000 0%, hsla(244.9,100%,26.3%, .3));
 }
-/*   box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 
 .text {
   color: #c0c0c0;
@@ -407,6 +394,61 @@ background-clip: text;
 
 .wrapper h1 {
   font-size: 3.775rem;
+}
+
+.alt-hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg');
+/*   background-size: 150%; */
+/*   background-position: -400px -1700px; */
+  background-position: center;
+  background-repeat: no-repeat;
+/*   opacity: .7; */
+}
+
+.alt-hero::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient( to top, #000 1%, hsla(244.9,100%,26.3%, .3) 80%);
+}
+
+footer {
+  position: relative;
+/*   padding-top: 4rem; */
+/*   border: 1px solid #c0c0c0; */
+}
+
+.footer--container {
+  position: relative;
+  height: 55vh;
+/*   opacity: .6; */
+background-color:hsla(0,4%,9%,1);
+background-image:
+radial-gradient(at 45% 35%, hsla(117,50%,24%,1) 0px, transparent 50%),
+radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
+  padding-top:2rem;
+/*   border: 1px solid #c0c0c0; */
+}
+
+.footer--container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 @media (max-width: 470px) {
