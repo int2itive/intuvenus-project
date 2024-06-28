@@ -403,7 +403,7 @@ background-clip: text;
 }
 
 .main-text--wrap {
-  padding: 3rem 5rem;
+  padding: 3rem 1rem;
   background-color: #222;
   color: #c0c0c0;
 /*   background-color:hsla(0,14%,94%,1); */
