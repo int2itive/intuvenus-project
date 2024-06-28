@@ -64,8 +64,8 @@ background-clip: text;
 .menu-btn__burger {
   width: 20px;
   height: 2px;
-  background: #fff;
-  background: hsl(42, 62.5%, 39.2%);
+  background: hsl(42, 62.5%, 55.9%);
+  /* background: hsl(42, 62.5%, 39.2%); */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out;
@@ -77,8 +77,8 @@ background-clip: text;
   position: absolute;
   width: 20px;
   height: 2px;
-  background: #fff;
-  background: hsl(42, 62.5%, 39.2%);
+  background: hsl(42, 62.5%, 55.9%);
+  /* background: hsl(42, 62.5%, 39.2%); */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
   transition: all .5s ease-in-out; 
