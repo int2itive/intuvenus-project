@@ -397,12 +397,12 @@ background-clip: text;
   background-image: linear-gradient( to top, #000 0%, hsla(244.9,100%,26.3%, .3));
 }
 
-.text {
+.main-text {
   color: #c0c0c0;
   background-color: #000;
 }
 
-.wrapper {
+.main-text--wrap {
   padding: 3rem 5rem;
   background-color: #222;
   color: #c0c0c0;
@@ -415,7 +415,7 @@ background-clip: text;
   radial-gradient(at 6% 8%, hsla(343,23%,95%,1) 0px, transparent 50%); */
 }
 
-.wrapper h1 {
+.main-text--wrap h1 {
   font-size: 3.775rem;
 }
 
