@@ -27,6 +27,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px;
   padding: 10px;
+  padding: 5px;
   align-items: center;
   justify-content: space-between;
 }
@@ -35,7 +36,7 @@ nav {
   justify-self: left;
   margin-right: .75rem;
   padding-left: 1.45rem;
-/*   padding-left: .25rem; /* At 320px viewport width */ */
+/*   padding-left: .25rem; /* At 320px viewport width */
 /*   padding-left: 0.015625vw; */
 /*   border: 1px solid black; */
 }
@@ -115,9 +116,9 @@ background-clip: text;
   width: 100%;
   height: 60vh;
 /*   height: 500px; */
-  background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg);
+  background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg);
   background-position: center -90px;
-  background-position: center center;
+  background-position: 47.5% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -144,7 +145,7 @@ background-clip: text;
 
 .header--content-grid {
   display: grid;
-  grid-templat-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 100px);
   padding: 2rem;
 /*   border: 1px solid firebrick; */
@@ -243,7 +244,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
 
 .footer-content {
   display: grid;
-  grid-template-column: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
 @keyframes moveHeaderUp {
