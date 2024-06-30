@@ -474,6 +474,72 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
+/* Mobile Device Menu Setting */
+
+.mbl--list-items {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 25% 0;
+  align-items: center;
+  z-index: 5;
+  transform: translateX(100%);
+/*   background-color: hsla(222, 23%, 20%, 4); */
+}
+
+.mbl--list-items li {
+  text-align: left;
+  font-size: clamp(.85rem, (1.2rem + 2vw), 3.5rem);
+  line-height: 1;
+  color: hsl(43.8, 0%, 85.4%);
+ }
+
+.mbl--list-items li a {
+  text-decoration: none;
+  color: inherit;
+  color: currentColor;
+  transition: color .3s ease-in-out;
+}
+
+.mbl--list-items li a:hover {
+  color: var(--clr-intu-gold-1);  
+}
+
+.mbl--list-items.showing {
+  animation: menuSliderAction 300ms linear forwards;
+/*   transform: translateX(0);   */
+}
+
+.mlb--list-items > * {
+  z-index: 1;
+}
+
+.mbl--list-items::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(40, 47, 64, .9);
+  background-color: hsla(113, 61%, 16%, .9);
+  background-color: hsla(222, 23%, 20%, .9);
+  z-index: -1;
+}
+
+@keyframes menuSliderAction {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 470px) {
   .container img {
     object-fit: cover;
