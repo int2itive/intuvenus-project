@@ -3,14 +3,19 @@ const headerH4 = document.querySelector('.creatives .content p');
 const text = new SplitType(headerH4, { types: 'words, chars' })
 
 const menuBtn = document.querySelector('.menu-btn');
+const menuSlider = document.querySelector('.mbl--list-items');
+
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   // alert("Hwllo!");
   if (!menuOpen) {
     menuBtn.classList.add('open');
+    menuSlider.classList.add('showing');
+    gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: .75, stagger: 0.3 });
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
+    menuSlider.classList.remove('showing');
     menuOpen = false;
   }
 });
