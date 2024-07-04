@@ -206,7 +206,7 @@ background-clip: text;
   justify-self: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   letter-spacing: 0.015rem;
-  transform: translateX(-5px);
+  transform: translateX(-12px);
 }
 
 .header--content-grid article {
@@ -480,6 +480,13 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
 @keyframes moveHeaderUp {
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menuSliderAction {
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
 }
