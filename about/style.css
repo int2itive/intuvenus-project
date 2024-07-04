@@ -343,6 +343,7 @@ background-clip: text;
 }
 
 .container p {
+  font-family: 'Sofia Pro', sans-serif;
   margin-bottom: 1.2rem;
 }
 
