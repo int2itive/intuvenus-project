@@ -344,6 +344,7 @@ background-clip: text;
 
 .container p {
   font-family: 'Sofia Pro', sans-serif;
+  font-weight: 300;
   margin-bottom: 1.2rem;
 }
 
