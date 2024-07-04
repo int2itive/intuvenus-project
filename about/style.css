@@ -334,7 +334,7 @@ background-clip: text;
     min(76ch, 100%)
     1fr; 
 /*   border: 1px solid #c0c0c0; */
-  padding: 0 .5rem;
+  padding: 0 .95rem;
   margin-bottom: 2rem;
 }
 
@@ -344,6 +344,7 @@ background-clip: text;
 
 .container p {
   font-family: 'Sofia Pro', sans-serif;
+  font-size: .875rem;
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
