@@ -345,12 +345,8 @@ background-clip: text;
 .container p {
   font-family: 'Sofia Pro', sans-serif;
   font-size: .875rem;
-  font-weight: 300;
-  margin-bottom: 1.2rem;
-}
-
-.container p:nth-of-type(2) {
   font-weight: 400;
+  margin-bottom: 1.2rem;
 }
 
 .full-bleed {
