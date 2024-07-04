@@ -349,6 +349,10 @@ background-clip: text;
   margin-bottom: 1.2rem;
 }
 
+.container p:nth-of-type(2) {
+  font-weight: 400;
+}
+
 .full-bleed {
   width: 100%;
   grid-column: 1 / 4;
