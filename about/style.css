@@ -218,6 +218,7 @@ background-clip: text;
   font-size: 32px; 
   align-self: end;
   margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header--content-grid article p {
@@ -244,7 +245,8 @@ background-clip: text;
     transform: translateX(0);
   }
   .header--content-grid article {
-   grid-template-columns: repeat(2, 1fr); 
+   grid-template-columns: repeat(2, 1fr);
+   margin-bottom: 2rem;
   }
   .header--content-grid article p {
     justify-self: start;    
