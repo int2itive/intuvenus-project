@@ -218,8 +218,8 @@ background-clip: text;
   font-size: 32px; 
   align-self: end;
 /*   margin-bottom: 2rem;
-  margin-bottom: 1rem;
-} */
+  margin-bottom: 1rem; */
+}
 
 .header--content-grid article p {
   width: 40ch;
