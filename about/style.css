@@ -272,7 +272,8 @@ background-clip: text;
   .intu--page-title {
     display: block;
     justify-self: center;
-    opacity: .7;
+    opacity: .5;
+    transform: translateY(2px);	  
   }
 }
 
