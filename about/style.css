@@ -20,6 +20,26 @@ body {
   font-family: 'Jockey One';
 }
 
+header.-hidden {
+  transform: translateY(-100%);
+}
+
+.headerDown {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.intuvenus--header {
+  background-color: #00020e;
+  background-color: rgba(0, 2, 14, .55);
+/*   border-bottom: .025rem solid #b9661f; */
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  /* transition: -webkit-transform 500ms ease-out; */
+  /* transition: transform 500ms ease-out; */
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
+}
 
 nav {
   position: relative;
@@ -132,17 +152,17 @@ background-clip: text;
   display: grid;
   container: main / inline-size;
 /* 	background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) 50% 120% / cover no-repeat fixed; */
-	background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) center center / 250% no-repeat;
-	height: 410px;
+  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) center center / 250% no-repeat;
+  height: 410px;
   height: 380px;
 /*   height: 459px; */
-	margin: 0 auto; 
+  margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
   position: relative; 
     /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
   padding: 0;
-  margin: 0;
+  margin-top: 50px;
 }
 
 .header::after {
@@ -228,10 +248,13 @@ background-clip: text;
   line-height: 1.1;
   justify-self: center;
   align-self: end;
-  transform: translateY(20px);
+  transform: translateY(10px);
 }
 
 .header--content-grid article .meta--social-icon {
+  list-style: none; 
+  display: flex; 
+  gap: 20px; 	
   justify-self: center;
 }
 
