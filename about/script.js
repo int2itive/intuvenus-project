@@ -6,6 +6,11 @@ const main = document.querySelector('.headerDown');
 
 let hiddenState = "-hidden", nav_dark = "intuvenus--header";
 
+var threshold = 10,
+    uBound = 7, 
+    position = 0, 
+    lastScroll = 0, 
+    n_event = 0;
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
