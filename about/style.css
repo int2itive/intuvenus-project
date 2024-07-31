@@ -452,7 +452,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
 .meta--content-icons {
   display: flex;
 /*   justify-content: center; */
-  gap: 1.5rem;
+  gap: .75rem;
 }
 
 .link--content {
