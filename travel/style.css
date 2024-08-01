@@ -151,6 +151,7 @@ background-clip: text;
   background-position: 47.5% center;
   background-size: 280%;
   background-repeat: no-repeat;
+  margin-top: 50px;
 }
 
 .header::after {
