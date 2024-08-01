@@ -101,7 +101,7 @@ background-clip: text;
 .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 30px;
+  width: 20px;
   height: 2px;
   background: #fff;
   background: hsl(42, 62.5%, 39.2%);
