@@ -199,7 +199,7 @@ background-clip: text;
 .header--content-grid article.title--header h2 {
   font-family: 'Jockey One';
 /*   font-size: clamp(1.90rem, 5vw, 4.5rem); */
-  font-size: clamp(2.2rem, 8vw + 0.3rem, 4.5rem);
+  font-size: clamp(2rem, 8vw + 0.3rem, 4.5rem);
   line-height: 1;
   color: hsl(45, 28.6%, 97.3%);
   margin-top: 2rem;
