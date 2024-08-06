@@ -167,7 +167,7 @@ background-clip: text;
 .progress--bar {
 /*   content: ''; */
   position: fixed;
-  height: 3px;
+  height: 2px;
   width: 0;
   top: 0;
   inset: 0;
