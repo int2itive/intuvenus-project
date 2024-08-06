@@ -32,8 +32,10 @@ header.-hidden {
 }
 
 .intuvenus--header {
-  background-color: #00020e;
+/*   background-color: #00020e;
   background-color: rgba(0, 2, 14, .55);
+  background: transparent; */
+  backdrop-filter: blur(12px);  
 /*   border-bottom: .025rem solid #b9661f; */
   -webkit-transition: -webkit-transform 500ms ease-out;
   /* transition: -webkit-transform 500ms ease-out; */
