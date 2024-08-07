@@ -270,7 +270,10 @@ background-clip: text;
   font-size: 5.5rem;
   text-transform: uppercase;
   color: rgba(0 0 0 / 0.1);
-  opacity: 0.3;
+  /* opacity: 0.3; */
+  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/bg_i51ZBRJOx.jpeg) 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .content--sub-hdr {
