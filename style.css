@@ -150,7 +150,7 @@ background-clip: text;
   }
 }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 55.25rem) {
   .container::after {
     background-image: linear-gradient(to left, #000 50%, transparent 80%);
   }
