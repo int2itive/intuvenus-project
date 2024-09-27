@@ -252,27 +252,12 @@ background-clip: text;
     padding: 5px 0;
     text-align: left;
     /*margin-bottom: .3rem;*/
-/*     mask-image: linear-gradient(
-      90deg,
-      transparent,
-      #000 15%,
-      #000 85%,
-      transparent 100%
-    );
-  /* */
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent,
-    #000 15%,
-    #000 85%,
-    transparent 100%
-  );
-  */
 }
 
 .link-wrap ul li span {
     font-family: 'Lato';
     font-size: 0.875rem;
+    font-size: 0.8125rem;
 }
 .link-wrap ul li a {
     display: flex;
