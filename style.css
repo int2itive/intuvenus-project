@@ -237,7 +237,7 @@ background-clip: text;
     mask-image: linear-gradient(to bottom, transparent, #000);
     -webkit-mask-imge: linear-gradient(to bottom, transparent, #000);
     order: 2;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
 /*     border: 1px solid firebrick; */
 }
 
@@ -257,7 +257,7 @@ background-clip: text;
 .link-wrap ul li span {
     font-family: 'Lato';
     font-size: 0.875rem;
-    font-size: 0.8125rem;
+    font-size: 12px;
 }
 .link-wrap ul li a {
     display: flex;
