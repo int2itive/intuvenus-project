@@ -344,9 +344,8 @@ background-clip: text;
 }
 
 .creatives .content {
-  container: grid-content / inline-size;
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   /*   display: flex; */
   display: grid;
@@ -355,16 +354,21 @@ background-clip: text;
   gap: 10px;
 }
 
+.creatives .content > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
 .creatives .content p {
   position: relative;
   color: #c0c0c0;
   color: hsl(43.8, 0%, 85.4%);
   width: 100%;
-  grid-column: 4 / -1;
+  grid-column: 1 / -1;
   grid-row: 1;
 /*   grid-row: 2; */
-  text-align: right;
-  align-self: center;
+  align-self: end;
+  justify-self: right;
 /*   align-self: end; */
   z-index: 10;
 }
