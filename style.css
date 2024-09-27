@@ -237,7 +237,7 @@ background-clip: text;
     mask-image: linear-gradient(to bottom, transparent, #000);
     -webkit-mask-imge: linear-gradient(to bottom, transparent, #000);
     order: 2;
-    transform: translateY(-50px);
+    transform: translateY(-40px);
 /*     border: 1px solid firebrick; */
 }
 
@@ -252,14 +252,14 @@ background-clip: text;
     padding: 5px 0;
     text-align: left;
     /*margin-bottom: .3rem;*/
-    mask-image: linear-gradient(
+/*     mask-image: linear-gradient(
       90deg,
       transparent,
       #000 15%,
       #000 85%,
       transparent 100%
     );
-  /*
+  /* */
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent,
@@ -272,7 +272,7 @@ background-clip: text;
 
 .link-wrap ul li span {
     font-family: 'Lato';
-    font-size: 12px;
+    font-size: 0.875rem;
 }
 .link-wrap ul li a {
     display: flex;
@@ -381,6 +381,7 @@ background-clip: text;
   display: grid;
   flex-direction: column;
   margin-bottom: 3rem;
+  padding-top: 2rem;
 /*   text-align: right; */
 /*   font-size: 2.5rem; */
   border: 1px solid hsla(0,0%,22%, .6);
