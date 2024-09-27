@@ -237,8 +237,8 @@ background-clip: text;
     text-align: center;
   }
   .container .content p {
-    width: 48ch;
-    font-size: 1rem;
+    width: 45ch;
+    font-size: 1.1rem;
     line-height: 1.2;
     margin-bottom: 6rem;
     align-self: center;
