@@ -293,8 +293,8 @@ background-clip: text;
   font-family: 'Lato';
   /*    font-family: 'Lato';*/
   font-size: .65rem;
-  margin-left: .5rem;
-  padding: 4px 12px;
+  margin-left: .25rem;
+  padding: 6px 12px;
   transition: all .5s ease-in-out;
 }
 
