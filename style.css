@@ -280,6 +280,7 @@ background-clip: text;
   margin-inline: 6px auto;
   font-family: 'Lato';
   font-size: 0.765em;
+  font-size: 0.78125rem;
 }
 
 .link-wrap ul li a {
