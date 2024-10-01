@@ -284,7 +284,7 @@ background-clip: text;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 90px;
+  flex: 0 0 85px;
   background-color: transparent;
   border: 1px solid #c0c0c0;
   border-radius: 50px;    
