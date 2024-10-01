@@ -1,4 +1,4 @@
-@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
+8@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 * {
@@ -277,7 +277,7 @@ background-clip: text;
   display: inline-block;
   margin-inline: 6px auto;
   font-family: 'Lato';
-  font-size: 0.75em;
+  font-size: 0.765em;
 }
 
 .link-wrap ul li a {
