@@ -240,7 +240,7 @@ background-clip: text;
   mask-image: linear-gradient(to bottom, transparent, #000);
   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%);
   order: 2;
-  transform: translateY(-80px);
+  transform: translateY(-60px);
 /*     border: 1px solid firebrick; */
 }
 
