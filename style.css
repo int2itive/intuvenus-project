@@ -625,6 +625,15 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
   }
 }
 
+@keyframes linkShowing {
+   0% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+   }
+}
+
 @media (max-width: 470px) {
   .container img {
     object-fit: cover;
