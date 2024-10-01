@@ -1,9 +1,10 @@
 const headerH4 = document.querySelector('.creatives .content p');
-
 const text = new SplitType(headerH4, { types: 'words, chars' })
-
 const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.mbl--list-items');
+let ul = document.querySelector(".triggers");
+let btn = document.querySelector('.meta--social-icon li:nth-of-type(2)');
+let pos = 30;
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -57,3 +58,29 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
       }
   }
  setTextAnimation(0.1,2.8,1,'linear','#c0c0c0',false);
+
+
+function tickerAnim () {
+  const items = ul.querySelectorAll('li');
+  // ul.style.top = "-" + pos + "px";
+  ul.style.transform = `translate(0, - ${pos}px`;
+  let children = ul.children;
+  let rmItem = children[0]; console.log(rmItem);
+  let insertItem = rmItem;
+  rmItem.remove();
+  ul.appendChild(insertItem);
+  runShowing();
+}
+
+function runShowing() {
+  let links = ul.querySelectorAll('li'); console.log(links)
+  links.forEach(link => {
+    link.classList.remove('showing');
+  });
+  links[links.length - 1].classList.add('showing');
+}
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault;
+  tickerAnim();
+});
