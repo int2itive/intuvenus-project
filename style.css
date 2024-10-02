@@ -274,6 +274,10 @@ background-clip: text;
   animation: linkShowing 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 }
 
+.link-wrap ul li:nth-of-type(4) {
+   padding-bottom: 4px;
+}
+
 .link-wrap ul li span {
   display: inline-block;
   margin-inline: 6px auto;
