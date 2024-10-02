@@ -284,6 +284,7 @@ background-clip: text;
   font-family: 'Lato';
   /* font-size: 0.765em; */
   font-size: 0.78125rem;
+  font-weight: 700;
 }
 
 .link-wrap ul li a {
