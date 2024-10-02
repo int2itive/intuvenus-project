@@ -60,7 +60,7 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
  setTextAnimation(0.1,2.8,1,'linear','#c0c0c0',false);
 
 
-function tickerAnim () {
+function tickerAnimation () {
   const items = ul.querySelectorAll('li');
   // ul.style.top = "-" + pos + "px";
   ul.style.transform = `translate(0, - ${pos}px`;
@@ -82,5 +82,5 @@ function runShowing() {
 
 btn.addEventListener('click', (e) => {
   e.preventDefault;
-  tickerAnim();
+  tickerAnimation();
 });
