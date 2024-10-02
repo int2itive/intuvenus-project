@@ -236,7 +236,7 @@ background-clip: text;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 315px;
+  width: 325px;
   margin: 0 auto;
   mask-image: linear-gradient(to bottom, transparent, #000);
   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%);
