@@ -263,6 +263,7 @@ background-clip: text;
   border-bottom: 1px solid hsla(132, 100%, 18%, .7);
   list-style: none;
   line-height: 1;
+  font-weight: 700;
   height: 30px;
   padding: 5px 0;
   text-align: left;
