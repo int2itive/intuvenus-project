@@ -237,9 +237,11 @@ background-clip: text;
   flex-direction: column;
   justify-content: flex-start;
   width: 325px;
+  height: 120px;  
   margin: 0 auto;
   mask-image: linear-gradient(to bottom, transparent, #000);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%);
+/*   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%); */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 50%, #000 95%);
   order: 2;
   transform: translateY(-60px);
 /*     border: 1px solid firebrick; */
@@ -271,7 +273,7 @@ background-clip: text;
 
 .link-wrap ul li.showing {
   opacity: 0;
-  animation: linkShowing 1.3s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  animation: linkShowing 1.9s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 }
 
 .link-wrap ul li:nth-of-type(4) {
