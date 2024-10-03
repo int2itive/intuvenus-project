@@ -4,6 +4,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.mbl--list-items');
 let ul = document.querySelector(".triggers");
 let btn = document.querySelector('.meta--social-icon li:nth-of-type(2)');
+const animTime = 5000; // Animation time (ms)
 let pos = 30;
 
 let menuOpen = false;
@@ -60,24 +61,38 @@ function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeCo
  setTextAnimation(0.1,2.8,1,'linear','#c0c0c0',false);
 
 
-function tickerAnimation () {
-  const items = ul.querySelectorAll('li');
-  // ul.style.top = "-" + pos + "px";
-  ul.style.transform = `translate(0, - ${pos}px`;
-  let children = ul.children;
-  let rmItem = children[0]; console.log(rmItem);
-  let insertItem = rmItem;
-  rmItem.remove();
-  ul.appendChild(insertItem);
-  runShowing();
+function tickerMoveUp() {
+  let ticker = document.querySelector('.triggers');
+  ticker.classList.add('upSlide');
 }
 
-function runShowing() {
-  let links = ul.querySelectorAll('li'); console.log(links)
-  links.forEach(link => {
-    link.classList.remove('showing');
-  });
-  links[links.length - 1].classList.add('showing');
+function setClickable() {
+  const items = ul.querySelectorAll('li');
+  for (let i = 0; i < items.length -1; i++) {
+    items[i].style.pointerEvents = 'none';
+  }
+}
+
+function removeListItem() {
+  const items = ul.querySelectorAll('li');
+  let children = ul.children;
+  children[0].remove();
+  setClickable();
+}
+
+function tickerAnimation() {
+  const items = ul.querySelectorAll('li');
+  // ul.style.top = "-" + pos + "px";
+  // ul.style.transform = `translate(0, - ${pos}px`;
+  let children = ul.children;
+  let rmItem = children[0];
+  // let insertItem = rmItem;
+  let insertItem = rmItem.cloneNode(true);
+  insertItem.classList.add('showing');
+  insertItem.style.pointerEvents = 'auto';
+  // tickerMoveUp();
+  items[items.length - 1].after(insertItem);  
+  removeListItem();
 }
 
 btn.addEventListener('click', (e) => {
