@@ -243,7 +243,7 @@ background-clip: text;
 /*   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%); */
   -webkit-mask-image: linear-gradient(to bottom, transparent 50%, #000 95%);
   order: 2;
-  transform: translateY(-90px);
+  transform: translateY(-60px);
 /*     border: 1px solid firebrick; */
 }
 
@@ -303,7 +303,7 @@ background-clip: text;
   /*    font-family: 'Lato';*/
   font-size: .65rem;
   margin-left: .25rem;
-  padding: 8px 12px;
+  padding: 6px 12px;
   transition: all .5s ease-in-out;
 }
 
