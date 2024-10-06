@@ -268,7 +268,7 @@ background-clip: text;
   height: 30px;
   padding: 5px 0;
   text-align: left;
-  /*margin-bottom: .3rem;*/
+  margin-bottom: .2rem;
 }
 
 .link-wrap ul li.showing {
