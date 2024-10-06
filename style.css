@@ -243,7 +243,7 @@ background-clip: text;
 /*   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%); */
   -webkit-mask-image: linear-gradient(to bottom, transparent 50%, #000 95%);
   order: 2;
-  transform: translateY(-60px);
+  transform: translateY(-65px);
 /*     border: 1px solid firebrick; */
 }
 
@@ -268,7 +268,7 @@ background-clip: text;
   height: 30px;
   padding: 5px 0;
   text-align: left;
-  margin-bottom: .2rem;
+  margin-bottom: .3rem;
 }
 
 .link-wrap ul li.showing {
