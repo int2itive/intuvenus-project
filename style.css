@@ -453,7 +453,6 @@ background-clip: text;
   color: #c0c0c0;
   color: hsl(43.8, 0%, 85.4%);
   width: 100%;
-  font-family: 'Oswald';
   grid-column: 1 / -1;
   grid-row: 1;
 /*   grid-row: 2; */
@@ -513,6 +512,10 @@ background-clip: text;
 
 .main-text--wrap h1 {
   font-size: 3.775rem;
+}
+
+.main-text--wrap p {
+  font-family: 'Oswald';
 }
 
 .alt-hero {
