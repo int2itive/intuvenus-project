@@ -1,6 +1,7 @@
 
 @import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://api.fonts.coollabs.io/css2?family=Oswald&display=swap');
 
 * {
   margin: 0;
@@ -452,6 +453,7 @@ background-clip: text;
   color: #c0c0c0;
   color: hsl(43.8, 0%, 85.4%);
   width: 100%;
+  font-family: 'Oswald';
   grid-column: 1 / -1;
   grid-row: 1;
 /*   grid-row: 2; */
