@@ -243,7 +243,7 @@ background-clip: text;
 /*   -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #000 90%); */
   -webkit-mask-image: linear-gradient(to bottom, transparent 50%, #000 95%);
   order: 2;
-  transform: translateY(-60px);
+  transform: translateY(-65px);
 /*     border: 1px solid firebrick; */
 }
 
