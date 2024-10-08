@@ -140,7 +140,7 @@ background-clip: text;
    */
 }
 
-@media (min-width: 41.25rem) {
+@media (min-width: 32.75rem) {
   .container::after {
     background-image: linear-gradient(to left, #000 30%, transparent 70%);
   }
@@ -148,19 +148,19 @@ background-clip: text;
 
 @media (min-width: 48rem) {
   .container::after {
-    background-image: linear-gradient(to left, #000 40%, transparent 80%);
+    background-image: linear-gradient(to left, #000 36%, transparent 80%);
   }
 }
 
 @media (min-width: 55.25rem) {
   .container::after {
-    background-image: linear-gradient(to left, #000 50%, transparent 80%);
+    background-image: linear-gradient(to left, #000 40%, transparent 80%);
   }
 }
 
 @media (min-width: 64rem) {
   .container::after {
-    background-image: linear-gradient(to left, #000 60%, transparent 80%);
+    background-image: linear-gradient(to left, #000 70%, transparent 80%);
   }
 }
 /* 
