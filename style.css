@@ -279,7 +279,7 @@ background-clip: text;
 }
 
 .link-wrap ul li.sliding-now {
-  animation: up 2s linear infinite forwards;
+  animation: up 0.9s linear infinite forwards;
 /*   animation: up 0.9s linear infinite forwards; */
   animation-delay: 3s;
 }
