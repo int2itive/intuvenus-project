@@ -97,5 +97,24 @@ function tickerAnimation() {
 
 btn.addEventListener('click', (e) => {
   e.preventDefault;
-  tickerAnimation();
+  // tickerAnimation();
+  initializeTicker();
 });
+
+function initializeTicker() {
+  setInterval(function() {
+    let parent = document.querySelector(".triggers");
+    let slide = parent.querySelectorAll('.triggers li');
+    
+    for (var i = 0; i < slide.length; i++) {
+      let currentSlide = slide[i];
+      currentSlide.classList.toggle('sliding-now');
+    }
+
+    setTimeout(function() {
+      parent.appendChild(slide[0]);
+    }, 5000);
+    
+  }, 5000);
+}
+
