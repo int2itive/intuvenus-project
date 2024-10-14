@@ -113,7 +113,11 @@ function initializeTicker() {
 
     setTimeout(function() {
       parent.appendChild(slide[0]);
-      slide[0].classList.add('showing');      
+      for (var i = 0; i < slide.length; i++) {
+        let currentSlide = slide[i];
+        slide[i].classList.remove('showing');
+      }
+      slide[0].classList.add('showing');
     }, 5000);
     
   }, 5000);
