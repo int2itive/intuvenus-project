@@ -37,6 +37,13 @@ document.addEventListener('scroll', () => {
 }, { passive: true });
 // }
 
+function progressIndicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+
 window.addEventListener("scroll", function () {
   var position = window.scrollY || document.documentElement.scrollTop;
   
@@ -52,5 +59,5 @@ window.addEventListener("scroll", function () {
   }
 
   lastScroll = position <= 0 ? 0 : position;
-
+  progressIndicator();    
 });
