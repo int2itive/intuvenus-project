@@ -45,6 +45,7 @@ function progressIndicator() {
 }
 
 window.addEventListener("scroll", function () {
+  progressIndicator();
   var position = window.scrollY || document.documentElement.scrollTop;
   
   if (position > threshold && position > lastScroll) {
@@ -59,5 +60,5 @@ window.addEventListener("scroll", function () {
   }
 
   lastScroll = position <= 0 ? 0 : position;
-  progressIndicator();    
+      
 });
