@@ -123,3 +123,4 @@ function initializeTicker() {
   }, 5000);
 }
 
+requestanimationframe(initializeTicker);
