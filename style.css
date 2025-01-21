@@ -501,7 +501,13 @@ background-clip: text;
 
 .main-text {
   color: #c0c0c0;
-  background-color: #000;
+/*   background-color: #000; */
+  background: radial-gradient(
+    ellipse at left top,
+    #107667ed 0%,
+    #000000 47%,
+    #000000 100%
+  );
 }
 
 .main-text--wrap {
