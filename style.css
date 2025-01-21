@@ -501,13 +501,7 @@ background-clip: text;
 
 .main-text {
   color: #c0c0c0;
-/*   background-color: #000; */
-  background: radial-gradient(
-    ellipse at left top,
-    #107667ed 0%,
-    #000000 47%,
-    #000000 100%
-  );
+  background-color: #000;
 }
 
 .main-text--wrap {
@@ -521,6 +515,12 @@ background-clip: text;
   radial-gradient(at 90% 24%, hsla(340,20%,88%,1) 0px, transparent 50%),
   radial-gradient(at 0% 100%, hsla(22,20%,89%,1) 0px, transparent 50%),
   radial-gradient(at 6% 8%, hsla(343,23%,95%,1) 0px, transparent 50%); */
+  background: radial-gradient(
+    circle at left top,
+    #107667ed 0%,
+    #000000 7%,
+    #000000 100%
+  );
 }
 
 .main-text--wrap h1 {
