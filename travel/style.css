@@ -411,8 +411,8 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-/*   grid-template-columns: 22rem 1fr;
-  grid-template-columns: 1fr; */
+/*   grid-template-columns: 22rem 1fr; */
+  grid-template-columns: 1fr;
   gap: 10rem;
   gap: 20px;
   align-items: start;
