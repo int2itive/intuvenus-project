@@ -378,7 +378,7 @@ footer {
 /*   background-image: */
 /* radial-gradient(at 45% 35%, hsla(117,50%,24%,1) 0px, transparent 50%),
 radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
-    background: radial-gradient(
+    /* background: radial-gradient(
       ellipse at right top,
       #ffb74194 0%,
       #151419 47%,
@@ -390,7 +390,10 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
       #151419 47%,
       #151419 100%
     );
-
+    background-color:hsla(0,4%,9%,1); */
+  background-image:
+radial-gradient(at 45% 35%, hsla(117,50%,24%,1) 0px, transparent 50%),
+radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
     padding-top: 1rem;
 }
 
