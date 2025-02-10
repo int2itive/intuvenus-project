@@ -149,9 +149,9 @@ background-clip: text;
   height: 410px;
   height: 380px;/*   height: 500px; */
   background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg?updatedAt=1739227488794);
-  background-position: center -90px;
+  background-position: center center;
   background-position: 47.5% center;
-  background-size: 280%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: 50px;
 }
