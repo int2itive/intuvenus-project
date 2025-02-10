@@ -55,3 +55,114 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+logo {
+  justify-self: left;
+  margin-right: .75rem;
+  /* padding-left: 1.45rem; */
+/*   padding-left: .25rem; /* At 320px viewport width */
+/*   padding-left: 0.015625vw; */
+/*   border: 1px solid black; */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  /* color: var(--clr-intu-gold-1); */
+  color: var(--clr-intu-accent-1);
+/* background-image: linear-gradient( to bottom, #000 10%, hsla(244.9,100%,26.3%, .6));    color: #fff;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   grid-columns: 3 / -1; */
+  width: 40px;
+  height: 40px;
+  justify-self: right;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  background: hsl(42, 62.5%, 39.2%);
+  background: var(--clr-intu-accent-1);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before, 
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  background: hsl(42, 62.5%, 39.2%);
+  background: var(--clr-intu-accent-1);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out; 
+}
+
+.menu-btn__burger::before {
+  transform: translateY(-6px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(6px);
+}
+
+/* Animation Phase */
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.intu--page-title {
+  display: none;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  container: main / inline-size;
+/*   height: 50vh; */
+  height: 410px;
+  height: 380px;/*   height: 500px; */
+  background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg?updatedAt=1739227488794);
+  background-position: center -90px;
+  background-position: 47.5% center;
+  background-size: 280%;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.header::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%);
+}
+
