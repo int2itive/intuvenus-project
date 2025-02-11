@@ -561,6 +561,8 @@ footer {
   position: relative;
 /*   padding-top: 4rem; */
 /*   border: 1px solid #c0c0c0; */
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 85%);
+  mask-image: linear-gradient(to bottom, transparent 5%, black 85%);
 }
 
 .footer--container {
