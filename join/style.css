@@ -164,7 +164,133 @@ background-clip: text;
   width: 100%;
   background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%);
 }
+/* The progress container (grey background) */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  z-index: 100;
+}
 
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 2px;
+  background: #fab800;
+  width: 0%;
+}
+
+.header > * {
+  z-index: 1;
+}
+
+.header .header--content-grid {
+  display: grid;
+  container: content-grid / inline-size;
+  padding: 1.5rem;
+}
+
+.header--content-grid > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.header--content-grid article.title--header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: start;
+/*   border: 1px solid firebrick; */
+}
+
+.header--content-grid article.title--header h2 {
+  font-family: 'Jockey One';
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1;
+  color: hsl(45, 28.6%, 97.3%);
+  margin-top: 2rem;
+  text-transform: uppercase;
+  justify-self: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.015rem;
+/*   transform: translateX(-12px); */
+}
+
+.header--content-grid article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  color: #000;
+  font-family: 'Jockey One';
+  font-size: 32px; 
+  align-self: end;
+/*   margin-bottom: 2rem;
+  margin-bottom: 1rem; */
+}
+
+.header--content-grid article p {
+  width: 40ch;
+  color: hsl(45, 28.6%, 97.3%);
+  font-size: 1.45rem;
+  font-size: 1rem;
+  font-size: clamp(.9rem, 3vw, 1.15rem);
+  line-height: 1.1;
+  justify-self: center;
+  align-self: end;
+  transform: translateY(10px);
+}
+
+.header--content-grid article .meta--social-icon {
+  list-style: none; 
+  display: flex; 
+  gap: 20px; 	
+  justify-self: center;
+}
+
+@container content-grid (min-width: 512px) {
+  article {
+    padding: 0 1.5rem;
+  }
+  .header--content-grid article.title--header h2 {
+    justify-self: start;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.045rem;
+    transform: translateX(0);
+  }
+  .header--content-grid article {
+   grid-template-columns: repeat(2, 1fr); 
+   margin-bottom: 2rem;
+  }
+  .header--content-grid article p {
+    justify-self: start;    
+   transform: translateY(2px);
+ }
+  .header--content-grid article .meta--social-icon {
+    justify-self: end;
+    transform: translate(-4px, 16px);
+  }
+}
+
+
+@media (min-width: 370px) {
+  .header {
+    /* height: 459px; */
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg) center center / cover no-repeat;    
+  }
+  nav {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-btn {
+    justify-self: right;
+  }
+  .intu--page-title {
+    display: block;
+    justify-self: center;
+    opacity: .2;
+    transform: translateY(2px);	  
+  }
+}
 
 footer {
   position: relative;
