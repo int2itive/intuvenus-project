@@ -642,14 +642,31 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%);
   align-self: center;
 }
 
-.link--content ul li a {
+.link--content ul li a, 
+.article--content ul li a {
   text-decoration: none;
   color: hsl(43.8, 0%, 75.3%);
   transition: color 300ms ease-in-out;
 }
 
-.link--content ul li a:hover {
+.link--content ul li a:hover,
+.article--content ul li a:hover {
   color: hsl(42, 62.5%, 55.9%);
+}
+
+.footer-content .article--content {
+  width: max-content;
+  margin-right: 2rem;
+  padding-inline: 0;
+/*   border: 1px solid firebrick; */
+}
+ 
+.footer-content .article--content h3 {
+  margin-bottom: .75rem;
+  font-size: 1.2rem;
+  color: hsl(42, 62.5%, 55.9%);
+  text-transform: uppercase;
+  letter-spacing: 0.050rem;
 }
 
 footer .dev--copyright {
