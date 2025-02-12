@@ -127,7 +127,7 @@ background-clip: text;
   justify-content: flex-start;
   align-items: center; */
   width: 100%;
-  border: 1px solid #c0c0c0;
+  /* border: 1px solid #c0c0c0; */
 }
 
 .container::after {
