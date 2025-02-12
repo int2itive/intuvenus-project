@@ -353,7 +353,6 @@ main {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
-  outline: 1px solid firebrick;
 }
 
 .gallery::-webkit-scrollbar {
