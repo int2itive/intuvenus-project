@@ -1,3 +1,4 @@
+
 @import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sofia-pro');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
@@ -408,6 +409,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
 /*   border: 1px solid firebrick; */
 /*   grid-row: 2; */
   align-self: center;
+  margin-bottom: 1.3rem;
 }
 
 .link--content ul li a, 
