@@ -1,3 +1,6 @@
+const parallax = document.getElementById("parallax");
+
+
 const menuBtn = document.querySelector('.menu-btn');
 const banner = document.querySelector('.header');
 const menuSlider = document.querySelector('.mbl--list-items');
@@ -21,9 +24,9 @@ let splitSlogan = document.querySelector('.content--sub-hdr h3');
 
 let header = document.querySelector('.header--content-grid h2');
 
-const text = new SplitType(toSplit, { types: 'words, chars' })
+const text = new SplitType(toSplit, { types: 'words, chars' });
 
-const slogan = new SplitType(splitSlogan, { types: 'words, chars' })
+const slogan = new SplitType(splitSlogan, { types: 'words, chars' });
 
 // function doProgressBar() {
 const progress = document.querySelector('.progress--bar');
@@ -88,8 +91,8 @@ menuBtn.addEventListener('click', () => {
   // alert("Hwllo!");
   if (!menuOpen) {
     menuBtn.classList.add('open');
-    menuSlider.classList.add('showing');
-    gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: .75, stagger: 0.3 });
+    menuSlider.classList.toggle('showing');
+    gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: 0.75, stagger: 0.3 });
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
@@ -98,30 +101,20 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-function progressIndicator() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
-window.addEventListener("scroll", function () {
-  progressIndicator();
-  var position = window.scrollY || document.documentElement.scrollTop;
-  
-  if (position > threshold && position > lastScroll) {
-    main.classList.add(hiddenState);
-  } else {
-    main.classList.remove(hiddenState);
-    if (window.scrollY > 40) {
-      main.classList.add(nav_dark);
+  window.addEventListener("scroll", function () {
+    var position = window.scrollY || document.documentElement.scrollTop;
+    
+    if (position > threshold && position > lastScroll) {
+      main.classList.add(hiddenState);
     } else {
-      main.classList.remove(nav_dark);
+      main.classList.remove(hiddenState);
+      if (window.scrollY > 40) {
+        main.classList.add(nav_dark);
+      } else {
+        main.classList.remove(nav_dark);
+      }
     }
-  }
 
-  lastScroll = position <= 0 ? 0 : position;
+    lastScroll = position <= 0 ? 0 : position;
 
-});
-
-// doProgressBar();
+  });
