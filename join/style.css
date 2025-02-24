@@ -375,7 +375,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   width: 100%;
   grid-column: 1 / -1;
 /*   border: 1px solid firebrick; */
-  margin-bottom: .5rem;
+  margin-bottom: .15rem;
 }
 
 /* .meta--content p {
