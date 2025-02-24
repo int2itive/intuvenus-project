@@ -44,21 +44,22 @@ function progressIndicator() {
   document.getElementById("progressBar").style.width = scrolled + "%";
 }
 
-window.addEventListener("scroll", function () {
-  progressIndicator();
-  var position = window.scrollY || document.documentElement.scrollTop;
-  
-  if (position > threshold && position > lastScroll) {
-    main.classList.add(hiddenState);
-  } else {
-    main.classList.remove(hiddenState);
-    if (window.scrollY > 40) {
-      main.classList.add(nav_dark);
-    } else {
-      main.classList.remove(nav_dark);
-    }
-  }
 
-  lastScroll = position <= 0 ? 0 : position;
-      
-});
+
+  window.addEventListener("scroll", function () {
+    var position = window.scrollY || document.documentElement.scrollTop;
+    
+    if (position > threshold && position > lastScroll) {
+      main.classList.add(hiddenState);
+    } else {
+      main.classList.remove(hiddenState);
+      if (window.scrollY > 40) {
+        main.classList.add(nav_dark);
+      } else {
+        main.classList.remove(nav_dark);
+      }
+    }
+
+    lastScroll = position <= 0 ? 0 : position;
+
+  });
