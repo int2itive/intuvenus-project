@@ -92,7 +92,7 @@ menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
     menuBtn.classList.add('open');
     menuSlider.classList.toggle('showing');
-    gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: 0.75, stagger: 0.3 });
+    gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: 0.85, stagger: 0.3 });
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
