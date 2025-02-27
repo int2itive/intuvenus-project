@@ -22,6 +22,12 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
+// click event to each of the page links
+document.querySelectorAll(".mbl--list-items .item a").forEach(n => n.addEventListener("click", () => {
+    menuBtn.classList.remove('open');
+    menuSlider.classList.remove('showing');
+}));
+
 gsap.from('.item a', { duration: 1, opacity: 0, delay: 1, stagger: 0.4 });
 
     gsap.fromTo(text.chars, {
