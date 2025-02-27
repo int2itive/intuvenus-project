@@ -711,7 +711,9 @@ footer .dev--copyright {
   padding: 25% 0;
   align-items: center;
   z-index: 5;
-  transform: translateX(100%);
+  transform: translate3d(100%, 0, 0);
+ /* animation: menuSliderOutAction 300ms linear forwards; */
+  transition: transform 0.65s ease-in-out;
 /*   background-color: hsla(222, 23%, 20%, 4); */
 }
 
@@ -734,8 +736,8 @@ footer .dev--copyright {
 }
 
 .mbl--list-items.showing {
-  animation: menuSliderAction 300ms linear forwards;
-/*   transform: translateX(0);   */
+  /* animation: menuSliderAction 300ms linear forwards; */
+  transform: translate3d(0, 0, 0);
 }
 
 .mlb--list-items > * {
