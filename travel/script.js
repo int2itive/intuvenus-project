@@ -4,6 +4,7 @@ const parallax = document.getElementById("parallax");
 const menuBtn = document.querySelector('.menu-btn');
 const banner = document.querySelector('.header');
 const menuSlider = document.querySelector('.mbl--list-items');
+// const nav-links
 // const para = document.querySelector('.header--content-grid p');
 const main = document.querySelector('.headerDown');
 
@@ -100,6 +101,13 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+// click event to each of the page links
+document.querySelectorAll(".mbl--list-items .item a").forEach(n => n.addEventListener("click", () => {
+    menuBtn.classList.remove('open');
+    menuSlider.classList.remove('showing');
+}));
+
 
   window.addEventListener("scroll", function () {
     var position = window.scrollY || document.documentElement.scrollTop;
