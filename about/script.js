@@ -27,6 +27,12 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
+// click event to each of the page links
+document.querySelectorAll(".mbl--list-items .item a").forEach(n => n.addEventListener("click", () => {
+    menuBtn.classList.remove('open');
+    menuSlider.classList.remove('showing');
+}));
+
 // function doProgressBar() {
 const progress = document.querySelector('.progress--bar');
 document.addEventListener('scroll', () => {
