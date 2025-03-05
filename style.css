@@ -532,6 +532,11 @@ background-clip: text;
   font-family: 'Oswald';
 }
 
+.main-text--wrap > p:last-of-type {
+/*   outline: 1px solid firebrick; */
+  margin-bottom: 2.5rem;
+}
+
 .alt-hero {
   position: relative;
   width: 100%;
@@ -843,7 +848,6 @@ footer .dev--copyright {
   display: grid;
   place-items: center;
   padding-block: 1.5rem;
-  margin-top: 2.5rem;
 }
 
 /* Buttons */
