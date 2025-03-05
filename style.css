@@ -15,6 +15,60 @@
 }
 
 :root {
+  --glow-hue: 171;
+
+  /* Dark Variants */
+  --color-pri-900: hsl(var(--glow-hue) 10% 5%);
+  --color-pri-800: hsl(var(--glow-hue) 10% 10%);
+  --color-pri-700: hsl(var(--glow-hue) 10% 20%);
+  --color-pri-600: hsl(var(--glow-hue) 10% 25%);
+  --color-pri-500: hsl(var(--glow-hue) 10% 30%);
+
+  /* Light Variants */
+  --color-sec-900: hsl(var(--glow-hue) 30% 95%);
+  --color-sec-800: hsl(var(--glow-hue) 25% 85%);
+  --color-sec-700: hsl(var(--glow-hue) 20% 75%);
+  --color-sec-600: hsl(var(--glow-hue) 15% 65%);
+
+  /* Accent Variants */
+  --color-acc-900: hsl(var(--glow-hue) 70% 50%);
+  --color-acc-800: hsl(var(--glow-hue) 70% 60%);
+  --color-acc-700: hsl(var(--glow-hue) 70% 40%);
+
+  /* Neutral Variants */
+  --color-neu-900: hsl(var(--glow-hue) 10% 50%);
+  --color-neu-800: hsl(var(--glow-hue) 10% 60%);
+
+  /* Shadow & Neon Effects */
+  --color-shadow-enhance: 0 0 2px hsl(var(--glow-hue) 70% 50% / 40%),
+    0 0 4px hsl(var(--glow-hue) 70% 50% / 45%),
+    0 0 8px hsl(var(--glow-hue) 70% 50% / 50%);
+  --color-shadow-enhance-hover: 0 0 8px hsl(var(--glow-hue) 70% 70% / 40%),
+    0 0 15px hsl(var(--glow-hue) 70% 70% / 45%),
+    0 0 30px hsl(var(--glow-hue) 70% 70% / 50%);
+  --color-shadow-neon: 0 0 2px hsl(var(--glow-hue) 70% 50% / 20%),
+    0 0 4px hsl(var(--glow-hue) 70% 50% / 25%),
+    0 0 8px hsl(var(--glow-hue) 70% 50% / 30%);
+  --color-shadow-neon-hover: 0 0 8px hsl(var(--glow-hue) 70% 70% / 20%),
+    0 0 15px hsl(var(--glow-hue) 70% 70% / 25%),
+    0 0 30px hsl(var(--glow-hue) 70% 70% / 30%);
+  --color-shadow-neon-inset: 
+    0 0 0 1px hsl(var(--glow-hue) 70% 50% / 30%),
+    0 0 2px hsl(var(--glow-hue) 70% 50% / 25%),
+    0 0 4px hsl(var(--glow-hue) 70% 50% / 20%),
+    0 0 8px hsl(var(--glow-hue) 70% 50% / 30%),
+    inset 0 0 2px hsl(var(--glow-hue) 70% 50% / 25%),
+    inset 0 0 4px hsl(var(--glow-hue) 70% 50% / 20%),
+    inset 0 0 8px hsl(var(--glow-hue) 70% 50% / 30%);
+  --color-shadow-neon-inset-hover: 
+    0 0 0 1px hsl(var(--glow-hue) 100% 100% / 30%),
+    0 0 4px hsl(var(--glow-hue) 100% 70% / 25%),
+    0 0 8px hsl(var(--glow-hue) 100% 70% / 20%),
+    0 0 12px hsl(var(--glow-hue) 100% 70% / 30%),
+    inset 0 0 4px hsl(var(--glow-hue) 100% 70% / 25%),
+    inset 0 0 8px hsl(var(--glow-hue) 100% 70% / 20%),
+    inset 0 0 12px hsl(var(--glow-hue) 100% 70% / 30%);
+  
   --clr-intu-gold-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-green-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-main-1: hsl(42, 62.5%, 39.2%);
