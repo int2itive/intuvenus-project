@@ -23,6 +23,7 @@
 
 body {
   font-family: 'Jockey One', sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
