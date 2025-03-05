@@ -837,3 +837,64 @@ footer .dev--copyright {
     transform: translateY(-30px);
   }
 }
+
+.join-cta--wrap {
+  display: grid;
+  place-items: center;
+  padding-block: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* Buttons */
+.btn {
+  align-items: center;
+  background-color: var(--color-pri-900);
+  border: 0;
+  border-radius: .5rem;
+  border-radius: 3.125rem;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  gap: .5rem;
+  justify-content: center;
+  line-height: 1;
+  padding: .5em 1em;
+}
+
+.btn--lg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-inline: 1.5rem;
+}
+
+/* Effects & Hover States */
+.neon-shadow {
+  box-shadow: var(--color-shadow-neon);
+  transition: all 0.3s ease;
+}
+
+.neon-shadow:hover {
+  box-shadow: var(--color-shadow-neon-hover);
+}
+
+.neon-shadow-inset {
+  box-shadow: var(--color-shadow-neon-inset);
+  transition: all 0.3s ease;
+}
+
+.neon-shadow-inset:hover {
+  box-shadow: var(--color-shadow-neon-inset-hover);
+}
+
+/* Icons */
+.icon {
+  fill: currentColor;
+  width: 1.5rem;
+}
+
+.cta-link {
+  text-decoration: none;
+  color: currentColor;
+}
+
