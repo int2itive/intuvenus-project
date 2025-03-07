@@ -778,3 +778,115 @@ footer .dev--copyright {
     opacity: 0;
   }
 }
+/* Photo Gallery */
+
+.gallery-container {
+  position: relative;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns:
+    [main-start]
+    1fr
+    [main-end];
+}
+
+.main {
+  grid-column: main;
+  padding: 1.25rem;
+}
+
+/* Full Grid Gallery */
+
+.full--gallery-main .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  grid-auto-rows: 12.5rem;
+  grid-auto-flow: dense;
+  gap: 0.75rem;
+}
+
+.full--gallery-main .gallery figure {
+  /* container-type: inline-size; */
+  container: figure / inline-size;
+  overflow: hidden;
+
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: 1fr; */
+
+  /*
+    Because 1fr = minmax(auto, 1fr),
+    to prevent the grid blowout,
+    set the minimum to zero.
+  */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.full--gallery-main .gallery img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+  /* grid-row: 1 / -1; */
+  /* grid-column: 1 / -1; */
+  grid-area: 1 / 1 / -1 / -1;
+  border-radius: 4px;
+/*   transition: scale 1s ease-in-out; */
+}
+/* 
+.full--gallery-main .gallery figure:hover img {
+  scale: 1.125;
+}
+ */
+.full--gallery-main .gallery figcaption {
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: end;
+  z-index: 1;
+
+  padding: 3em 15% 1em 1em;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  background: linear-gradient(transparent 25%, rgb(0 0 0 / 0.75));
+  display: none;
+}
+
+@container figure (width > 20rem) {
+  .gallery figcaption {
+    display: block;
+  }
+}
+
+.full--gallery-main .gallery figcaption h3 {
+  font-size: 1.0625rem;
+}
+
+.full--gallery-main .gallery figcaption p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (width > 320px) {
+  .full--gallery-main .gallery figure:nth-child(1) {
+/*     grid-area: span 2 / span 2; */
+  }
+
+  .full--gallery-main .gallery figure:nth-child(4n + 1) {
+    grid-row: span 2;
+  }
+
+  .full--gallery-main .gallery figure:nth-child(4n + 2) {
+    grid-column: span 2;
+  }
+}
+
+@media (width > 600px) {
+  .gallery-container {
+    padding: 0 4rem;
+  }
+  .full--gallery-main .gallery figure:nth-child(1) {
+    grid-area: span 2 / span 2;
+  }
+}
