@@ -155,8 +155,9 @@ background-clip: text;
   height: 410px;
   height: 380px;/*   height: 500px; */
   background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-position: center -90px;
+  background-position: 47.5% center; /* Centers at X -225px, at viewport width: 360px */
+  background-size: 250%;
   background-repeat: no-repeat;
   margin-top: 50px;
 }
@@ -667,11 +668,12 @@ footer .dev--copyright {
 @media (min-width: 370px) {
   .header {
 /*     height: 459px; */
-    background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg);
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg) center center / cover no-repeat;    
+/*     background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg) center center / cover no-repeat;     */
+/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg) center center / cover no-repeat;     */ */
   }
   nav {
       grid-template-columns: repeat(3, 1fr);
