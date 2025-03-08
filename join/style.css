@@ -333,7 +333,7 @@ form {
   display: grid;
   gap: 0.75rem;
   max-width: 30ch;
-  max-width: 90ch;
+  max-width: 150ch;
   width: 80%;
 /*   width: 100%; */
   margin: 2rem auto;
