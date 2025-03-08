@@ -8,6 +8,8 @@
 }
 
 :root {
+  --glow-hue: 171;
+  
   --clr-intu-gold-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-gold-2: hsl(42, 62.5%, 55.9%);
   --clr-intu-gold-3: hsl(42, 62.5%, 62.6%);
@@ -293,6 +295,115 @@ background-clip: text;
     justify-self: center;
     opacity: .2;
     transform: translateY(2px);	  
+  }
+}
+
+.form-join {
+  position: relative;
+  grid-column: full;
+  background-color: #ddd;  
+  background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg) center top / cover no-repeat;
+  padding-block: 1.75rem;
+}
+
+.form-join::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: hsl(0, 0%, 0%, 0.75);
+}
+
+.form-join > * {
+  position: relative;
+  z-index: 1;
+}
+
+.form-join h3 {
+  font-size: clamp(1.6rem, 5vw, 3.5rem);  
+  color: #fafafa;
+  text-align: center;
+}
+
+form {
+  --clr-success: hsl(143, 100%, 26%);
+  --clr-warning: hsl(43, 100%, 66%);
+  --clr-error: hsl(348, 55%, 49%);
+  
+  display: grid;
+  gap: 0.75rem;
+  max-width: 30ch;
+  max-width: 90ch;
+  width: 80%;
+/*   width: 100%; */
+  margin: 2rem auto;
+/*   outline: 1px solid firebrick; */
+}
+
+.form-group {
+  display: grid;
+  gap: 0.25rem;
+}
+
+label {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 0;
+/*     background-color: hsl(201, 31%, 11%); */
+  grid-column: 1 / -1;
+}
+
+input {
+  outline: 2px solid hsl(var(--glow-hue), 15%, 65%);
+}
+
+input:not(:placeholder-shown):valid {
+  outline-color: var(--clr-success);
+/*   outline-color: hsl(var(--glow-hue) 10% 30%); */
+}
+
+input:not(:placeholder-shown):invalid {
+  outline-color: var(--clr-error);
+}
+
+input:focus:invalid {
+  outline-color: var(--clr-warning)
+}
+
+.form-group {
+  margin-bottom: .75rem;  
+}
+
+.form-group:last-of-type {
+  margin-bottom: 3rem;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  width: 60%;
+  margin: 0 auto;
+  padding: 8px 2px;
+  border-radius: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 370px) {
+  form {
+    max-width: 45%;
+    width: 70ch;
   }
 }
 
