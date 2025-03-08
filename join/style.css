@@ -401,7 +401,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 768px) {
   form {
     max-width: 45%;
     width: 70ch;
