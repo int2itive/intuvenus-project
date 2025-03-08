@@ -181,7 +181,7 @@ background-clip: text;
   justify-content: flex-start;
   align-items: center; */
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   /* border: 1px solid #c0c0c0; */
 }
 
