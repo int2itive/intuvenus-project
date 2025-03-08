@@ -679,7 +679,7 @@ footer .dev--copyright {
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 38rem) {
   .header {
 /*     height: 459px; */
     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg) center center / cover no-repeat;    
