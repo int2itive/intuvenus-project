@@ -179,6 +179,17 @@ background-clip: text;
   background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%);
 }
 
+/* The progress container (grey background) */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  z-index: 100;
+}
+
 .progress--bar {
 /*   content: ''; */
   position: fixed;
