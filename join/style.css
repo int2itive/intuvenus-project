@@ -679,16 +679,11 @@ footer .dev--copyright {
   }
 }
 
-@media (min-width: 38rem) {
+@media (min-width: 420px) {
   .header {
 /*     height: 459px; */
     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg) center center / cover no-repeat;    
-/*     background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20240714-WA0036_Dr88tAiGv.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/ivs-img--asset--trav-0499__nuXLdmyCkX.jpg) center center / cover no-repeat;     */ */
-  }
+  }  
 }
 
 @media (min-width: 720px) {
