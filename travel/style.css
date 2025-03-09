@@ -190,6 +190,13 @@ background-clip: text;
   z-index: 100;
 }
 
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 2px;
+  background: #fab800;
+  width: 0%;
+}
+
 .progress--bar {
 /*   content: ''; */
   position: fixed;
