@@ -176,7 +176,8 @@ background-clip: text;
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%);
+/*   background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%); */
+  background-image: linear-gradient(to top, #000 15%, transparent 60%);
 }
 
 /* The progress container (grey background) */
