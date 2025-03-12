@@ -177,7 +177,7 @@ background-clip: text;
   height: 100%;
   width: 100%;
 /*   background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%); */
-  background-image: linear-gradient(to top, #000 15%, transparent 60%);
+  background-image: linear-gradient(to top, #000 15%, transparent 50%);
 }
 
 /* The progress container (grey background) */
