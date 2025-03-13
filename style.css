@@ -16,6 +16,7 @@
 
 :root {
   --glow-hue: 171;
+  view-transition-name: none;
 
   /* Dark Variants */
   --color-pri-900: hsl(var(--glow-hue) 10% 5%);
@@ -956,5 +957,76 @@ footer .dev--copyright {
 .cta-link {
   text-decoration: none;
   color: currentColor;
+}
+
+[data-theme=dark] {
+  color-scheme: dark only;
+}
+[data-theme=light],
+html {
+  color-scheme: dark only;
+}
+
+@media(prefers-color-scheme: dark) {
+  color-scheme: dark only;
+}
+
+[aria-pressed=true] path:nth-of-type(1) {
+  display: none;
+}
+[aria-pressed=false] path:nth-of-type(2) {
+  display: none;
+}
+
+nav svg {
+  width: 40px;
+  position: absolute;
+  right: 3px;
+  top: -1px;
+  height: 40px;
+  scale: 1.5 1.5;
+  transform-origin: 100% 100%;
+  rotate: 25deg;
+  fill: canvasText;
+  fill: hsl(42, 62.5%, 39.2%);
+  translate: 18% 16%;
+  margin-right: 16px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+[aria-pressed] {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  width: 28px;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  transition: background 0.2;
+  cursor: pointer;
+  background-color: color-mix(in lch, canvas, canvasText calc(var(--intent) * 15%));
+/*   border: 1px solid firebrick; */
+}
+
+button svg {
+  width: 50%;
+}
+
+button:is(:focus-visible, :hover) {
+  --intent: 1;
 }
 
