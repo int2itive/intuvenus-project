@@ -747,7 +747,8 @@ footer .dev--copyright {
 @media (min-width: 370px) {
   .header {
     height: 459px;
-    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat;    
+/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat; */
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg) center center / cover no-repeat;
   }
   nav {
       grid-template-columns: repeat(3, 1fr);
