@@ -30,6 +30,7 @@ header.-hidden {
   width: 100%;
   top: 0;
   z-index: 10;
+  backdrop-filter: blur(12px);
 }
 
 .intuvenus--header {
@@ -49,6 +50,7 @@ nav {
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50px;
 /*   padding: 5px; */
   align-items: center;
@@ -176,7 +178,7 @@ background-clip: text;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.95) 90%);
-  background-image: linear-gradient(to top, #000 15%, transparent 50%);
+  background-image: linear-gradient(to top, #000 15%, transparent 40%);
 }
 
 /* The progress container (grey background) */
