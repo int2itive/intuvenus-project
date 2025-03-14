@@ -167,6 +167,17 @@ background-clip: text;
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
+section {
+	 background-color: #ffffff;
+	 position: relative;
+	 width: 100%;
+	 z-index: 10;	
+}
+
+.margin-400 {
+	 margin-bottom: 320px;
+}
+
 .site--hero {
   position: relative;
   container-name: hero;
