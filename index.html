@@ -1,282 +1,401 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IntUVenus - Home</title>
-    <link
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/sound-of-mind-still_sm_DSa1-eB4-.png" type="image/x-icon">
-    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js" defer></script>
-    <script src="https://unpkg.com/split-type" defer></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <ul class="mbl--list-items">
-      <li class="item"><a href="#">Home</a></li>
-      <li class="item">
-        <a href="./about">About Me</a>
-      </li>
-      <li class="item">
-        <a href="./blog">Blog</a>
-      </li>
-      <li class="item">
-        <a href="./products">Products</a>
-      </li>
-      <li class="item">
-        <a href="./events">Events</a>
-      </li>
-      <li class="item">
-        <a href="./travel">Travel</a>
-      </li>
-      <li class="item">
-        <a href="./join">Join Us</a>
-      </li>
-    </ul>    
-    <header>
-      <nav>
-        <div class="logo">
-          <span class="logo-text">IntUVenus</span>
-        </div>
-        
-        <button aria-pressed="false">
-          <svg fill="hsl(42, 62.5%, 39.2%)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-6">
-          <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
-          <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
-        </svg>
-          <span class="sr-only">Toggle Theme</span>
-        </button>
-        
-        <div class="menu-btn">
-          <div class="menu-btn__burger">
-          </div>
-        </div>    
-      </nav>
-    </header>
-    <section class="site--hero">
-      <div class="container">
-        <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/47573fe2bf6f4169ba5316619df6dd2b_-J6-IPUrD.jpg" alt="" width="500">
-        <div class="content--wrap">
-          <div class="content">
-            <h1><span class="title--emph">Int<span class="char-under">U</span></span>Venus</h1>
-            <p>A Consistent Maker of Moves. Haylee Venus is one of the UK's leading Poetical Wordsmiths. Few can rival her Lyrical Deterity and Artistic Expression. She travels the World Constantly to share her gifts in the Arts.</p>
-            <ul class="meta--social-icon" style="list-style: none; display: flex; gap: 20px; margin-top: 1rem;">
-              <li>
-                <a href="https://www.instagram.com/iamkweenvenus/" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>              
-                </a>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/haylee-venus-3b021559/" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
-                  </svg>              
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@hayleevenus5980" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
-                </a>
-              </li>
-    <!--           <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0,0%,75.3%);transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0,0%,75.3%);"><path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path><path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path></svg>
-              </li> -->
-           </ul>
-            <div class="link-wrap">
-               <ul class="triggers">
-               <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                    <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
-                  </svg>                 
-                  <span><strong>Article</strong>: Artistic Conspiracy</span>
-                  <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
-               </li>
-               <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                    <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
-                  </svg>                 
-                  <span><strong>Article</strong>: Loyal to you Last Level - Stop</span>
-                  <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
-               </li>
-               <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
-                    <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
-                  </svg>                 
-                  <span><strong>Article</strong>: Mek A Step Trip to Kenya</span>
-                  <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
-               </li>
-               <li>
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 452.986 452.986" height="16"><path d="M404.344 0H48.642C21.894 0 0 21.873 0 48.664v355.681c0 26.726 21.894 48.642 48.642 48.642h355.702c26.726 0 48.642-21.916 48.642-48.642V48.664C452.986 21.873 431.07 0 404.344 0zM148.429 33.629h156.043v40.337H148.429V33.629zm262.473 372.743H42.041v-293.88h368.86v293.88z" style="fill:#c0c0c0"/><path d="M79.273 246.23h48.642v48.664H79.273zM79.273 323.26h48.642v48.642H79.273zM160.853 169.223h48.621v48.642h-48.621zM160.853 246.23h48.621v48.664h-48.621zM160.853 323.26h48.621v48.642h-48.621zM242.369 169.223h48.664v48.642h-48.664zM242.369 246.23h48.664v48.664h-48.664zM242.369 323.26h48.664v48.642h-48.664zM323.907 169.223h48.664v48.642h-48.664zM323.907 246.23h48.664v48.664h-48.664z" stylestyle="fill:#c0c0c0"/></svg>
-                 
-                  <span><strong>Events</strong>: Inspiring Edge Fashion Show</span>
-                  <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Book Tickets</a> 
-               </li>
-               </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Markup Boilerplate</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+        <script type="text/javascript" src="./app.js" defer></script>
+    </head>
+
+    <body>
+        <ul class="mbl--list-items">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item">
+            <a href="#">About Me</a>
+          </li>
+          <li class="item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="item">
+            <a href="#">Products</a>
+          </li>
+          <li class="item">
+            <a href="#">Events</a>
+          </li>
+          <li class="item">
+            <a href="#">Travel</a>
+          </li>
+          <li class="item">
+            <a href="#">Join Us</a>
+          </li>
+        </ul>
+        <header>
+          <nav>
+            <div class="logo">
+        <!--       <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/Current/DWP/sound-of-mind-still_sm_DSa1-eB4-_1__MiSgZdA9p.png" alt="" width="40" height="40"> https://globalwomanmagazine.com/changing-the-world-through-creativity/ -->
+              <span class="logo-text">IntUVenus</span>
             </div>
+            <div class="menu-btn">
+              <div class="menu-btn__burger">
+
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section class="site--hero">
+          <div class="container">
+        <!--     <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/47573fe2bf6f4169ba5316619df6dd2b_-J6-IPUrD.jpg" alt="" width="500"> -->
+            <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/47573fe2bf6f4169ba5316619df6dd2b_-J6-IPUrD.jpg" alt="" width="500">
+            <div class="content--wrap">
+              <div class="content">      
+                <h1><span class="title--emph">Int<span class="intu-underlined">U</span></span>Venus</h1>
+                <p>A Consistent Maker of Moves. Haylee Venus is one of the UK's leading Poetical Wordsmiths. Few can rival her Lyrical Deterity and Artistic Expression. She travels the World Constantly to share her gifts in the Arts.</p>
+                <ul class="meta--social-icon" style="list-style: none; display: flex; gap: 20px; margin-top: 1rem;">
+                  <li>
+                    <a href="https://www.instagram.com/iamkweenvenus/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>              
+                    </a>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/haylee-venus-3b021559/" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
+                      </svg>              
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@hayleevenus5980" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                    </a>
+                  </li>
+        <!--           <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0,0%,75.3%);transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(0,0%,75.3%);"><path d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"></path><path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path></svg>
+                  </li> -->
+               </ul>
+                <div class="link-wrap">
+                   <ul class="triggers">
+                       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
+          <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
+        </svg>                 
+                          <span><strong>Article</strong>: Artistic Conspiracy</span>
+                          <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
+                       </li>
+                       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
+          <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
+        </svg>                 
+                          <span><strong>Article</strong>: Loyal to you Last Level - Stop</span>
+                          <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
+                       </li>
+                       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
+          <path d="M 168 80 Q 146 82 144 104 L 144 408 L 144 408 Q 144 421 140 432 L 440 432 L 440 432 Q 462 430 464 408 L 464 104 L 464 104 Q 462 82 440 80 L 168 80 L 168 80 Z M 72 480 Q 41 479 21 459 L 21 459 L 21 459 Q 1 439 0 408 L 0 112 L 0 112 Q 2 90 24 88 Q 46 90 48 112 L 48 408 L 48 408 Q 50 430 72 432 Q 94 430 96 408 L 96 104 L 96 104 Q 97 73 117 53 Q 137 33 168 32 L 440 32 L 440 32 Q 471 33 491 53 Q 511 73 512 104 L 512 408 L 512 408 Q 511 439 491 459 Q 471 479 440 480 L 72 480 L 72 480 Z M 176 136 Q 178 114 200 112 L 296 112 L 296 112 Q 318 114 320 136 L 320 216 L 320 216 Q 318 238 296 240 L 200 240 L 200 240 Q 178 238 176 216 L 176 136 L 176 136 Z M 376 112 L 408 112 L 376 112 L 408 112 Q 430 114 432 136 Q 430 158 408 160 L 376 160 L 376 160 Q 354 158 352 136 Q 354 114 376 112 L 376 112 Z M 376 192 L 408 192 L 376 192 L 408 192 Q 430 194 432 216 Q 430 238 408 240 L 376 240 L 376 240 Q 354 238 352 216 Q 354 194 376 192 L 376 192 Z M 200 272 L 408 272 L 200 272 L 408 272 Q 430 274 432 296 Q 430 318 408 320 L 200 320 L 200 320 Q 178 318 176 296 Q 178 274 200 272 L 200 272 Z M 200 352 L 408 352 L 200 352 L 408 352 Q 430 354 432 376 Q 430 398 408 400 L 200 400 L 200 400 Q 178 398 176 376 Q 178 354 200 352 L 200 352 Z" />
+        </svg>                 
+                          <span><strong>Article</strong>: Volunteer with Mek A Step Trip</span>
+                          <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Read Now</a> 
+                       </li>
+                       <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 452.986 452.986" height="16"><path d="M404.344 0H48.642C21.894 0 0 21.873 0 48.664v355.681c0 26.726 21.894 48.642 48.642 48.642h355.702c26.726 0 48.642-21.916 48.642-48.642V48.664C452.986 21.873 431.07 0 404.344 0zM148.429 33.629h156.043v40.337H148.429V33.629zm262.473 372.743H42.041v-293.88h368.86v293.88z" style="fill:#c0c0c0"/><path d="M79.273 246.23h48.642v48.664H79.273zM79.273 323.26h48.642v48.642H79.273zM160.853 169.223h48.621v48.642h-48.621zM160.853 246.23h48.621v48.664h-48.621zM160.853 323.26h48.621v48.642h-48.621zM242.369 169.223h48.664v48.642h-48.664zM242.369 246.23h48.664v48.664h-48.664zM242.369 323.26h48.664v48.642h-48.664zM323.907 169.223h48.664v48.642h-48.664zM323.907 246.23h48.664v48.664h-48.664z" stylestyle="fill:#c0c0c0"/></svg>
+
+                          <span><strong>Events</strong>: Inspiring Edge Fashion Show</span>
+                          <a href="https://www.eventbrite.co.uk/e/inspriring-edge-fashion-showe-gala-tickets-1020524946587">Book Tickets</a> 
+                       </li>
+                   </ul>
+                </div>
+              </div>
+              <ul class="list-items">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item">
+                  <a href="#">About Me</a>
+                </li>
+                <li class="item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="item">
+                  <a href="#">Products</a>
+                </li>
+                <li class="item">
+                  <a href="#">Events</a>
+                </li>
+                <li class="item">
+                  <a href="#">Travel</a>
+                </li>
+                <li class="item">
+                  <a href="#">Join Us</a>
+                </li>
+              </ul>
+            </div>
+        <!--     <p>IntuVenus</p> -->
           </div>
-          <ul class="list-items">
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item">
-              <a href="./about">About Me</a>
-            </li>
-            <li class="item">
-              <a href="./blog">Blog</a>
-            </li>
-            <li class="item">
-              <a href="./products">Products</a>
-            </li>
-            <li class="item">
-              <a href="./events">Events</a>
-            </li>
-            <li class="item">
-              <a href="./travel">Travel</a>
-            </li>
-            <li class="item">
-              <a href="#">Join Us</a>
-            </li>
-          </ul>    
-        </div>
-      </div>
-    </section>
-    <section class="creatives">
-      <header>
-        <h1>Beyond the bounds of possibility</h1>
-        <p>For all Creatives, dreamers and Visionaries who are tired of letting their inner voice stop them...</p>
-      </header>
-      <div class="content">
-        <p>Ancient souls do not need the human language. we use frequency, tone, and vibration.. Without positive obsession, there is nothing at all.</p>
-        <div class="img--creative">
-          <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/hvq--prof-intuv-ls__w15kKyN.jpg" alt="">      
-        </div>
-    
-        </div>
-    </section>
-    <section class="main-text margin-400">
-      <main class="main-text--wrap">
-        <div class="bg-watermark-head">
-          <p class="bg--wm-header">
-            <svg width="201.36" height="42" viewBox="0 0 201.36 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
-              <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
-                <path d="M 12.72 35.04 L 23.28 35.04 L 23.28 42 L 8.04 42 A 22.672 22.672 0 0 1 3.034 35 A 27.792 27.792 0 0 1 2.04 32.58 Q 0 26.88 0 20.85 Q 0 14.82 2.28 9.24 Q 4.56 3.66 9.06 0 L 23.28 0 L 23.28 7.2 L 12.72 7.2 A 8.855 8.855 0 0 0 11.705 8.666 Q 10.855 10.172 10.155 12.438 A 32.811 32.811 0 0 0 9.93 13.2 A 31.571 31.571 0 0 0 8.953 17.989 A 26.038 26.038 0 0 0 8.76 21.12 A 27.228 27.228 0 0 0 9.264 26.236 A 33.315 33.315 0 0 0 9.93 29.04 A 28.516 28.516 0 0 0 10.624 31.188 Q 11.421 33.34 12.388 34.629 A 7.254 7.254 0 0 0 12.72 35.04 Z" id="0" vector-effect="non-scaling-stroke"/>
-                <path d="M 27.66 42 L 27.66 0 L 43.62 0 A 13.366 13.366 0 0 1 49.473 3.934 A 16.398 16.398 0 0 1 50.07 4.65 A 12.356 12.356 0 0 1 52.593 10.738 A 16.342 16.342 0 0 1 52.74 12.96 A 15.937 15.937 0 0 1 52.022 17.881 A 12.235 12.235 0 0 1 46.38 24.78 L 52.44 42 L 44.04 42 L 38.94 26.7 L 35.76 26.7 L 35.76 42 L 27.66 42 Z M 41.28 7.2 L 35.76 7.2 L 35.76 19.98 L 40.92 19.98 Q 41.748 19.785 42.714 18.543 A 11.291 11.291 0 0 0 43.17 17.91 Q 44.4 16.08 44.4 13.62 Q 44.4 11.16 43.35 9.3 Q 42.3 7.44 41.28 7.2 Z" id="1" vector-effect="non-scaling-stroke"/>
-                <path d="M 78.84 42 L 57.06 42 L 57.06 0 L 78.6 0 L 78.6 7.2 L 65.28 7.2 L 65.28 17.22 L 77.16 17.22 L 77.16 24.18 L 65.28 24.18 L 65.28 35.04 L 78.84 35.04 L 78.84 42 Z" id="2" vector-effect="non-scaling-stroke"/>
-                <path d="M 109.38 42 L 101.34 42 L 100.08 35.34 L 90.6 35.34 L 89.34 42 L 81.18 42 L 89.28 0 L 101.7 0 L 109.38 42 Z M 95.34 7.8 L 95.22 7.8 L 92.88 21.78 L 91.56 28.92 L 99.06 28.92 L 97.68 21.78 L 95.34 7.8 Z" id="3" vector-effect="non-scaling-stroke"/>
-                <path d="M 115.98 42 L 115.98 7.2 L 106.92 7.2 L 106.92 0 L 133.2 0 L 133.2 7.2 L 124.14 7.2 L 124.14 42 L 115.98 42 Z" id="4" vector-effect="non-scaling-stroke"/>
-                <path d="M 144.9 42 L 136.68 42 L 136.68 0 L 144.9 0 L 144.9 42 Z" id="5" vector-effect="non-scaling-stroke"/>
-                <path d="M 167.76 0 L 176.4 0 L 167.88 42 L 156.6 42 L 148.08 0 L 156.72 0 L 160.02 19.44 L 162.06 32.04 L 162.42 32.04 L 164.46 19.44 L 167.76 0 Z" id="6" vector-effect="non-scaling-stroke"/>
-                <path d="M 201.36 42 L 179.58 42 L 179.58 0 L 201.12 0 L 201.12 7.2 L 187.8 7.2 L 187.8 17.22 L 199.68 17.22 L 199.68 24.18 L 187.8 24.18 L 187.8 35.04 L 201.36 35.04 L 201.36 42 Z" id="7" vector-effect="non-scaling-stroke"/>
-              </g>
-            </svg>
-          </p>
-        </div>
-        <p>Haylee Venus is a multidimensional change maker in both her passion and professional ventures. Haylee Venus is one of the UK's leading Poetical Wordsmiths. Few can rival her Lyrical Deterity and Artistic Expression. She travels the World Constantly to share her gifts in the Arts.</p>
-        <p>Table of (dis)contents: a) moving away from Black music as mainly connected to orality or an exaggerated admiration of the voice b) dislike of 
-          focus on historical and biographical; instead focus more on parahistorical, ahistorical, analogical, anonymity and mythopoesis/fabulism c) 
-          ignorance of electronics d) over-evaluation of Hip-Hop (James Baldwin: the slightest shift in Negro identity, the stars would lose position) 
-          e) More emphasis on “unblack,” “unpopular,” and “unculture” and less on this idea of ghetto centricity to give more shine on unknown black 
-          composers.</p>
-        <p>You must recognize that consciousness is power; being aware, knowing something, and being able to do something is what consciousness is all about. This grants power. Remember, we act in terms of what we know, what we believe, what we expect, what we value, what skills we have. All of this is part of consciousness. Therefore, when you manipulate these things, you manipulate people’s ability.
-        </p>
-        <div class="bg-watermark-head">
-          <p class="bg--wm-header">
-    <svg width="179.821" height="42" viewBox="0 0 179.821 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
-    	<g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
-    		<path d="M 28.2 42 L 20.16 42 L 18.9 35.34 L 9.42 35.34 L 8.16 42 L 0 42 L 8.1 0 L 20.52 0 L 28.2 42 Z M 14.16 7.8 L 14.04 7.8 L 11.7 21.78 L 10.38 28.92 L 17.88 28.92 L 16.5 21.78 L 14.16 7.8 Z" id="0" vector-effect="non-scaling-stroke"/>
-    		<path d="M 41.76 35.04 L 46.8 35.04 A 11.285 11.285 0 0 0 47.842 33.729 Q 48.378 32.934 48.69 32.13 A 6.605 6.605 0 0 0 48.991 31.074 Q 49.222 29.946 49.255 28.327 A 27.072 27.072 0 0 0 49.26 27.78 L 49.26 0 L 57.48 0 L 57.48 24.78 Q 57.48 27.302 57.378 28.907 A 26.842 26.842 0 0 1 57.33 29.55 A 19.734 19.734 0 0 1 57.154 30.938 Q 57.036 31.677 56.856 32.519 A 43.462 43.462 0 0 1 56.58 33.72 Q 55.686 37.56 52.024 41.031 A 25.239 25.239 0 0 1 50.94 42 L 37.62 42 A 20.479 20.479 0 0 1 34.764 39.19 Q 32.633 36.603 31.98 33.72 A 28.009 28.009 0 0 1 31.397 30.479 Q 31.08 27.915 31.08 24.78 L 31.08 0 L 39.3 0 L 39.3 27.78 A 23.503 23.503 0 0 0 39.345 29.288 Q 39.439 30.742 39.728 31.713 A 5.492 5.492 0 0 0 39.87 32.13 A 8.073 8.073 0 0 0 40.687 33.683 Q 41.141 34.365 41.76 35.04 Z" id="1" vector-effect="non-scaling-stroke"/>
-    		<path d="M 69.72 42 L 69.72 7.2 L 60.66 7.2 L 60.66 0 L 86.94 0 L 86.94 7.2 L 77.88 7.2 L 77.88 42 L 69.72 42 Z" id="2" vector-effect="non-scaling-stroke"/>
-    		<path d="M 98.64 24.6 L 98.64 42 L 90.42 42 L 90.42 0 L 98.64 0 L 98.64 16.92 L 108.24 16.92 L 108.24 0 L 116.46 0 L 116.46 42 L 108.24 42 L 108.24 24.6 L 98.64 24.6 Z" id="3" vector-effect="non-scaling-stroke"/>
-    		<path d="M 129.42 0 L 141.78 0 A 19.268 19.268 0 0 1 146.865 6.446 A 24.311 24.311 0 0 1 148.02 9.18 Q 150.06 14.94 150.06 21.03 Q 150.06 27.12 148.08 32.58 Q 146.1 38.04 141.78 42 L 129.42 42 Q 125.1 38.04 123.12 32.58 Q 121.14 27.12 121.14 21.03 Q 121.14 14.94 123.18 9.18 A 22.446 22.446 0 0 1 125.858 3.862 A 18.625 18.625 0 0 1 129.42 0 Z M 133.44 35.04 L 137.76 35.04 A 7.923 7.923 0 0 0 138.654 33.739 Q 139.457 32.306 140.103 30.109 A 30.794 30.794 0 0 0 140.31 29.37 A 31.579 31.579 0 0 0 141.341 22.215 A 35.814 35.814 0 0 0 141.36 21.06 A 33.526 33.526 0 0 0 140.833 15.027 A 29.486 29.486 0 0 0 140.34 12.81 Q 139.32 8.94 137.82 7.2 L 133.44 7.2 A 8.142 8.142 0 0 0 132.504 8.571 Q 131.595 10.21 130.89 12.81 A 30.535 30.535 0 0 0 129.883 19.302 A 35.297 35.297 0 0 0 129.84 21.06 Q 129.84 25.44 130.89 29.37 A 26.725 26.725 0 0 0 131.516 31.407 Q 132.232 33.425 133.115 34.631 A 6.582 6.582 0 0 0 133.44 35.04 Z" id="4" vector-effect="non-scaling-stroke"/>
-    		<path d="M 154.74 42 L 154.74 0 L 170.7 0 A 13.366 13.366 0 0 1 176.553 3.934 A 16.398 16.398 0 0 1 177.15 4.65 A 12.356 12.356 0 0 1 179.673 10.738 A 16.342 16.342 0 0 1 179.82 12.96 A 15.937 15.937 0 0 1 179.102 17.881 A 12.235 12.235 0 0 1 173.46 24.78 L 179.52 42 L 171.12 42 L 166.02 26.7 L 162.84 26.7 L 162.84 42 L 154.74 42 Z M 168.36 7.2 L 162.84 7.2 L 162.84 19.98 L 168 19.98 Q 168.828 19.785 169.794 18.543 A 11.291 11.291 0 0 0 170.25 17.91 Q 171.48 16.08 171.48 13.62 Q 171.48 11.16 170.43 9.3 Q 169.38 7.44 168.36 7.2 Z" id="5" vector-effect="non-scaling-stroke"/>
-    	</g>
-    </svg>
-          </p>
-        </div>
-        <p>You must recognize that consciousness is power; being aware, knowing something, and being able to do something is what consciousness is all about. This grants power. Remember, we act in terms of what we know, what we believe, what we expect, what we value, what skills we have. All of this is part of consciousness. Therefore, when you manipulate these things, you manipulate people’s ability.
-        </p>
-        <div class="join-cta--wrap">
-          <button class="btn btn--lg neon-shadow">
-            <a href="#" class="cta-link">
-              <span>Know more</span>
-            </a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon">
-              <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
-            </svg>
-    
-          </button>
-        </div>
-      </main>  
-    </section>    
-    <footer>
-        <div class="footer--container">
-            <nav>
-              <div class="logo">
-          <!--       <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/Current/DWP/sound-of-mind-still_sm_DSa1-eB4-_1__MiSgZdA9p.png" alt="" width="40" height="40"> -->
-                <span class="logo-text">IntUVenus</span>
-              </div>
-            </nav>
-            <div class="footer-content">
-              <div class="meta--content">
-                <p>A mission, that mission being to serve with love and empower and transform lives through her businesses, life experiences and talent.</p>
-                <ul class="meta--content-icons">
-                    <li>
-                      <a href="https://www.instagram.com/iamkweenvenus/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>              
-                      </a>
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/haylee-venus-3b021559/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
-                        </svg>              
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/@hayleevenus5980" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
-                      </a>
-                    </li>        
-                </ul>
-              </div>
-              <div class="link--content">
-                <ul class="content--links">
-                  <li><a href="../about">About Me</a></li>
-                  <li><a href="../blog">Blog</a></li>
-                  <li><a href="../products">Products</a></li>
-                  <li><a href="../events">Events</a></li>
-                  <li><a href="../travel">Travel</a></li>
-                  <li><a href="../join">Join Us</a></li>
-                </ul>
-              </div>
-              <div class="article--content">
-                <h3>Latest Articles</h3>
-                <ul class="content--links">
-                  <li><a href="../blog/consciousness-is-power/">Recognize that Consciousness is Power</a></li>
-                  <li><a href="#">MekAhStep: St. Lucia 2024</a></li>
-                  <li><a href="#">Stop Being Loyal to you Last Level</a></li>
-                  <li><a href="#"><strong>Events</strong>: Inspiring Edge Fashion Show</a></li>
-                  <li><a href="#">Passion & Performance - Are you Talented?</a></li>
-                </ul>        
-              </div>
-          </div>
-          <div class="dev--copyright">
-          <!-- copyright icon by Free Icons (https://free-icons.github.io/free-icons/) -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="0.85em" fill="currentColor" viewBox="0 0 512 512">
-            <path d="M 256 32 Q 317 33 368 62 L 368 62 L 368 62 Q 419 92 450 144 Q 480 197 480 256 Q 480 315 450 368 Q 419 420 368 450 Q 317 479 256 480 Q 195 479 144 450 Q 93 420 62 368 Q 32 315 32 256 Q 32 197 62 144 Q 93 92 144 62 Q 195 33 256 32 L 256 32 Z M 256 512 Q 326 511 384 478 L 384 478 L 384 478 Q 442 444 478 384 Q 512 323 512 256 Q 512 189 478 128 Q 442 68 384 34 Q 326 1 256 0 Q 186 1 128 34 Q 70 68 34 128 Q 0 189 0 256 Q 0 323 34 384 Q 70 444 128 478 Q 186 511 256 512 L 256 512 Z M 324 324 Q 294 352 256 352 L 256 352 L 256 352 Q 218 352 188 324 Q 160 294 160 256 Q 160 218 188 188 Q 218 160 256 160 Q 294 160 324 188 Q 335 197 347 188 Q 356 177 347 165 Q 307 128 256 128 Q 205 128 166 165 Q 128 205 128 256 Q 128 307 166 347 Q 205 384 256 384 Q 307 384 347 347 Q 356 335 347 324 Q 335 315 324 324 L 324 324 Z" />
+        </section>
+        <section class="creatives">
+          <header>
+            <h1>Beyond the bounds of possibility</h1>
+            <p>For all Creatives, dreamers and Visionaries who are tired of letting their inner voice stop them...</p>
+          </header>
+          <div class="content">
+            <p>Ancient souls do not need the human language. we use frequency, tone, and vibration.
+            </p>
+        <!--     <p>Prodigy is, at its essence, adaptability, persistence, and positive obsession. Without persistence, what remains is an enthusiasm of the moment. Without adaptability, what remains may be channelled into destructive fanaticism. Without positive obsession, there is nothing at all.      </p> -->
+            <div class="img--creative">
+              <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/hvq--prof-intuv-ls__w15kKyN.jpg" alt="">      
+            </div>
+
+            </div>
+        </section>       
+        <section class="main-text margin-400">
+          <main class="main-text--wrap">
+        <!--     <h1>Beyond the bounds of possibility</h1> -->
+            <div class="bg-watermark-head">
+              <p class="bg--wm-header">
+                <svg width="201.36" height="42" viewBox="0 0 201.36 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+                  <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                    <path d="M 12.72 35.04 L 23.28 35.04 L 23.28 42 L 8.04 42 A 22.672 22.672 0 0 1 3.034 35 A 27.792 27.792 0 0 1 2.04 32.58 Q 0 26.88 0 20.85 Q 0 14.82 2.28 9.24 Q 4.56 3.66 9.06 0 L 23.28 0 L 23.28 7.2 L 12.72 7.2 A 8.855 8.855 0 0 0 11.705 8.666 Q 10.855 10.172 10.155 12.438 A 32.811 32.811 0 0 0 9.93 13.2 A 31.571 31.571 0 0 0 8.953 17.989 A 26.038 26.038 0 0 0 8.76 21.12 A 27.228 27.228 0 0 0 9.264 26.236 A 33.315 33.315 0 0 0 9.93 29.04 A 28.516 28.516 0 0 0 10.624 31.188 Q 11.421 33.34 12.388 34.629 A 7.254 7.254 0 0 0 12.72 35.04 Z" id="0" vector-effect="non-scaling-stroke"/>
+                    <path d="M 27.66 42 L 27.66 0 L 43.62 0 A 13.366 13.366 0 0 1 49.473 3.934 A 16.398 16.398 0 0 1 50.07 4.65 A 12.356 12.356 0 0 1 52.593 10.738 A 16.342 16.342 0 0 1 52.74 12.96 A 15.937 15.937 0 0 1 52.022 17.881 A 12.235 12.235 0 0 1 46.38 24.78 L 52.44 42 L 44.04 42 L 38.94 26.7 L 35.76 26.7 L 35.76 42 L 27.66 42 Z M 41.28 7.2 L 35.76 7.2 L 35.76 19.98 L 40.92 19.98 Q 41.748 19.785 42.714 18.543 A 11.291 11.291 0 0 0 43.17 17.91 Q 44.4 16.08 44.4 13.62 Q 44.4 11.16 43.35 9.3 Q 42.3 7.44 41.28 7.2 Z" id="1" vector-effect="non-scaling-stroke"/>
+                    <path d="M 78.84 42 L 57.06 42 L 57.06 0 L 78.6 0 L 78.6 7.2 L 65.28 7.2 L 65.28 17.22 L 77.16 17.22 L 77.16 24.18 L 65.28 24.18 L 65.28 35.04 L 78.84 35.04 L 78.84 42 Z" id="2" vector-effect="non-scaling-stroke"/>
+                    <path d="M 109.38 42 L 101.34 42 L 100.08 35.34 L 90.6 35.34 L 89.34 42 L 81.18 42 L 89.28 0 L 101.7 0 L 109.38 42 Z M 95.34 7.8 L 95.22 7.8 L 92.88 21.78 L 91.56 28.92 L 99.06 28.92 L 97.68 21.78 L 95.34 7.8 Z" id="3" vector-effect="non-scaling-stroke"/>
+                    <path d="M 115.98 42 L 115.98 7.2 L 106.92 7.2 L 106.92 0 L 133.2 0 L 133.2 7.2 L 124.14 7.2 L 124.14 42 L 115.98 42 Z" id="4" vector-effect="non-scaling-stroke"/>
+                    <path d="M 144.9 42 L 136.68 42 L 136.68 0 L 144.9 0 L 144.9 42 Z" id="5" vector-effect="non-scaling-stroke"/>
+                    <path d="M 167.76 0 L 176.4 0 L 167.88 42 L 156.6 42 L 148.08 0 L 156.72 0 L 160.02 19.44 L 162.06 32.04 L 162.42 32.04 L 164.46 19.44 L 167.76 0 Z" id="6" vector-effect="non-scaling-stroke"/>
+                    <path d="M 201.36 42 L 179.58 42 L 179.58 0 L 201.12 0 L 201.12 7.2 L 187.8 7.2 L 187.8 17.22 L 199.68 17.22 L 199.68 24.18 L 187.8 24.18 L 187.8 35.04 L 201.36 35.04 L 201.36 42 Z" id="7" vector-effect="non-scaling-stroke"/>
+                  </g>
+                </svg>
+              </p>
+            </div>
+            <p>Haylee Venus is a multidimensional change maker in both her passion and professional ventures. Haylee Venus is one of the UK's leading Poetical Wordsmiths. Few can rival her Lyrical Deterity and Artistic Expression. She travels the World Constantly to share her gifts in the Arts.</p>
+            <p>Table of (dis)contents: a) moving away from Black music as mainly connected to orality or an exaggerated admiration of the voice b) dislike of 
+              focus on historical and biographical; instead focus more on parahistorical, ahistorical, analogical, anonymity and mythopoesis/fabulism c) 
+              ignorance of electronics d) over-evaluation of Hip-Hop (James Baldwin: the slightest shift in Negro identity, the stars would lose position) 
+              e) More emphasis on “unblack,” “unpopular,” and “unculture” and less on this idea of ghetto centricity to give more shine on unknown black 
+              composers.</p>
+            <p>You must recognize that consciousness is power; being aware, knowing something, and being able to do something is what consciousness is all about. This grants power. Remember, we act in terms of what we know, what we believe, what we expect, what we value, what skills we have. All of this is part of consciousness. Therefore, when you manipulate these things, you manipulate people’s ability.
+            </p>
+            <div class="bg-watermark-head">
+              <p class="bg--wm-header">
+        <svg width="179.821" height="42" viewBox="0 0 179.821 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+            <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                <path d="M 28.2 42 L 20.16 42 L 18.9 35.34 L 9.42 35.34 L 8.16 42 L 0 42 L 8.1 0 L 20.52 0 L 28.2 42 Z M 14.16 7.8 L 14.04 7.8 L 11.7 21.78 L 10.38 28.92 L 17.88 28.92 L 16.5 21.78 L 14.16 7.8 Z" id="0" vector-effect="non-scaling-stroke"/>
+                <path d="M 41.76 35.04 L 46.8 35.04 A 11.285 11.285 0 0 0 47.842 33.729 Q 48.378 32.934 48.69 32.13 A 6.605 6.605 0 0 0 48.991 31.074 Q 49.222 29.946 49.255 28.327 A 27.072 27.072 0 0 0 49.26 27.78 L 49.26 0 L 57.48 0 L 57.48 24.78 Q 57.48 27.302 57.378 28.907 A 26.842 26.842 0 0 1 57.33 29.55 A 19.734 19.734 0 0 1 57.154 30.938 Q 57.036 31.677 56.856 32.519 A 43.462 43.462 0 0 1 56.58 33.72 Q 55.686 37.56 52.024 41.031 A 25.239 25.239 0 0 1 50.94 42 L 37.62 42 A 20.479 20.479 0 0 1 34.764 39.19 Q 32.633 36.603 31.98 33.72 A 28.009 28.009 0 0 1 31.397 30.479 Q 31.08 27.915 31.08 24.78 L 31.08 0 L 39.3 0 L 39.3 27.78 A 23.503 23.503 0 0 0 39.345 29.288 Q 39.439 30.742 39.728 31.713 A 5.492 5.492 0 0 0 39.87 32.13 A 8.073 8.073 0 0 0 40.687 33.683 Q 41.141 34.365 41.76 35.04 Z" id="1" vector-effect="non-scaling-stroke"/>
+                <path d="M 69.72 42 L 69.72 7.2 L 60.66 7.2 L 60.66 0 L 86.94 0 L 86.94 7.2 L 77.88 7.2 L 77.88 42 L 69.72 42 Z" id="2" vector-effect="non-scaling-stroke"/>
+                <path d="M 98.64 24.6 L 98.64 42 L 90.42 42 L 90.42 0 L 98.64 0 L 98.64 16.92 L 108.24 16.92 L 108.24 0 L 116.46 0 L 116.46 42 L 108.24 42 L 108.24 24.6 L 98.64 24.6 Z" id="3" vector-effect="non-scaling-stroke"/>
+                <path d="M 129.42 0 L 141.78 0 A 19.268 19.268 0 0 1 146.865 6.446 A 24.311 24.311 0 0 1 148.02 9.18 Q 150.06 14.94 150.06 21.03 Q 150.06 27.12 148.08 32.58 Q 146.1 38.04 141.78 42 L 129.42 42 Q 125.1 38.04 123.12 32.58 Q 121.14 27.12 121.14 21.03 Q 121.14 14.94 123.18 9.18 A 22.446 22.446 0 0 1 125.858 3.862 A 18.625 18.625 0 0 1 129.42 0 Z M 133.44 35.04 L 137.76 35.04 A 7.923 7.923 0 0 0 138.654 33.739 Q 139.457 32.306 140.103 30.109 A 30.794 30.794 0 0 0 140.31 29.37 A 31.579 31.579 0 0 0 141.341 22.215 A 35.814 35.814 0 0 0 141.36 21.06 A 33.526 33.526 0 0 0 140.833 15.027 A 29.486 29.486 0 0 0 140.34 12.81 Q 139.32 8.94 137.82 7.2 L 133.44 7.2 A 8.142 8.142 0 0 0 132.504 8.571 Q 131.595 10.21 130.89 12.81 A 30.535 30.535 0 0 0 129.883 19.302 A 35.297 35.297 0 0 0 129.84 21.06 Q 129.84 25.44 130.89 29.37 A 26.725 26.725 0 0 0 131.516 31.407 Q 132.232 33.425 133.115 34.631 A 6.582 6.582 0 0 0 133.44 35.04 Z" id="4" vector-effect="non-scaling-stroke"/>
+                <path d="M 154.74 42 L 154.74 0 L 170.7 0 A 13.366 13.366 0 0 1 176.553 3.934 A 16.398 16.398 0 0 1 177.15 4.65 A 12.356 12.356 0 0 1 179.673 10.738 A 16.342 16.342 0 0 1 179.82 12.96 A 15.937 15.937 0 0 1 179.102 17.881 A 12.235 12.235 0 0 1 173.46 24.78 L 179.52 42 L 171.12 42 L 166.02 26.7 L 162.84 26.7 L 162.84 42 L 154.74 42 Z M 168.36 7.2 L 162.84 7.2 L 162.84 19.98 L 168 19.98 Q 168.828 19.785 169.794 18.543 A 11.291 11.291 0 0 0 170.25 17.91 Q 171.48 16.08 171.48 13.62 Q 171.48 11.16 170.43 9.3 Q 169.38 7.44 168.36 7.2 Z" id="5" vector-effect="non-scaling-stroke"/>
+            </g>
+        </svg>
+              </p>
+            </div>
+            <p>You must recognize that consciousness is power; being aware, knowing something, and being able to do something is what consciousness is all about. This grants power. Remember, we act in terms of what we know, what we believe, what we expect, what we value, what skills we have. All of this is part of consciousness. Therefore, when you manipulate these things, you manipulate people’s ability.
+            </p>
+            <div class="bg-watermark-head">
+              <p>Author</p>
+            </div>
+            <div class="bg-watermark-head">
+              <p>
+              <svg width="406.68" height="42" viewBox="0 0 406.68 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+                <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                  <path d="M 21.78 42 L 0 42 L 0 0 L 21.54 0 L 21.54 7.2 L 8.22 7.2 L 8.22 17.22 L 20.1 17.22 L 20.1 24.18 L 8.22 24.18 L 8.22 35.04 L 21.78 35.04 L 21.78 42 Z" id="0" vector-effect="non-scaling-stroke"/>
+                  <path d="M 43.5 0 L 52.14 0 L 43.62 42 L 32.34 42 L 23.82 0 L 32.46 0 L 35.76 19.44 L 37.8 32.04 L 38.16 32.04 L 40.2 19.44 L 43.5 0 Z" id="1" vector-effect="non-scaling-stroke"/>
+                  <path d="M 77.1 42 L 55.32 42 L 55.32 0 L 76.86 0 L 76.86 7.2 L 63.54 7.2 L 63.54 17.22 L 75.42 17.22 L 75.42 24.18 L 63.54 24.18 L 63.54 35.04 L 77.1 35.04 L 77.1 42 Z" id="2" vector-effect="non-scaling-stroke"/>
+                  <path d="M 106.02 42 L 100.44 42 L 89.22 18.78 L 88.92 18.9 L 89.28 25.98 L 89.28 42 L 81.72 42 L 81.72 0 L 87.78 0 L 98.82 24.12 L 99.12 24 L 98.46 16.62 L 98.46 0 L 106.02 0 L 106.02 42 Z" id="3" vector-effect="non-scaling-stroke"/>
+                  <path d="M 118.56 42 L 118.56 7.2 L 109.5 7.2 L 109.5 0 L 135.78 0 L 135.78 7.2 L 126.72 7.2 L 126.72 42 L 118.56 42 Z" id="4" vector-effect="non-scaling-stroke"/>
+                  <path d="M 143.1 0 L 157.5 0 L 157.5 7.2 L 145.98 7.2 L 145.8 7.56 L 155.4 25.08 A 43.039 43.039 0 0 1 156.686 27.563 Q 157.831 29.977 158.184 31.712 A 7.126 7.126 0 0 1 158.34 33.12 A 14.366 14.366 0 0 1 157.947 36.591 A 9.025 9.025 0 0 1 154.32 42 L 138.42 42 L 138.42 35.04 L 150.84 35.04 L 151.02 34.68 L 140.22 15.3 A 28.688 28.688 0 0 1 139.089 13.061 Q 138.082 10.809 137.914 9.117 A 6.642 6.642 0 0 1 137.88 8.46 Q 137.88 2.289 142.985 0.05 A 11.099 11.099 0 0 1 143.1 0 Z" id="5" vector-effect="non-scaling-stroke"/>
+                  <path d="M 175.98 0 L 190.38 0 L 190.38 7.2 L 178.86 7.2 L 178.68 7.56 L 188.28 25.08 A 43.039 43.039 0 0 1 189.566 27.563 Q 190.711 29.977 191.064 31.712 A 7.126 7.126 0 0 1 191.22 33.12 A 14.366 14.366 0 0 1 190.827 36.591 A 9.025 9.025 0 0 1 187.2 42 L 171.3 42 L 171.3 35.04 L 183.72 35.04 L 183.9 34.68 L 173.1 15.3 A 28.688 28.688 0 0 1 171.969 13.061 Q 170.962 10.809 170.794 9.117 A 6.642 6.642 0 0 1 170.76 8.46 Q 170.76 2.289 175.865 0.05 A 11.099 11.099 0 0 1 175.98 0 Z" id="7" vector-effect="non-scaling-stroke"/>
+                  <path d="M 203.52 42 L 195.42 42 L 195.42 0 L 211.68 0 Q 215.76 1.8 218.13 5.52 A 15.137 15.137 0 0 1 220.387 12.083 A 19.131 19.131 0 0 1 220.5 14.19 Q 220.5 19.14 218.04 23.34 Q 215.58 27.54 210.78 29.28 L 203.52 29.28 L 203.52 42 Z M 209.22 7.2 L 203.52 7.2 L 203.52 22.2 L 208.86 22.2 A 8.706 8.706 0 0 0 211.869 17.157 A 13.44 13.44 0 0 0 212.16 14.28 Q 212.16 12.06 211.29 10.08 Q 210.42 8.1 209.22 7.2 Z" id="8" vector-effect="non-scaling-stroke"/>
+                  <path d="M 246.66 42 L 224.88 42 L 224.88 0 L 246.42 0 L 246.42 7.2 L 233.1 7.2 L 233.1 17.22 L 244.98 17.22 L 244.98 24.18 L 233.1 24.18 L 233.1 35.04 L 246.66 35.04 L 246.66 42 Z" id="9" vector-effect="non-scaling-stroke"/>
+                  <path d="M 262.32 35.04 L 272.88 35.04 L 272.88 42 L 257.64 42 A 22.672 22.672 0 0 1 252.634 35 A 27.792 27.792 0 0 1 251.64 32.58 Q 249.6 26.88 249.6 20.85 Q 249.6 14.82 251.88 9.24 Q 254.16 3.66 258.66 0 L 272.88 0 L 272.88 7.2 L 262.32 7.2 A 8.855 8.855 0 0 0 261.305 8.666 Q 260.455 10.172 259.755 12.438 A 32.811 32.811 0 0 0 259.53 13.2 A 31.571 31.571 0 0 0 258.553 17.989 A 26.038 26.038 0 0 0 258.36 21.12 A 27.228 27.228 0 0 0 258.864 26.236 A 33.315 33.315 0 0 0 259.53 29.04 A 28.516 28.516 0 0 0 260.224 31.188 Q 261.021 33.34 261.988 34.629 A 7.254 7.254 0 0 0 262.32 35.04 Z" id="10" vector-effect="non-scaling-stroke"/>
+                  <path d="M 285.48 42 L 277.26 42 L 277.26 0 L 285.48 0 L 285.48 42 Z" id="11" vector-effect="non-scaling-stroke"/>
+                  <path d="M 317.16 42 L 309.12 42 L 307.86 35.34 L 298.38 35.34 L 297.12 42 L 288.96 42 L 297.06 0 L 309.48 0 L 317.16 42 Z M 303.12 7.8 L 303 7.8 L 300.66 21.78 L 299.34 28.92 L 306.84 28.92 L 305.46 21.78 L 303.12 7.8 Z" id="12" vector-effect="non-scaling-stroke"/>
+                  <path d="M 341.34 42 L 320.64 42 L 320.64 0 L 328.86 0 L 328.86 35.04 L 341.34 35.04 L 341.34 42 Z" id="13" vector-effect="non-scaling-stroke"/>
+                  <path d="M 353.64 42 L 345.42 42 L 345.42 0 L 353.64 0 L 353.64 42 Z" id="14" vector-effect="non-scaling-stroke"/>
+                  <path d="M 363.24 0 L 377.64 0 L 377.64 7.2 L 366.12 7.2 L 365.94 7.56 L 375.54 25.08 A 43.039 43.039 0 0 1 376.826 27.563 Q 377.971 29.977 378.324 31.712 A 7.126 7.126 0 0 1 378.48 33.12 A 14.366 14.366 0 0 1 378.087 36.591 A 9.025 9.025 0 0 1 374.46 42 L 358.56 42 L 358.56 35.04 L 370.98 35.04 L 371.16 34.68 L 360.36 15.3 A 28.688 28.688 0 0 1 359.229 13.061 Q 358.222 10.809 358.054 9.117 A 6.642 6.642 0 0 1 358.02 8.46 Q 358.02 2.289 363.125 0.05 A 11.099 11.099 0 0 1 363.24 0 Z" id="15" vector-effect="non-scaling-stroke"/>
+                  <path d="M 389.46 42 L 389.46 7.2 L 380.4 7.2 L 380.4 0 L 406.68 0 L 406.68 7.2 L 397.62 7.2 L 397.62 42 L 389.46 42 Z" id="16" vector-effect="non-scaling-stroke"/>
+                </g>
+              </svg>
+              </p>
+            </div>
+            <p>A leading member of a number of social change projects and community-led enterprises. She established herself through a creative network, Embrace U Empire in 2012, and has since been developing herself as a Event Specialist, Community Organiser, Creative Artist and Social Entrepreneur.</p>
+            <div class="bg-watermark-head">
+              <p>
+                <svg width="464.16" height="42" viewBox="0 0 464.16 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+                  <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                    <path d="M 17.94 42 L 0 42 L 0 0 L 17.4 0 A 24.89 24.89 0 0 1 25.657 16.11 A 35.317 35.317 0 0 1 25.92 20.49 A 34.46 34.46 0 0 1 24.338 31.143 A 28.759 28.759 0 0 1 17.94 42 Z M 8.16 7.2 L 8.16 35.04 L 13.56 35.04 Q 14.764 33.535 15.614 31.043 A 25.422 25.422 0 0 0 16.23 28.92 Q 17.22 24.9 17.22 20.94 A 39.719 39.719 0 0 0 16.941 16.052 Q 16.306 10.947 14.224 7.925 A 10.869 10.869 0 0 0 13.68 7.2 L 8.16 7.2 Z" id="0" vector-effect="non-scaling-stroke"/>
+                    <path d="M 52.38 42 L 30.6 42 L 30.6 0 L 52.14 0 L 52.14 7.2 L 38.82 7.2 L 38.82 17.22 L 50.7 17.22 L 50.7 24.18 L 38.82 24.18 L 38.82 35.04 L 52.38 35.04 L 52.38 42 Z" id="1" vector-effect="non-scaling-stroke"/>
+                    <path d="M 74.1 0 L 82.74 0 L 74.22 42 L 62.94 42 L 54.42 0 L 63.06 0 L 66.36 19.44 L 68.4 32.04 L 68.76 32.04 L 70.8 19.44 L 74.1 0 Z" id="2" vector-effect="non-scaling-stroke"/>
+                    <path d="M 107.7 42 L 85.92 42 L 85.92 0 L 107.46 0 L 107.46 7.2 L 94.14 7.2 L 94.14 17.22 L 106.02 17.22 L 106.02 24.18 L 94.14 24.18 L 94.14 35.04 L 107.7 35.04 L 107.7 42 Z" id="3" vector-effect="non-scaling-stroke"/>
+                    <path d="M 133.02 42 L 112.32 42 L 112.32 0 L 120.54 0 L 120.54 35.04 L 133.02 35.04 L 133.02 42 Z" id="4" vector-effect="non-scaling-stroke"/>
+                    <path d="M 142.5 0 L 154.86 0 A 19.268 19.268 0 0 1 159.945 6.446 A 24.311 24.311 0 0 1 161.1 9.18 Q 163.14 14.94 163.14 21.03 Q 163.14 27.12 161.16 32.58 Q 159.18 38.04 154.86 42 L 142.5 42 Q 138.18 38.04 136.2 32.58 Q 134.22 27.12 134.22 21.03 Q 134.22 14.94 136.26 9.18 A 22.446 22.446 0 0 1 138.938 3.862 A 18.625 18.625 0 0 1 142.5 0 Z M 146.52 35.04 L 150.84 35.04 A 7.923 7.923 0 0 0 151.734 33.739 Q 152.537 32.306 153.183 30.109 A 30.794 30.794 0 0 0 153.39 29.37 A 31.579 31.579 0 0 0 154.421 22.215 A 35.814 35.814 0 0 0 154.44 21.06 A 33.526 33.526 0 0 0 153.913 15.027 A 29.486 29.486 0 0 0 153.42 12.81 Q 152.4 8.94 150.9 7.2 L 146.52 7.2 A 8.142 8.142 0 0 0 145.584 8.571 Q 144.675 10.21 143.97 12.81 A 30.535 30.535 0 0 0 142.963 19.302 A 35.297 35.297 0 0 0 142.92 21.06 Q 142.92 25.44 143.97 29.37 A 26.725 26.725 0 0 0 144.596 31.407 Q 145.312 33.425 146.195 34.631 A 6.582 6.582 0 0 0 146.52 35.04 Z" id="5" vector-effect="non-scaling-stroke"/>
+                    <path d="M 175.92 42 L 167.82 42 L 167.82 0 L 184.08 0 Q 188.16 1.8 190.53 5.52 A 15.137 15.137 0 0 1 192.787 12.083 A 19.131 19.131 0 0 1 192.9 14.19 Q 192.9 19.14 190.44 23.34 Q 187.98 27.54 183.18 29.28 L 175.92 29.28 L 175.92 42 Z M 181.62 7.2 L 175.92 7.2 L 175.92 22.2 L 181.26 22.2 A 8.706 8.706 0 0 0 184.269 17.157 A 13.44 13.44 0 0 0 184.56 14.28 Q 184.56 12.06 183.69 10.08 Q 182.82 8.1 181.62 7.2 Z" id="6" vector-effect="non-scaling-stroke"/>
+                    <path d="M 211.38 22.8 L 211.14 22.8 L 207.96 9.66 L 205.38 0 L 197.88 0 L 195.18 42 L 203.04 42 L 204.18 19.08 L 204.48 19.08 L 208.8 36 L 213.72 36 L 218.04 19.08 L 218.34 19.08 L 219.48 42 L 227.34 42 L 224.64 0 L 217.14 0 L 214.56 9.66 L 211.38 22.8 Z M 211.14 22.8 L 211.38 22.8 L 211.14 22.8 Z" id="7" vector-effect="non-scaling-stroke"/>
+                    <path d="M 253.98 42 L 232.2 42 L 232.2 0 L 253.74 0 L 253.74 7.2 L 240.42 7.2 L 240.42 17.22 L 252.3 17.22 L 252.3 24.18 L 240.42 24.18 L 240.42 35.04 L 253.98 35.04 L 253.98 42 Z" id="8" vector-effect="non-scaling-stroke"/>
+                    <path d="M 282.9 42 L 277.32 42 L 266.1 18.78 L 265.8 18.9 L 266.16 25.98 L 266.16 42 L 258.6 42 L 258.6 0 L 264.66 0 L 275.7 24.12 L 276 24 L 275.34 16.62 L 275.34 0 L 282.9 0 L 282.9 42 Z" id="9" vector-effect="non-scaling-stroke"/>
+                    <path d="M 295.44 42 L 295.44 7.2 L 286.38 7.2 L 286.38 0 L 312.66 0 L 312.66 7.2 L 303.6 7.2 L 303.6 42 L 295.44 42 Z" id="10" vector-effect="non-scaling-stroke"/>
+                    <path d="M 337.38 35.04 L 347.94 35.04 L 347.94 42 L 332.7 42 A 22.672 22.672 0 0 1 327.694 35 A 27.792 27.792 0 0 1 326.7 32.58 Q 324.66 26.88 324.66 20.85 Q 324.66 14.82 326.94 9.24 Q 329.22 3.66 333.72 0 L 347.94 0 L 347.94 7.2 L 337.38 7.2 A 8.855 8.855 0 0 0 336.365 8.666 Q 335.515 10.172 334.815 12.438 A 32.811 32.811 0 0 0 334.59 13.2 A 31.571 31.571 0 0 0 333.613 17.989 A 26.038 26.038 0 0 0 333.42 21.12 A 27.228 27.228 0 0 0 333.924 26.236 A 33.315 33.315 0 0 0 334.59 29.04 A 28.516 28.516 0 0 0 335.284 31.188 Q 336.081 33.34 337.048 34.629 A 7.254 7.254 0 0 0 337.38 35.04 Z" id="12" vector-effect="non-scaling-stroke"/>
+                    <path d="M 358.02 0 L 370.38 0 A 19.268 19.268 0 0 1 375.465 6.446 A 24.311 24.311 0 0 1 376.62 9.18 Q 378.66 14.94 378.66 21.03 Q 378.66 27.12 376.68 32.58 Q 374.7 38.04 370.38 42 L 358.02 42 Q 353.7 38.04 351.72 32.58 Q 349.74 27.12 349.74 21.03 Q 349.74 14.94 351.78 9.18 A 22.446 22.446 0 0 1 354.458 3.862 A 18.625 18.625 0 0 1 358.02 0 Z M 362.04 35.04 L 366.36 35.04 A 7.923 7.923 0 0 0 367.254 33.739 Q 368.057 32.306 368.703 30.109 A 30.794 30.794 0 0 0 368.91 29.37 A 31.579 31.579 0 0 0 369.941 22.215 A 35.814 35.814 0 0 0 369.96 21.06 A 33.526 33.526 0 0 0 369.433 15.027 A 29.486 29.486 0 0 0 368.94 12.81 Q 367.92 8.94 366.42 7.2 L 362.04 7.2 A 8.142 8.142 0 0 0 361.104 8.571 Q 360.195 10.21 359.49 12.81 A 30.535 30.535 0 0 0 358.483 19.302 A 35.297 35.297 0 0 0 358.44 21.06 Q 358.44 25.44 359.49 29.37 A 26.725 26.725 0 0 0 360.116 31.407 Q 360.832 33.425 361.715 34.631 A 6.582 6.582 0 0 0 362.04 35.04 Z" id="13" vector-effect="non-scaling-stroke"/>
+                    <path d="M 408.66 42 L 400.62 42 L 399.36 35.34 L 389.88 35.34 L 388.62 42 L 380.46 42 L 388.56 0 L 400.98 0 L 408.66 42 Z M 394.62 7.8 L 394.5 7.8 L 392.16 21.78 L 390.84 28.92 L 398.34 28.92 L 396.96 21.78 L 394.62 7.8 Z" id="14" vector-effect="non-scaling-stroke"/>
+                    <path d="M 423.18 35.04 L 433.74 35.04 L 433.74 42 L 418.5 42 A 22.672 22.672 0 0 1 413.494 35 A 27.792 27.792 0 0 1 412.5 32.58 Q 410.46 26.88 410.46 20.85 Q 410.46 14.82 412.74 9.24 Q 415.02 3.66 419.52 0 L 433.74 0 L 433.74 7.2 L 423.18 7.2 A 8.855 8.855 0 0 0 422.165 8.666 Q 421.315 10.172 420.615 12.438 A 32.811 32.811 0 0 0 420.39 13.2 A 31.571 31.571 0 0 0 419.413 17.989 A 26.038 26.038 0 0 0 419.22 21.12 A 27.228 27.228 0 0 0 419.724 26.236 A 33.315 33.315 0 0 0 420.39 29.04 A 28.516 28.516 0 0 0 421.084 31.188 Q 421.881 33.34 422.848 34.629 A 7.254 7.254 0 0 0 423.18 35.04 Z" id="15" vector-effect="non-scaling-stroke"/>
+                    <path d="M 446.34 24.6 L 446.34 42 L 438.12 42 L 438.12 0 L 446.34 0 L 446.34 16.92 L 455.94 16.92 L 455.94 0 L 464.16 0 L 464.16 42 L 455.94 42 L 455.94 24.6 L 446.34 24.6 Z" id="16" vector-effect="non-scaling-stroke"/>
+                  </g>
+                </svg>
+              </p>
+            </div>
+            <p>This presenting her with many opportunities to partner with leading commercial and community organisations addressing homelessness, youth engagement & policy, celebration of arts and culture, health & wellbeing amongst many other initiatives.</p>
+            <p>Event Planning • Live Events • Writing • Public Speaking • Event Marketing • Content Strategy • Project Management • Blogging</p>
+            <div class="bg-watermark-head">
+              <p>
+                <svg width="410.7" height="42" viewBox="0 0 410.7 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+                  <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                    <path d="M 9.06 42 L 9.06 7.2 L 0 7.2 L 0 0 L 26.28 0 L 26.28 7.2 L 17.22 7.2 L 17.22 42 L 9.06 42 Z" id="0" vector-effect="non-scaling-stroke"/>
+                    <path d="M 29.76 42 L 29.76 0 L 45.72 0 A 13.366 13.366 0 0 1 51.573 3.934 A 16.398 16.398 0 0 1 52.17 4.65 A 12.356 12.356 0 0 1 54.693 10.738 A 16.342 16.342 0 0 1 54.84 12.96 A 15.937 15.937 0 0 1 54.122 17.881 A 12.235 12.235 0 0 1 48.48 24.78 L 54.54 42 L 46.14 42 L 41.04 26.7 L 37.86 26.7 L 37.86 42 L 29.76 42 Z M 43.38 7.2 L 37.86 7.2 L 37.86 19.98 L 43.02 19.98 Q 43.848 19.785 44.814 18.543 A 11.291 11.291 0 0 0 45.27 17.91 Q 46.5 16.08 46.5 13.62 Q 46.5 11.16 45.45 9.3 Q 44.4 7.44 43.38 7.2 Z" id="1" vector-effect="non-scaling-stroke"/>
+                    <path d="M 85.08 42 L 77.04 42 L 75.78 35.34 L 66.3 35.34 L 65.04 42 L 56.88 42 L 64.98 0 L 77.4 0 L 85.08 42 Z M 71.04 7.8 L 70.92 7.8 L 68.58 21.78 L 67.26 28.92 L 74.76 28.92 L 73.38 21.78 L 71.04 7.8 Z" id="2" vector-effect="non-scaling-stroke"/>
+                    <path d="M 103.26 0 L 111.9 0 L 103.38 42 L 92.1 42 L 83.58 0 L 92.22 0 L 95.52 19.44 L 97.56 32.04 L 97.92 32.04 L 99.96 19.44 L 103.26 0 Z" id="3" vector-effect="non-scaling-stroke"/>
+                    <path d="M 136.86 42 L 115.08 42 L 115.08 0 L 136.62 0 L 136.62 7.2 L 123.3 7.2 L 123.3 17.22 L 135.18 17.22 L 135.18 24.18 L 123.3 24.18 L 123.3 35.04 L 136.86 35.04 L 136.86 42 Z" id="4" vector-effect="non-scaling-stroke"/>
+                    <path d="M 162.18 42 L 141.48 42 L 141.48 0 L 149.7 0 L 149.7 35.04 L 162.18 35.04 L 162.18 42 Z" id="5" vector-effect="non-scaling-stroke"/>
+                    <path d="M 187.5 35.04 L 198.06 35.04 L 198.06 42 L 182.82 42 A 22.672 22.672 0 0 1 177.814 35 A 27.792 27.792 0 0 1 176.82 32.58 Q 174.78 26.88 174.78 20.85 Q 174.78 14.82 177.06 9.24 Q 179.34 3.66 183.84 0 L 198.06 0 L 198.06 7.2 L 187.5 7.2 A 8.855 8.855 0 0 0 186.485 8.666 Q 185.635 10.172 184.935 12.438 A 32.811 32.811 0 0 0 184.71 13.2 A 31.571 31.571 0 0 0 183.733 17.989 A 26.038 26.038 0 0 0 183.54 21.12 A 27.228 27.228 0 0 0 184.044 26.236 A 33.315 33.315 0 0 0 184.71 29.04 A 28.516 28.516 0 0 0 185.404 31.188 Q 186.201 33.34 187.168 34.629 A 7.254 7.254 0 0 0 187.5 35.04 Z" id="7" vector-effect="non-scaling-stroke"/>
+                    <path d="M 208.14 0 L 220.5 0 A 19.268 19.268 0 0 1 225.585 6.446 A 24.311 24.311 0 0 1 226.74 9.18 Q 228.78 14.94 228.78 21.03 Q 228.78 27.12 226.8 32.58 Q 224.82 38.04 220.5 42 L 208.14 42 Q 203.82 38.04 201.84 32.58 Q 199.86 27.12 199.86 21.03 Q 199.86 14.94 201.9 9.18 A 22.446 22.446 0 0 1 204.578 3.862 A 18.625 18.625 0 0 1 208.14 0 Z M 212.16 35.04 L 216.48 35.04 A 7.923 7.923 0 0 0 217.374 33.739 Q 218.177 32.306 218.823 30.109 A 30.794 30.794 0 0 0 219.03 29.37 A 31.579 31.579 0 0 0 220.061 22.215 A 35.814 35.814 0 0 0 220.08 21.06 A 33.526 33.526 0 0 0 219.553 15.027 A 29.486 29.486 0 0 0 219.06 12.81 Q 218.04 8.94 216.54 7.2 L 212.16 7.2 A 8.142 8.142 0 0 0 211.224 8.571 Q 210.315 10.21 209.61 12.81 A 30.535 30.535 0 0 0 208.603 19.302 A 35.297 35.297 0 0 0 208.56 21.06 Q 208.56 25.44 209.61 29.37 A 26.725 26.725 0 0 0 210.236 31.407 Q 210.952 33.425 211.835 34.631 A 6.582 6.582 0 0 0 212.16 35.04 Z" id="8" vector-effect="non-scaling-stroke"/>
+                    <path d="M 257.76 42 L 252.18 42 L 240.96 18.78 L 240.66 18.9 L 241.02 25.98 L 241.02 42 L 233.46 42 L 233.46 0 L 239.52 0 L 250.56 24.12 L 250.86 24 L 250.2 16.62 L 250.2 0 L 257.76 0 L 257.76 42 Z" id="9" vector-effect="non-scaling-stroke"/>
+                    <path d="M 275.16 35.04 L 285.72 35.04 L 285.72 42 L 270.48 42 A 22.672 22.672 0 0 1 265.474 35 A 27.792 27.792 0 0 1 264.48 32.58 Q 262.44 26.88 262.44 20.85 Q 262.44 14.82 264.72 9.24 Q 267 3.66 271.5 0 L 285.72 0 L 285.72 7.2 L 275.16 7.2 A 8.855 8.855 0 0 0 274.145 8.666 Q 273.295 10.172 272.595 12.438 A 32.811 32.811 0 0 0 272.37 13.2 A 31.571 31.571 0 0 0 271.393 17.989 A 26.038 26.038 0 0 0 271.2 21.12 A 27.228 27.228 0 0 0 271.704 26.236 A 33.315 33.315 0 0 0 272.37 29.04 A 28.516 28.516 0 0 0 273.064 31.188 Q 273.861 33.34 274.828 34.629 A 7.254 7.254 0 0 0 275.16 35.04 Z" id="10" vector-effect="non-scaling-stroke"/>
+                    <path d="M 298.32 42 L 290.1 42 L 290.1 0 L 298.32 0 L 298.32 42 Z" id="11" vector-effect="non-scaling-stroke"/>
+                    <path d="M 325.86 42 L 304.08 42 L 304.08 0 L 325.62 0 L 325.62 7.2 L 312.3 7.2 L 312.3 17.22 L 324.18 17.22 L 324.18 24.18 L 312.3 24.18 L 312.3 35.04 L 325.86 35.04 L 325.86 42 Z" id="12" vector-effect="non-scaling-stroke"/>
+                    <path d="M 330.48 42 L 330.48 0 L 346.44 0 A 13.366 13.366 0 0 1 352.293 3.934 A 16.398 16.398 0 0 1 352.89 4.65 A 12.356 12.356 0 0 1 355.413 10.738 A 16.342 16.342 0 0 1 355.56 12.96 A 15.937 15.937 0 0 1 354.842 17.881 A 12.235 12.235 0 0 1 349.2 24.78 L 355.26 42 L 346.86 42 L 341.76 26.7 L 338.58 26.7 L 338.58 42 L 330.48 42 Z M 344.1 7.2 L 338.58 7.2 L 338.58 19.98 L 343.74 19.98 Q 344.568 19.785 345.534 18.543 A 11.291 11.291 0 0 0 345.99 17.91 Q 347.22 16.08 347.22 13.62 Q 347.22 11.16 346.17 9.3 Q 345.12 7.44 344.1 7.2 Z" id="13" vector-effect="non-scaling-stroke"/>
+                    <path d="M 379.2 42 L 366.48 42 Q 362.16 38.04 360.18 32.58 Q 358.2 27.12 358.2 21.15 A 30.636 30.636 0 0 1 360.526 9.542 A 34.719 34.719 0 0 1 360.6 9.36 Q 363 3.54 367.32 0 L 381.9 0 L 381.9 7.2 L 370.74 7.2 A 8.962 8.962 0 0 0 369.739 8.643 Q 368.867 10.176 368.154 12.491 A 31.835 31.835 0 0 0 368.04 12.87 Q 366.9 16.74 366.9 21.09 A 32.444 32.444 0 0 0 367.648 28.132 A 29.728 29.728 0 0 0 367.95 29.37 Q 368.905 32.943 370.281 34.706 A 6.401 6.401 0 0 0 370.56 35.04 L 376.32 35.04 L 376.32 18.72 L 384.24 18.72 L 384.24 28.8 A 22.021 22.021 0 0 1 383.531 34.537 A 16.057 16.057 0 0 1 379.2 42 Z" id="14" vector-effect="non-scaling-stroke"/>
+                    <path d="M 410.7 42 L 388.92 42 L 388.92 0 L 410.46 0 L 410.46 7.2 L 397.14 7.2 L 397.14 17.22 L 409.02 17.22 L 409.02 24.18 L 397.14 24.18 L 397.14 35.04 L 410.7 35.04 L 410.7 42 Z" id="15" vector-effect="non-scaling-stroke"/>
+                  </g>
+                </svg>
+              </p>
+            </div>
+            <p>In 2015, Haylee set up a Community Interest Company, Make A Step, which works internationally to build the confidence of 5-16 year olds through creative arts & sports volunteer programmes. The volunteer programmes are tailored to assist in the individual tapping into their full creative and sporting potential, stepping into their greatness, developing the skills that are necessary & transferable to their desired career paths and solving challenges within their communities. Haylee is aiming to increase the diaspora's involvement in community and social development across Africa and the Caribbean, and has already taken 34 volunteers on 13 international projects involving over 1500 young people in Kenya, Gambia, Jamaica and St Lucia in the last 7 years.</p>
+            <div class="bg-watermark-head">
+              <p>
+                <svg width="508.681" height="42" viewBox="0 0 508.681 42" xmlns="http://www.w3.org/2000/svg" class="creative-header">
+            <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+              <path d="M 12.72 35.04 L 23.28 35.04 L 23.28 42 L 8.04 42 A 22.672 22.672 0 0 1 3.034 35 A 27.792 27.792 0 0 1 2.04 32.58 Q 0 26.88 0 20.85 Q 0 14.82 2.28 9.24 Q 4.56 3.66 9.06 0 L 23.28 0 L 23.28 7.2 L 12.72 7.2 A 8.855 8.855 0 0 0 11.705 8.666 Q 10.855 10.172 10.155 12.438 A 32.811 32.811 0 0 0 9.93 13.2 A 31.571 31.571 0 0 0 8.953 17.989 A 26.038 26.038 0 0 0 8.76 21.12 A 27.228 27.228 0 0 0 9.264 26.236 A 33.315 33.315 0 0 0 9.93 29.04 A 28.516 28.516 0 0 0 10.624 31.188 Q 11.421 33.34 12.388 34.629 A 7.254 7.254 0 0 0 12.72 35.04 Z" id="0" vector-effect="non-scaling-stroke"/>
+              <path d="M 33.36 0 L 45.72 0 A 19.268 19.268 0 0 1 50.805 6.446 A 24.311 24.311 0 0 1 51.96 9.18 Q 54 14.94 54 21.03 Q 54 27.12 52.02 32.58 Q 50.04 38.04 45.72 42 L 33.36 42 Q 29.04 38.04 27.06 32.58 Q 25.08 27.12 25.08 21.03 Q 25.08 14.94 27.12 9.18 A 22.446 22.446 0 0 1 29.798 3.862 A 18.625 18.625 0 0 1 33.36 0 Z M 37.38 35.04 L 41.7 35.04 A 7.923 7.923 0 0 0 42.594 33.739 Q 43.397 32.306 44.043 30.109 A 30.794 30.794 0 0 0 44.25 29.37 A 31.579 31.579 0 0 0 45.282 22.215 A 35.814 35.814 0 0 0 45.3 21.06 A 33.526 33.526 0 0 0 44.773 15.027 A 29.486 29.486 0 0 0 44.28 12.81 Q 43.26 8.94 41.76 7.2 L 37.38 7.2 A 8.142 8.142 0 0 0 36.444 8.571 Q 35.536 10.21 34.83 12.81 A 30.535 30.535 0 0 0 33.823 19.302 A 35.297 35.297 0 0 0 33.78 21.06 Q 33.78 25.44 34.83 29.37 A 26.725 26.725 0 0 0 35.456 31.407 Q 36.172 33.425 37.055 34.631 A 6.582 6.582 0 0 0 37.38 35.04 Z" id="1" vector-effect="non-scaling-stroke"/>
+              <path d="M 73.38 22.8 L 73.14 22.8 L 69.96 9.66 L 67.38 0 L 59.88 0 L 57.18 42 L 65.04 42 L 66.18 19.08 L 66.48 19.08 L 70.8 36 L 75.72 36 L 80.04 19.08 L 80.34 19.08 L 81.48 42 L 89.34 42 L 86.64 0 L 79.14 0 L 76.56 9.66 L 73.38 22.8 Z M 73.14 22.8 L 73.38 22.8 L 73.14 22.8 Z" id="2" vector-effect="non-scaling-stroke"/>
+              <path d="M 109.5 22.8 L 109.26 22.8 L 106.08 9.66 L 103.5 0 L 96 0 L 93.3 42 L 101.16 42 L 102.3 19.08 L 102.6 19.08 L 106.92 36 L 111.84 36 L 116.16 19.08 L 116.46 19.08 L 117.6 42 L 125.46 42 L 122.76 0 L 115.26 0 L 112.68 9.66 L 109.5 22.8 Z M 109.26 22.8 L 109.5 22.8 L 109.26 22.8 Z" id="3" vector-effect="non-scaling-stroke"/>
+              <path d="M 140.7 35.04 L 145.74 35.04 A 11.285 11.285 0 0 0 146.782 33.729 Q 147.318 32.934 147.63 32.13 A 6.605 6.605 0 0 0 147.931 31.074 Q 148.162 29.946 148.195 28.327 A 27.072 27.072 0 0 0 148.2 27.78 L 148.2 0 L 156.42 0 L 156.42 24.78 Q 156.42 27.302 156.318 28.907 A 26.842 26.842 0 0 1 156.27 29.55 A 19.734 19.734 0 0 1 156.094 30.938 Q 155.976 31.677 155.796 32.519 A 43.462 43.462 0 0 1 155.52 33.72 Q 154.626 37.56 150.965 41.031 A 25.239 25.239 0 0 1 149.88 42 L 136.56 42 A 20.479 20.479 0 0 1 133.704 39.19 Q 131.573 36.603 130.92 33.72 A 28.009 28.009 0 0 1 130.337 30.479 Q 130.02 27.915 130.02 24.78 L 130.02 0 L 138.24 0 L 138.24 27.78 A 23.503 23.503 0 0 0 138.285 29.288 Q 138.379 30.742 138.668 31.713 A 5.492 5.492 0 0 0 138.81 32.13 A 8.073 8.073 0 0 0 139.627 33.683 Q 140.081 34.365 140.7 35.04 Z" id="4" vector-effect="non-scaling-stroke"/>
+              <path d="M 186.18 42 L 180.6 42 L 169.38 18.78 L 169.08 18.9 L 169.44 25.98 L 169.44 42 L 161.88 42 L 161.88 0 L 167.94 0 L 178.98 24.12 L 179.28 24 L 178.62 16.62 L 178.62 0 L 186.18 0 L 186.18 42 Z" id="5" vector-effect="non-scaling-stroke"/>
+              <path d="M 200.16 42 L 191.94 42 L 191.94 0 L 200.16 0 L 200.16 42 Z" id="6" vector-effect="non-scaling-stroke"/>
+              <path d="M 212.7 42 L 212.7 7.2 L 203.64 7.2 L 203.64 0 L 229.92 0 L 229.92 7.2 L 220.86 7.2 L 220.86 42 L 212.7 42 Z" id="7" vector-effect="non-scaling-stroke"/>
+              <path d="M 248.16 28.02 L 248.16 42 L 239.4 42 L 239.4 28.02 L 230.52 0 L 238.68 0 L 242.4 12.78 L 243.66 20.16 L 243.9 20.16 L 245.16 12.78 L 248.88 0 L 257.04 0 L 248.16 28.02 Z" id="8" vector-effect="non-scaling-stroke"/>
+              <path d="M 276.72 0 L 289.08 0 A 19.268 19.268 0 0 1 294.165 6.446 A 24.311 24.311 0 0 1 295.32 9.18 Q 297.36 14.94 297.36 21.03 Q 297.36 27.12 295.38 32.58 Q 293.4 38.04 289.08 42 L 276.72 42 Q 272.4 38.04 270.42 32.58 Q 268.44 27.12 268.44 21.03 Q 268.44 14.94 270.48 9.18 A 22.446 22.446 0 0 1 273.158 3.862 A 18.625 18.625 0 0 1 276.72 0 Z M 280.74 35.04 L 285.06 35.04 A 7.923 7.923 0 0 0 285.954 33.739 Q 286.757 32.306 287.403 30.109 A 30.794 30.794 0 0 0 287.61 29.37 A 31.579 31.579 0 0 0 288.642 22.215 A 35.814 35.814 0 0 0 288.66 21.06 A 33.526 33.526 0 0 0 288.133 15.027 A 29.486 29.486 0 0 0 287.64 12.81 Q 286.62 8.94 285.12 7.2 L 280.74 7.2 A 8.142 8.142 0 0 0 279.804 8.571 Q 278.896 10.21 278.19 12.81 A 30.535 30.535 0 0 0 277.183 19.302 A 35.297 35.297 0 0 0 277.14 21.06 Q 277.14 25.44 278.19 29.37 A 26.725 26.725 0 0 0 278.816 31.407 Q 279.532 33.425 280.415 34.631 A 6.582 6.582 0 0 0 280.74 35.04 Z" id="10" vector-effect="non-scaling-stroke"/>
+              <path d="M 302.04 42 L 302.04 0 L 318 0 A 13.366 13.366 0 0 1 323.853 3.934 A 16.398 16.398 0 0 1 324.45 4.65 A 12.356 12.356 0 0 1 326.973 10.738 A 16.342 16.342 0 0 1 327.12 12.96 A 15.937 15.937 0 0 1 326.402 17.881 A 12.235 12.235 0 0 1 320.76 24.78 L 326.82 42 L 318.42 42 L 313.32 26.7 L 310.14 26.7 L 310.14 42 L 302.04 42 Z M 315.66 7.2 L 310.14 7.2 L 310.14 19.98 L 315.3 19.98 Q 316.128 19.785 317.094 18.543 A 11.291 11.291 0 0 0 317.55 17.91 Q 318.78 16.08 318.78 13.62 Q 318.78 11.16 317.73 9.3 Q 316.68 7.44 315.66 7.2 Z" id="11" vector-effect="non-scaling-stroke"/>
+              <path d="M 350.76 42 L 338.04 42 Q 333.72 38.04 331.74 32.58 Q 329.76 27.12 329.76 21.15 A 30.636 30.636 0 0 1 332.086 9.542 A 34.719 34.719 0 0 1 332.16 9.36 Q 334.56 3.54 338.88 0 L 353.46 0 L 353.46 7.2 L 342.3 7.2 A 8.962 8.962 0 0 0 341.299 8.643 Q 340.427 10.176 339.714 12.491 A 31.835 31.835 0 0 0 339.6 12.87 Q 338.46 16.74 338.46 21.09 A 32.444 32.444 0 0 0 339.208 28.132 A 29.728 29.728 0 0 0 339.51 29.37 Q 340.465 32.943 341.841 34.706 A 6.401 6.401 0 0 0 342.12 35.04 L 347.88 35.04 L 347.88 18.72 L 355.8 18.72 L 355.8 28.8 A 22.021 22.021 0 0 1 355.091 34.538 A 16.057 16.057 0 0 1 350.76 42 Z" id="12" vector-effect="non-scaling-stroke"/>
+              <path d="M 386.4 42 L 378.36 42 L 377.1 35.34 L 367.62 35.34 L 366.36 42 L 358.2 42 L 366.3 0 L 378.72 0 L 386.4 42 Z M 372.36 7.8 L 372.24 7.8 L 369.9 21.78 L 368.58 28.92 L 376.08 28.92 L 374.7 21.78 L 372.36 7.8 Z" id="13" vector-effect="non-scaling-stroke"/>
+              <path d="M 414.18 42 L 408.6 42 L 397.38 18.78 L 397.08 18.9 L 397.44 25.98 L 397.44 42 L 389.88 42 L 389.88 0 L 395.94 0 L 406.98 24.12 L 407.28 24 L 406.62 16.62 L 406.62 0 L 414.18 0 L 414.18 42 Z" id="14" vector-effect="non-scaling-stroke"/>
+              <path d="M 428.16 42 L 419.94 42 L 419.94 0 L 428.16 0 L 428.16 42 Z" id="15" vector-effect="non-scaling-stroke"/>
+              <path d="M 437.76 0 L 452.16 0 L 452.16 7.2 L 440.64 7.2 L 440.46 7.56 L 450.06 25.08 A 43.039 43.039 0 0 1 451.346 27.563 Q 452.491 29.977 452.844 31.712 A 7.126 7.126 0 0 1 453 33.12 A 14.366 14.366 0 0 1 452.607 36.591 A 9.025 9.025 0 0 1 448.98 42 L 433.08 42 L 433.08 35.04 L 445.5 35.04 L 445.68 34.68 L 434.88 15.3 A 28.688 28.688 0 0 1 433.749 13.061 Q 432.742 10.809 432.574 9.117 A 6.642 6.642 0 0 1 432.54 8.46 Q 432.54 2.289 437.645 0.05 A 11.099 11.099 0 0 1 437.76 0 Z" id="16" vector-effect="non-scaling-stroke"/>
+              <path d="M 478.98 42 L 457.2 42 L 457.2 0 L 478.74 0 L 478.74 7.2 L 465.42 7.2 L 465.42 17.22 L 477.3 17.22 L 477.3 24.18 L 465.42 24.18 L 465.42 35.04 L 478.98 35.04 L 478.98 42 Z" id="17" vector-effect="non-scaling-stroke"/>
+              <path d="M 483.6 42 L 483.6 0 L 499.56 0 A 13.366 13.366 0 0 1 505.413 3.934 A 16.398 16.398 0 0 1 506.01 4.65 A 12.356 12.356 0 0 1 508.533 10.738 A 16.342 16.342 0 0 1 508.68 12.96 A 15.937 15.937 0 0 1 507.962 17.881 A 12.235 12.235 0 0 1 502.32 24.78 L 508.38 42 L 499.98 42 L 494.88 26.7 L 491.7 26.7 L 491.7 42 L 483.6 42 Z M 497.22 7.2 L 491.7 7.2 L 491.7 19.98 L 496.86 19.98 Q 497.688 19.785 498.654 18.543 A 11.291 11.291 0 0 0 499.11 17.91 Q 500.34 16.08 500.34 13.62 Q 500.34 11.16 499.29 9.3 Q 498.24 7.44 497.22 7.2 Z" id="18" vector-effect="non-scaling-stroke"/>
+            </g>
           </svg>
-          <p>Copyright 2015-2024 intuitiveAspects Communications</p> 
+              </p>
+            </div>
+            <p>Haylee is a woman on a mission, that mission being to serve with love and empower and transform lives through her businesses, life experiences and talent</p>
+            <p>You must recognize that consciousness is power; being aware, knowing something, and being able to do something is what consciousness is all about. This grants power. Remember, we act in terms of what we know, what we believe, what we expect, what we value, what skills we have. All of this is part of consciousness. Therefore, when you manipulate these things, you manipulate people’s ability.
+            </p>
+            <div class="join-cta--wrap">
+              <button class="btn btn--lg neon-shadow">
+                <a href="#" class="cta-link">
+                  <span>Know more</span>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="icon">
+                  <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                </svg>
+
+              </button>
+            </div>
+          </main>  
+        </section>
+        <!--
+        <section class="margin-400">
+
+            <h2>
+                Fixed Footer Behind Content
+            </h2>
+
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+        </section>
+        -->
+        <footer class="fixed-footer">
+          <div class="footer--container">
+                <nav>
+                  <div class="logo">
+              <!--       <img src="https://ik.imagekit.io/ghow2otb3rc/Projects/Current/DWP/sound-of-mind-still_sm_DSa1-eB4-_1__MiSgZdA9p.png" alt="" width="40" height="40"> -->
+                    <span class="logo-text">IntUVenus</span>
+                  </div>
+                </nav>
+                <div class="footer-content">
+                  <div class="meta--content">
+                    <p>A mission, that mission being to serve with love and empower and transform lives through her businesses, life experiences and talent.</p>
+                    <ul class="meta--content-icons">
+                        <li>
+                          <a href="https://www.instagram.com/iamkweenvenus/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>              
+                          </a>
+                        </li>
+                        <li>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/haylee-venus-3b021559/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
+                            </svg>              
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/@hayleevenus5980" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: hsl(42, 62.5%, 55.9%);"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                          </a>
+                        </li>        
+                    </ul>
+                  </div>
+                  <div class="link--content">
+                    <ul class="content--links">
+                      <li><a href="../blog/consciousness-is-power/">Recognize that Consciousness is Power</a></li>
+                      <li><a href="#">Link to Article</a></li>
+                      <li><a href="#">Link to Article</a></li>
+                      <li><a href="#">Link to Article</a></li>
+                      <li><a href="#">Link to Article</a></li>
+                    </ul>
+                    <ul class="content--links">
+            <!--           <li><a href="#">Home</a></li> -->
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">Events</a></li>
+                      <li><a href="#">Travel</a></li>
+                      <li><a href="#">Join</a></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="dev--copyright">
+              <!-- copyright icon by Free Icons (https://free-icons.github.io/free-icons/) -->
+              <svg xmlns="http://www.w3.org/2000/svg" height="0.85em" fill="currentColor" viewBox="0 0 512 512">
+                <path d="M 256 32 Q 317 33 368 62 L 368 62 L 368 62 Q 419 92 450 144 Q 480 197 480 256 Q 480 315 450 368 Q 419 420 368 450 Q 317 479 256 480 Q 195 479 144 450 Q 93 420 62 368 Q 32 315 32 256 Q 32 197 62 144 Q 93 92 144 62 Q 195 33 256 32 L 256 32 Z M 256 512 Q 326 511 384 478 L 384 478 L 384 478 Q 442 444 478 384 Q 512 323 512 256 Q 512 189 478 128 Q 442 68 384 34 Q 326 1 256 0 Q 186 1 128 34 Q 70 68 34 128 Q 0 189 0 256 Q 0 323 34 384 Q 70 444 128 478 Q 186 511 256 512 L 256 512 Z M 324 324 Q 294 352 256 352 L 256 352 L 256 352 Q 218 352 188 324 Q 160 294 160 256 Q 160 218 188 188 Q 218 160 256 160 Q 294 160 324 188 Q 335 197 347 188 Q 356 177 347 165 Q 307 128 256 128 Q 205 128 166 165 Q 128 205 128 256 Q 128 307 166 347 Q 205 384 256 384 Q 307 384 347 347 Q 356 335 347 324 Q 335 315 324 324 L 324 324 Z" />
+              </svg>
+              <p>Copyright 2015-2024 intuitiveAspects Communications</p> 
+              </div>
           </div>
-        </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
