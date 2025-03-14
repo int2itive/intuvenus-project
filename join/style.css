@@ -36,6 +36,7 @@ header.-hidden {
   width: 100%;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(12px);
 }
 
 .intuvenus--header {
@@ -55,6 +56,7 @@ nav {
   z-index: 10;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50px;
   padding: 10px;
   padding: 5px;
@@ -159,7 +161,6 @@ background-clip: text;
   background-position: 47.5% center; /* Centers at X -225px, at viewport width: 360px */
   background-size: 250%;
   background-repeat: no-repeat;
-  margin-top: 50px;
 }
 
 .header::after {
