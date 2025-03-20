@@ -159,7 +159,7 @@ background-clip: text;
 /* 	background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) 50% 120% / cover no-repeat fixed; */
   background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg) center center / 250% no-repeat;
   height: 410px;
-  height: 380px;
+  height: 340px; /* formerly 380px */
 /*   height: 459px; */
   margin: 0 auto; 
   width: 100%; 
@@ -299,10 +299,10 @@ background-clip: text;
 
 
 @media (min-width: 370px) {
-  .header {
+/*   .header {
     height: 459px;
     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg) center center / cover no-repeat;    
-  }
+  } */
   nav {
       grid-template-columns: repeat(3, 1fr);
   }
@@ -314,6 +314,13 @@ background-clip: text;
     justify-self: center;
     opacity: .2;
     transform: translateY(2px);	  
+  }
+}
+
+@media (min-width: 390px) {
+  .header {
+    height: 459px;
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg) center center / cover no-repeat;    
   }
 }
 
