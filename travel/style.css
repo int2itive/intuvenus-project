@@ -166,7 +166,7 @@ background-clip: text;
   background-image: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg);
   background-position: center -90px;
   background-position: 47.5% center; /* Centers at X -225px, at viewport width: 360px */
-  background-position: 48.25% -140px; /* Centers at X -225px, at viewport width: 360px */
+  background-position: 48.25% -160px; /* Centers at X -225px, at viewport width: 360px */
   background-size: 280%;
   background-repeat: no-repeat;
 /*   margin-top: 50px; */
@@ -746,13 +746,7 @@ footer .dev--copyright {
 }
  */
 
-@media (min-width: 390px) {
-  .header {
-    height: 459px;
-    height: 410px;
-/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat; */
-    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg) center center / cover no-repeat;
-  }
+@media (min-width: 370px) {
   nav {
       grid-template-columns: repeat(3, 1fr);
   }
@@ -765,6 +759,26 @@ footer .dev--copyright {
     opacity: .3;
   }
 }
+
+@media (min-width: 390px) {
+  .header {
+    height: 459px;
+    height: 410px;
+/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat; */
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg) center center / cover no-repeat;
+  }
+/*   nav {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-btn {
+    justify-self: right;
+  }
+  .intu--page-title {
+    display: block;
+    justify-self: center;
+    opacity: .3;
+  }
+} */
 
 @media (min-width: 720px) {
   .footer-content {
