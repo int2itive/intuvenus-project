@@ -97,7 +97,7 @@ nav {
   justify-self: left;
   margin-right: .75rem;
   outline: 1px solid var(--clr-intu-accent-1);
-  padding: 5px;
+  padding: 2px 5px;
   border-radius: 6px;
 }
 
