@@ -397,7 +397,7 @@ background-clip: text;
   display: inline-block;
   margin-inline: 6px auto;
   font-family: 'Lato';
-  font-size: 0.85rem 
+  font-size: 0.85rem;
 /*   font-size: .9rem; */
 }
 .link-wrap ul li a {
