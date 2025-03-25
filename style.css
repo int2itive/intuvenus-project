@@ -349,6 +349,7 @@ background-clip: text;
   /*   transform: translate(0, 30px); */
   /*     transform: translateY(-30px); */
   border-bottom: 1px solid hsla(132, 100%, 18%, .6);
+  border-bottom: var(--color-shadow-enhance);
 }
 
 .link-wrap ul li {
@@ -386,7 +387,7 @@ background-clip: text;
 }
 
 .link-wrap ul li:nth-last-child(-n+1) {
-  margin-bottom: .35rem;
+  margin-bottom: .15rem;
   /* border-bottom: 1px solid hsla(132, 100%, 18%, .6); */
 /*   border: 0.025rem solid firebrick;   */
 }
@@ -1010,6 +1011,7 @@ footer .dev--copyright {
   place-items: center;
   padding-block: 1.5rem;
 /*   margin-top: 2.5rem; */
+  outline: 1px solid firebrick;
 }
 
 /* Buttons */
