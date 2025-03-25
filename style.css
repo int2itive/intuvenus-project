@@ -1008,6 +1008,7 @@ footer .dev--copyright {
 
 .join-cta--wrap {
   display: grid;
+  width: 100%;
   place-items: center;
   padding-block: 1.5rem;
 /*   margin-top: 2.5rem; */
