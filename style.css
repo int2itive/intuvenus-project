@@ -334,7 +334,7 @@ background-clip: text;
   mask-image: linear-gradient(to bottom, transparent, #000);
   -webkit-mask-image: linear-gradient(to bottom, transparent 46%, #000 85%);
   order: 1;
-  transform: translateY(30px);
+  transform: translateY(25px);
   z-index: 999;
 }
 
