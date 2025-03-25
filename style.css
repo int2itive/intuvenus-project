@@ -96,6 +96,9 @@ nav {
 .logo {
   justify-self: left;
   margin-right: .75rem;
+  outline: 1px solid firebrick;
+  padding: 5px;
+  border-radius: 6px;
 }
 
 .logo-text {
