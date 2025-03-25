@@ -382,7 +382,7 @@ background-clip: text;
 }
 
 .link-wrap ul li:nth-last-child(-n+1) {
-  margin-bottom: .15rem;
+  margin-bottom: .35rem;
   border-bottom: 1px solid hsla(132, 100%, 18%, .4);  
 /*   border: 0.025rem solid firebrick;   */
 }
