@@ -23,6 +23,7 @@
 body {
 /*   padding: 3.5rem 0; */
   font-family: 'Jockey One';
+  background: #000;
 }
 
 header.-hidden {
