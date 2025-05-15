@@ -519,7 +519,7 @@ background-clip: text;
   width: 100%;
   padding: .75rem;
   background-color: #000;
-background-image: linear-gradient(to top, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 0.9)), url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
+background-image: linear-gradient(to bottom, rgba(34, 34, 61, 0.85), rgba(0, 0, 0, 0.9)), url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
   background-position: center center;
   background-size: 300%;
   background-repeat: no-repeat;  
