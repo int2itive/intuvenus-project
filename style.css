@@ -794,7 +794,6 @@ background-clip: text;
   background-image: linear-gradient( to top, #000 1%, hsla(244.9,100%,26.3%, .3) 80%);
 }
 
-
 footer {
   position: relative;
 /*   bottom: 0;
@@ -842,15 +841,6 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   padding-inline: .5rem;
 }
 
-.footer--container .logo-text {
-  font-size: 1.5rem;
-  color: var(--clr-intu-gold-1);
-  color: var(--clr-intu-accent-1);
-/* background-image: linear-gradient( to bottom, #000 10%, hsla(244.9,100%,26.3%, .6));    color: #fff;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
-}
 
 .footer-content {
   display: grid;
@@ -883,7 +873,7 @@ background-clip: text;
   width: 100%;
   grid-column: 1 / -1;
 /*   border: 1px solid firebrick; */
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 /* .meta--content p {
@@ -912,31 +902,6 @@ background-clip: text;
   gap: 1.5rem;
 }
 
-.footer-content p {
-  color: hsl(43.8, 0%, 75.3%);
-}
-
-.footer-content ul {
-  list-style-type: none;
-}
-
-.footer-content ul:nth-of-type(1) {
-  position: relative;
-  width: 100%;
-  
-  align-self: end;
-  justify-self: end;
-}
-
-.footer-content ul li {
-  color: var(--clr-intu-accent-1);
-}
-
-.footer-content ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .link--content {
   position: relative;
   display: flex;
@@ -945,7 +910,6 @@ background-clip: text;
 /*   border: 1px solid firebrick; */
 /*   grid-row: 2; */
   align-self: center;
-  margin-bottom: 1.3rem;
 }
 
 .link--content ul li a, 
@@ -964,10 +928,9 @@ background-clip: text;
   width: max-content;
   margin-right: 2rem;
   padding-inline: 0;
-  margin-bottom: 2.3rem;
 /*   border: 1px solid firebrick; */
 }
- 
+
 .footer-content .article--content h3 {
   margin-bottom: .75rem;
   font-size: 1.2rem;
@@ -979,7 +942,6 @@ background-clip: text;
 footer .dev--copyright {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: .25rem;
   font-family: 'Sofia Pro';
   font-size: .75rem;
@@ -997,7 +959,7 @@ footer .dev--copyright {
   .meta--content {
     grid-column: 1 / 5;
   }
-  
+
   .link--content {
     grid-column: 5 / 8;
   }
