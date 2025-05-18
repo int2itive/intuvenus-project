@@ -333,8 +333,8 @@ background-clip: text;
   width: 100%;
   margin: 0 auto;
 /*   mask-image: linear-gradient(to bottom, transparent, #000); */
-  mask-image: linear-gradient(to bottom, transparent 60%, #000 70%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 60%, #000 70%); /* 46% / 85% */
+  mask-image: linear-gradient(to bottom, transparent 50%, #000 70%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 50%, #000 70%); /* 46% / 85% */
   order: 1;
   transform: translateY(25px);
   z-index: 999;
