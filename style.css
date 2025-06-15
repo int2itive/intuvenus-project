@@ -1136,7 +1136,8 @@ footer .dev--copyright {
   }
 }
 
-.join-cta--wrap {
+.join-cta--wrap { 
+  grid-column: wide;
   display: grid;
   width: 100%;
   place-items: center;
