@@ -86,6 +86,7 @@ background-clip: text;
   align-items: center;
   justify-content: center;
 /*   grid-columns: 3 / -1; */
+  grid-column: 2;
   width: 40px;
   height: 40px;
   justify-self: right;
@@ -753,6 +754,7 @@ footer .dev--copyright {
   }
   .menu-btn {
     justify-self: right;
+    grid-column: 3;
   }
   .intu--page-title {
     display: block;
