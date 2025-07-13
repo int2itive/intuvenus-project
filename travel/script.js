@@ -1,5 +1,8 @@
 const parallax = document.getElementById("parallax");
-
+let bodyStyles = window.getComputedStyle(document.body);
+const root = document.documentElement;
+// const themeBtns = document.querySelectorAll('.theme > button')
+// let newVar = bodyStyles.getPropertyValue('--clr-intu-gold-1'); //get
 
 const menuBtn = document.querySelector('.menu-btn');
 const banner = document.querySelector('.header');
@@ -133,3 +136,28 @@ function progressIndicator() {
     lastScroll = position <= 0 ? 0 : position;
 
   });
+
+
+// themeBtns.forEach((btn) => {
+//   btn.addEventListener('click', handleThemeUpdate)
+// })
+
+// https://codepen.io/ohansemmanuel/pen/xYKgwE?editors=0011
+
+function handleThemeUpdate(e) {
+  switch(e.target.value) {
+    case 'dark': 
+      root.style.setProperty('--bg', 'black')
+      // root.style.setProperty('--bg-text', 'white')
+      root.style.setProperty('--bg-text', newVar)
+      break
+    case 'calm': 
+       root.style.setProperty('--bg', '#B3E5FC')
+       root.style.setProperty('--bg-text', '#37474F')
+      break
+    case 'light':
+      root.style.setProperty('--bg', 'white')
+      root.style.setProperty('--bg-text', 'black')
+      break
+  }
+}
