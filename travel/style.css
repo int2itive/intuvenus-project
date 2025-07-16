@@ -242,6 +242,40 @@ background-clip: text;
   background-image: linear-gradient(to top, #000 15%, transparent 40%);
 }
 
+@media (min-width: 370px) {
+  nav {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-btn {
+    justify-self: right;
+    grid-column: 3;
+  }
+  .intu--page-title {
+    display: block;
+    justify-self: center;
+    opacity: .3;
+  }
+}
+
+@media (min-width: 390px) {
+  .header {
+    height: 459px;
+    height: 410px;
+/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat; */
+    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg) center center / cover no-repeat;
+  }
+/*   nav {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .menu-btn {
+    justify-self: right;
+  }
+  .intu--page-title {
+    display: block;
+    justify-self: center;
+    opacity: .3;
+  } */
+}
 /* The progress container (grey background) */
 .progress-container {
   position: fixed;
@@ -895,41 +929,6 @@ footer .dev--copyright {
   }
 }
  */
-
-@media (min-width: 370px) {
-  nav {
-      grid-template-columns: repeat(3, 1fr);
-  }
-  .menu-btn {
-    justify-self: right;
-    grid-column: 3;
-  }
-  .intu--page-title {
-    display: block;
-    justify-self: center;
-    opacity: .3;
-  }
-}
-
-@media (min-width: 390px) {
-  .header {
-    height: 459px;
-    height: 410px;
-/*     background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intuvenus_rKa4kU9hy_pjBZsxYZ40.jpg) center center / cover no-repeat; */
-    background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-intu-trvs_rU9hy__hNTzUhbHc.jpg) center center / cover no-repeat;
-  }
-/*   nav {
-      grid-template-columns: repeat(3, 1fr);
-  }
-  .menu-btn {
-    justify-self: right;
-  }
-  .intu--page-title {
-    display: block;
-    justify-self: center;
-    opacity: .3;
-  } */
-} 
 
 @media (min-width: 720px) {
   .footer-content {
