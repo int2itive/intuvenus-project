@@ -349,6 +349,7 @@ background-clip: text;
   line-height: 1;
   color: hsl(42, 62.5%, 55.9%);
   color: hsl(0, 0%, 98%);
+  color: #0C0C0C;
 /*   font-size: 3.775rem; */
   margin-bottom: 2rem;
   margin-inline-end: var(--gap); 
