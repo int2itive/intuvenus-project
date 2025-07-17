@@ -8,6 +8,7 @@
 }
 
 :root {
+  --gap: 2rem;  
   --clr-intu-gold-1: hsl(42, 62.5%, 39.2%);
   --clr-intu-gold-2: hsl(42, 62.5%, 55.9%);
   --clr-intu-gold-3: hsl(42, 62.5%, 62.6%);
@@ -29,7 +30,7 @@ header.-hidden {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   backdrop-filter: blur(12px);
 }
 
@@ -155,8 +156,9 @@ background-clip: text;
 .header {
   position: relative;
   display: grid;
-  container: main / inline-size; /*  https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg  */
-/* 	background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) 50% 120% / cover no-repeat fixed; */
+  container: main / inline-size; 
+  /*  https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg  */
+  /* 	background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/cbc029ab57a8495195bf6b4061e2cb2f_Qgk527FNL.jpg) 50% 120% / cover no-repeat fixed; */
   background: url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/hqv--029-cr0p-16-9-rto-lrg__Qgk527FNL.jpg) center center / 250% no-repeat;
   height: 410px;
   height: 380px; /* formerly 380px */
