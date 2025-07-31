@@ -1090,7 +1090,7 @@ footer .dev--copyright {
     align-items: center;
     gap: 16px;
     height: 90px;
-    margin-block: 4rem;
+    margin-block: 8rem;
 }
 
 @media (min-width: 600px) {
@@ -1103,7 +1103,7 @@ footer .dev--copyright {
     display: flex;
     flex-direction: column;
     flex: 1 1 20%;
-    max-width: 108px;
+    min-width: 108px;
     justify-content: space-between;
 /*     justify-content: flex-start; */
     align-items: center;
@@ -1141,14 +1141,15 @@ footer .dev--copyright {
 }
 
 .counter:nth-last-of-type(-n+2) h3 {
-  margin-top: 1rem;
+  margin-top: var(--gap);
 }
 
 .counter h3 {
     font-family: system-iu, sans-serif;
     text-transform: uppercase;
     font-size: .85rem;
-    text-align: center;
+  text-align: center;
+  margin-top: calc(var(--gap) / 2);
 }
 
 .counter span {
