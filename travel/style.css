@@ -78,7 +78,8 @@
 body {
 /*   padding: 3.5rem 0; */
   font-family: 'Jockey One';
-  background: hsl(0, 0%, 5%);
+  background-color: var(--bg, hsl(0, 0%, 5%)); /* background: hsl(0, 0%, 5%) */
+  transition: all .1s;
 }
 
 header.-hidden {
@@ -237,7 +238,8 @@ background-clip: text;
   height: 100%;
   width: 100%;
 /*   background-image: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.8) 80%); */
-  background-image: linear-gradient(to top, #000 15%, transparent 40%);
+/*   background-image: linear-gradient(to top, #000 15%, transparent 40%); */
+  background-image: linear-gradient(to top, var(--bg, hsl(0, 0%, 5%)) 15%, transparent 40%);	
 }
 
 @media (min-width: 370px) {
@@ -374,7 +376,7 @@ background-clip: text;
   position: relative;
 /*   height: 100vh; */
   padding: 2.15rem;
-  padding: 1.5rem 1.2rem;
+  padding: 1.5rem 1rem;
 }
 
 .article--content h2 {
@@ -455,7 +457,13 @@ background-clip: text;
   .main--sub-hdr {
     grid-column: margin;
     padding-top: 10px;
-    margin-inline-end: var(--gap);
+    margin-inline-end: 0; /* var(--gap) */
+  }
+}
+
+@media (width > 1024px) {
+  .main--content {
+    margin-inline: 4rem;
   }
 }
 
@@ -1072,15 +1080,23 @@ footer .dev--copyright {
     margin-top: 12rem;
     padding-block-start: 2rem;
     padding-block-end: 8rem;
-    /* flex-direction: column; */
+    flex-direction: column;
     position: relative;
     max-width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     height: 90px;
+    margin-block: 4rem;
+}
+
+@media (min-width: 600px) {
+  .impact {
+    flex-direction: row;
+  }
 }
 
 .counter {
@@ -1099,6 +1115,7 @@ footer .dev--copyright {
     background: #0c0c0c;
     color: #c0c0c0;
     color: var(--clr-intu-accent-1);
+    color: hsl(171, 46%, 66%);
     /* outline: 2px solid firebrick; */
     border-radius: 6px;
     box-shadow: var(--color-shadow-enhance);
@@ -1143,6 +1160,68 @@ footer .dev--copyright {
 .neon-shadow {
     box-shadow: var(--color-shadow-enhance);
     transition: all 0.3s ease;
+}
+
+[aria-pressed=true] path:nth-of-type(1) {
+  display: none;
+}
+
+[aria-pressed=false] path:nth-of-type(2) {
+  display: none;
+}
+
+nav svg {
+  width: 40px;
+  position: absolute
+  right: 4px;
+  top: -1px;
+  height: 40px;
+  scale: 1.5 1.5;
+  transform-origin: 100% 100%;
+  rotate: 25deg;
+  fill: canvasText;
+  fill: hsl(42, 62.5%, 39.2%);
+  translate: 18% 16%;
+  margin-right: 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+[aria-pressed] {
+  position: absolute;
+  top: 1rem;
+  top: 0.70rem;
+  right: 2.83rem;
+  width: 28px;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  transition: background 0.2;
+  cursor: pointer;
+  background-color: color-mix(in lch, canvas, canvasText calc(var(--intent) * 15%));
+/*   border: 1px solid firebrick; */
+}
+
+button svg {
+  width: 50%;
+}
+
+button:is(:focus-visible, :hover) {
+  --intent: 1;
 }
 
 @media (width > 600px) {
