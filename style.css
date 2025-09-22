@@ -107,7 +107,7 @@ article {
 .logo {
   justify-self: left;
   margin-right: .75rem;
-  outline: 1px solid var(--clr-intu-accent-1);
+  /* outline: 1px solid var(--clr-intu-accent-1); */
   padding: 1px 5px;
   border-radius: 6px;
 }
