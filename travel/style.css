@@ -418,6 +418,10 @@ background-clip: text;
     margin-bottom: calc(var(--gap) * 2);
 }
 
+.main--content:nth-last-of-type(-n+1) {
+	margin-block-start: calc(var(--gap) * 2);
+}
+
 .main--content h2 {
   grid-column: margin / center;
   font-size: clamp(1.53rem, 5vw, 3.5rem);
