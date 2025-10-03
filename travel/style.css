@@ -471,6 +471,40 @@ button:is(:focus-visible, :hover) {
   color: var(--clr-text-light);
 }
 
+form {
+  grid-column: full;
+}
+
+form p {
+  font-family: 'DM Sans', serif, 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
+      'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  font-size: .825rem;
+  font-weight: 600;
+  color: #fafafa;
+  margin-block: 10px;
+}
+
+form input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    flex: 1;
+    outline-color: red;
+}
+
+form  button {
+    background:  color-mix(in hsl, canvas, canvasText 75%);
+    color:  color-mix(in hsl, canvas, canvasText 10%);
+    border-radius: 4px;
+    border: 0;
+    padding-inline: 1.5rem;
+    /*padding-block: 1rem;*/
+    align-self: stretch;
+  height: 34.0px;
+}
+
+
 @media (max-width: 568px) {
   .main--content h2 {
     grid-column: margin;
