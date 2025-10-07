@@ -545,7 +545,7 @@ form  button {
 .main--story h4 {
 /*   text-align: center; */
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .main--story h4::after {
@@ -608,6 +608,15 @@ main {
   padding-inline-start: 1.15rem;
   padding-inline-end: 1rem;
   grid-column: full;
+}
+
+.content h1 {
+  font-family: "raleway", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: lowercase;
+  grid-column: full;
+  margin-inline-start: var(--space);
 }
 
 .content p:nth-last-of-type(-n+1) {
