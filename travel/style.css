@@ -1305,6 +1305,12 @@ position: absolute;
   margin-inline: var(--space);
 }
 
+@media (min-width: 794px) {
+  .wrapper {
+    margin-inline: 0;
+  }
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
