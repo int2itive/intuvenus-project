@@ -1301,13 +1301,12 @@ position: absolute;
 
 .wrapper {
   max-width: 744px;
-  margin: 2rem auto;
-  margin-inline: var(--space);
+  margin: 2rem var(--space);
 }
 
 @media (min-width: 794px) {
   .wrapper {
-    margin-inline: 0;
+    margin: 2rem auto;
   }
 }
 
