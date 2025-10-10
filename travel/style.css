@@ -1357,3 +1357,34 @@ position: absolute;
     transition: all 0.3s ease;
 }
 
+.counter {
+  opacity: 0;
+  transform: translate3d(-16px, 0, 0);
+  animation: moveIn .8s ease-in-out forwards;
+}
+/*  */
+.counter:nth-of-type(2) {
+  animation-delay: .4s;
+}
+
+.counter:nth-of-type(3) {
+  animation-delay: .8s;
+}
+
+.counter:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+
+.counter:nth-of-type(5) {
+  animation-delay: 1.6s;
+}
+
+@keyframes moveIn {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
