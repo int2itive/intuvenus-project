@@ -1302,6 +1302,13 @@ position: absolute;
 .wrapper {
   max-width: 744px;
   margin: 2rem var(--space);
+  padding-inline: 4rem;
+}
+
+@media (min-width: 520px) {
+  .wrapper {
+    padding-inline: 0;
+  }
 }
 
 @media (min-width: 794px) {
