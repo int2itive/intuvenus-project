@@ -611,7 +611,7 @@ form  button {
   font-weight: 700;
   text-transform: uppercase;
   opacity: 0;
-  transform: translate3d(8px, 0, 0);
+  transform: translate3d(5px, 0, 0);
   animation: titleFadeIn 1.2s ease-in-out 2.8s forwards;
 }
 
