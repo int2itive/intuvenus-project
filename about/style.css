@@ -191,7 +191,7 @@ nav {
 
 .logo-text {
   font-family: 'Jockey One';
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--clr-intu-gold-1);
   color: var(--clr-intu-accent-1);
 /* background-image: linear-gradient( to bottom, #000 10%, hsla(244.9,100%,26.3%, .6));    color: #fff;
@@ -340,6 +340,10 @@ button:is(:focus-visible, :hover) {
   opacity: .23;
 }
 
+.intu--page-title h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
 
 .opl--img-wrapper {
 /*   border: 1px solid firebrick; */

@@ -536,7 +536,7 @@ background-clip: text;
     rgba(0, 0, 0, 0.95) 30%,
     rgba(34, 34, 61, 0.85) 50%, 
     rgba(0, 0, 0, 0.9)), 
-    url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
+    url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');
 /*  background-image: url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_kkz-ER4Vt.jpg');*/
   background-position: center center;
   background-size: 300%;
@@ -1103,8 +1103,10 @@ footer .dev--copyright {
   padding: 25% 0;
   align-items: center;
   z-index: 5;
-  transform: translateX(100%);
+  /*transform: translateX(100%);*/
+  transform: translate3d(100%, 0, 0);
 /*   background-color: hsla(222, 23%, 20%, 4); */
+  transition: transform 0.65s ease-in-out;
 }
 
 .mbl--list-items li {
@@ -1126,8 +1128,8 @@ footer .dev--copyright {
 }
 
 .mbl--list-items.showing {
-  animation: menuSliderAction 300ms linear forwards;
-/*   transform: translateX(0);   */
+  /*animation: menuSliderAction 300ms linear forwards;*/
+  transform: translate3d(0, 0, 0);
 }
 
 .mlb--list-items > * {

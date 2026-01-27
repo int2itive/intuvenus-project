@@ -129,4 +129,4 @@ function initializeTicker() {
   }, 5000);
 }
 
-requestAnimationframe(initializeTicker);
+const animationRef = window.requestAnimationFrame(initializeTicker);
