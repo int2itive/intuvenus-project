@@ -569,8 +569,11 @@ background-clip: text;
 }
 
 .creatives header h1 {
+  font-family: "raleway", sans-serif;
   font-size: clamp(1.5rem, (1rem + 5vw), 3.775rem);
+  font-weight: 300;
   color: var(--clr-intu-gold-1);
+  color: hsl(0, 0%, 98%);
   line-height: .9;
   margin-bottom: 2.75rem;
 }
@@ -756,7 +759,7 @@ background-clip: text;
 .main-text {
   width: 100%;
   color: #c0c0c0;
-  background-color: #000;
+  background-color: hsl(0, 0%, 0%);
 }
 
 .main-text--wrap {
@@ -771,15 +774,60 @@ background-clip: text;
   radial-gradient(at 0% 100%, hsla(22,20%,89%,1) 0px, transparent 50%),
   radial-gradient(at 6% 8%, hsla(343,23%,95%,1) 0px, transparent 50%); */
   background: radial-gradient(
-    circle at left top,
+    circle at left 80px,
     #107667ed 0%,
     #000000 7%,
     #000000 10%
   );  
 }
 
+.main-text .main--attribute-head {
+  font-family: "raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: lowercase;
+  grid-column: full;
+  margin-inline-start: var(--space);  
+  margin-block-start: .85rem;
+  /*position: relative;*/
+}
+
+.main-text:nth-of-type(1) .main--attribute-head {
+  margin-block-start: 0;color: firebrick;
+}
+
+@media (min-width: 478px) {
+  .main--attribute-head {
+    margin-block-start: .85rem;
+  }
+}
+
+.main--attribute-head::after {
+  content: '';
+  width: 4px;
+  height: 100%;
+  margin-inline-start: 1rem;
+  background: firebrick;
+  display: block;
+}
+
+.main-text:nth-of-type(1) .main--attribute-head {
+  /*margin-block-start: .85rem;  */
+  color: firebrick;
+}
+
 .main-text--wrap h1 {
   font-size: 3.775rem;
+}
+
+.main-text--wrap > p {
+  font-family: 'DM Sans', serif, 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
+      'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: hsl(43.8, 0%, 75.3%);  
+  margin-block-end: 1rem;
 }
 
 .main-text--wrap > p:last-of-type {
@@ -825,6 +873,7 @@ background-clip: text;
       minmax(0, 1fr) [margin-end] 
       calc(var(--gap) / 2) [full-end]
   ;
+  background-color: hsl(0, 0%, 0%);
 }
 
 .test--grid figure {
@@ -1250,11 +1299,11 @@ button:is(:focus-visible, :hover) {
   --intent: 1;
 }
 
-main {
+/*main {
   width: 600px;
   max-width: calc(100% - 2rem);
 }
-
+*/
 @media (max-width: 470px) {
   .container img {
     object-fit: cover;
@@ -1277,4 +1326,88 @@ main {
   .container .content .meta--social-icon {
     align-self: center;
   }   */
+}
+
+
+.int--v-blockquote {
+/*   border: 1px solid firebrick; */
+  width: 100%;
+  height: 480px;
+  /*height: min(440px, 50%);*/
+  position: relative;
+/*   max-width: 1000px; */
+  margin: 0 auto;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(to top, #000, transparent);
+  -webkit-mask-image: linear-gradient(to top, transparent 8%, black 75%);
+  /*
+  mask-image: linear-gradient( 
+    transparent 5%, 
+    rgba(0 0 0 / 0.75) 35%, 
+    transparent 5%
+  );
+  */
+  mask-image: linear-gradient(180deg,rgba(42, 123, 155, 0.02) 2%, rgba(1, 13, 9, 1) 24%, rgba(10, 0, 0, 1) 40%, rgba(237, 221, 83, 0) 90%);
+  overflow: hidden;
+  background-attachment: fixed;
+  /*grid-column: full;*/
+  margin-block-start: 8rem;
+  /*padding-block-end: 3rem;*/
+}
+
+.int--v-blockquote > * {
+  position: relative;
+  z-index: 1;
+  /*top: 50%;*/
+  /*left: 50%;*/
+}
+
+.int--v-blockquote img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 10px;
+  scale: 2.5;
+  z-index: -1;
+}
+
+.int--v-blockquote::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(276 100% 30% / .6);
+}
+
+.int--v-quote {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  /*left: .65rem;*/
+/*   text-align: center; */
+  font-size: clamp(2rem, 4vw + 0.3rem, 3.2rem);
+  font-size: clamp(1.6rem, 0.749rem + 3.781vw, 3.5rem);
+  line-height: .9;
+  z-index: 1;
+  padding: 1rem 0;  
+}
+
+.int--v-quote h2 {
+  position: relative;
+  color: #fafafa;
+  letter-spacing: 0.075rem;
+}
+
+
+.int--v-quote h2::before {
+position: absolute;
+    content: "\201C";
+    left: -40px;
+    top: -38px;
+    font-size: 148px;
+    color: #fff;
+    opacity: .4;
+    /* rotate: 180deg;  */
 }
