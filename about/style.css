@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');*/
+@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sofia-pro');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://api.fonts.coollabs.io/css2?family=Montserrat&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reddit-sans-condensed');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova');
+@import url('https://api.fonts.coollabs.io/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -53,6 +55,7 @@ h4 {
 /*   font-family: 'Reddit Sans Condensed', sans-serif; */
   font-weight: 300;
   font-size: 2rem;
+  font-size: clamp(2rem, -3.818rem + 9.091vw, 3rem);
 }
 .main__navigation {
   display: grid;
@@ -471,12 +474,6 @@ button:is(:focus-visible, :hover) {
   }  
 }
 
-@media (width > 1024px) {
-  .main--content {
-    margin-inline: 4rem;
-  }
-}
-
 .content--sub-hdr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -511,10 +508,10 @@ button:is(:focus-visible, :hover) {
   animation: titleFadeIn 1.2s ease-in-out 2.8s forwards;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 415px) {
   .main--story h4::after {
     top: 90%;
-    left: 280px;
+    left: 268px;
   }
 }
 
@@ -524,6 +521,15 @@ button:is(:focus-visible, :hover) {
   font-family: 'Proxima Nova';
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+@media (width > 1024px) {
+  .main--story {
+    padding: 0 5.15rem;
+  }
+  .main--content {
+    margin-inline: 4rem;
+  }
 }
 
 .rtl {
@@ -548,6 +554,7 @@ button:is(:focus-visible, :hover) {
 .container h1 {
     font-family: "raleway", sans-serif;
     font-size: 1.4rem;
+    font-size: clamp(1.4rem, -2.091rem + 5.455vw, 2rem);
     font-weight: 300;
     text-transform: lowercase;
 }
@@ -595,7 +602,7 @@ main {
 .content p {
   grid-column: full;
   padding: 1.5rem;
-  font-family: 'Proxima Nova';
+  font-family: 'Roboto';
 }
 
 .gallery {
@@ -1126,3 +1133,80 @@ footer .dev--copyright {
     transform: translate3d(0, 0, 0);
   }  
 }
+
+
+.scroll-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 2rem;
+    background: radial-gradient(circle at left 50px, #107667ed 0%, #000000 7%, #000000 10%);
+    z-index: -1;
+    view-timeline-axis: block;
+    view-timeline-inset: 40% 40%;
+}
+
+@media (max-width: 768px) {
+    .scroll-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.s2 {
+    view-timeline-name: --s2;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(171, 76%, 26%) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hvq--prof-img-C0_152401__GYPzF8Tdd.jpg);
+    background-position: center center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.s3 {
+    view-timeline-name: --s3;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(240 28% 19% / 0.85) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20190403-clp-0045_84htQuLKh_VH-lUd9hyx10_Hnh6n9p-z.png);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+@media (width > 48rem) {
+  .s2 {
+    background-size: 200%;
+  }
+}
+
+.focus-text {
+    position: relative;
+    font-family: "Jockey One", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 500px;
+    letter-spacing: 0.02em;
+    animation: content-focus linear both;
+    animation-timeline: view();
+}
+
+
+.description {
+    font-family: "raleway", sans-serif;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 95%);
+    margin-top: 1.5rem;
+    max-width: 420px;
+    line-height: 1.7;
+    font-weight: 300;
+    border-left: 2px solid hsl(42, 62.5%, 39.2%);
+    padding-left: 1.5rem;
+    animation: content-focus linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+

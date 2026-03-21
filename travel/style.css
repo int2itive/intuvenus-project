@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');*/
+@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.cdnfonts.com/css/sofia-pro');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://api.fonts.coollabs.io/css2?family=Montserrat&display=swap');
@@ -440,9 +441,9 @@ button:is(:focus-visible, :hover) {
   mask-image: linear-gradient(to bottom, transparent 15%, black 85%); */
 }
 
-@media (min-width: 570px) {
+@media (min-width: 457px) {
   .opl--img-wrapper img {
-    scale: 1.55;
+    scale: 1.65;
     transform: translate3d(4px, 12px, 0);
   }
 }
@@ -1304,6 +1305,36 @@ position: absolute;
     /* rotate: 180deg;  */
 }
 
+.scroll-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 2rem;
+    background: radial-gradient(circle at left 50px, #107667ed 0%, #000000 7%, #000000 10%);
+    z-index: -1;
+    view-timeline-axis: block;
+    view-timeline-inset: 40% 40%;
+}
+
+.s2 {
+    view-timeline-name: --s2;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(171, 76%, 26%) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hvq--prof-img-C0_152401__GYPzF8Tdd.jpg);
+    background-position: center center;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+    .scroll-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
 .impact {
   max-width: 744px;
   margin: 2rem var(--space);
@@ -1404,4 +1435,72 @@ position: absolute;
 }
 
 
+
+.scroll-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 2rem;
+    background: radial-gradient(circle at left 50px, #107667ed 0%, #000000 7%, #000000 10%);
+    z-index: -1;
+    view-timeline-axis: block;
+    view-timeline-inset: 40% 40%;
+}
+
+@media (max-width: 768px) {
+    .scroll-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.s2 {
+    view-timeline-name: --s2;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(240 28% 19% / 0.85) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20190403-clp-0045_84htQuLKh_VH-lUd9hyx10_Hnh6n9p-z.png);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.focus-text {
+    position: relative;
+    font-family: "Jockey One", sans-serif;
+    font-size: 3.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 500px;
+    letter-spacing: 0.02em;
+    animation: content-focus linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+/*
+@media (max-width: 768px) {
+    .focus-text {
+        font-size: 2rem;
+    }
+}*/
+
+
+.description {
+    font-family: "raleway", sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1.5rem;
+    max-width: 420px;
+    line-height: 1.7;
+    font-weight: 300;
+    border-left: 2px solid hsl(42, 36%, 74%);
+    padding-left: 1.5rem;
+    animation: content-focus linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
 

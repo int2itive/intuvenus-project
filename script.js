@@ -1,5 +1,5 @@
 const headerH4 = document.querySelector('.creatives .content p');
-const text = new SplitType(headerH4, { types: 'words, chars' })
+const text = new SplitType(headerH4, { types: 'words, chars' });
 const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.mbl--list-items');
 let ul = document.querySelector(".triggers");
