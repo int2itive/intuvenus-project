@@ -1076,15 +1076,15 @@ span.title-large:first-word {
 
 @media (width >= 480px) {
   .description {
-    padding-left: 3.5rem;
+    padding-left: 2rem;
   }
 }
-
+/*
 @media (width >= 540px) {
   .description {
     padding-left: 3.5rem;
   }
-}
+}*/
 
 @media (width >= 580px) {
   .description {
