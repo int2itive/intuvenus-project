@@ -585,7 +585,7 @@ button:is(:focus-visible, :hover) {
   margin-inline: 6px auto;
   font-family: 'Lato';
   font-family: "raleway", sans-serif;
-  font-size: 0.755rem;
+  font-size: 0.775rem;
 /*   font-size: .9rem; */
 }
 .link-wrap ul li a {
@@ -603,7 +603,7 @@ button:is(:focus-visible, :hover) {
   font-family: "raleway", sans-serif;
   font-size: .675rem;
 /*   font-size: .85rem; */
-  margin-left: .5rem;
+  margin-left: .25rem;
   padding: 8px 10px;
   transition: all .5s ease-in-out;
 }
