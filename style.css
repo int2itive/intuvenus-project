@@ -585,7 +585,7 @@ button:is(:focus-visible, :hover) {
   margin-inline: 6px auto;
   font-family: 'Lato';
   font-family: "raleway", sans-serif;
-  font-size: 0.775rem;
+  font-size: 0.755rem;
 /*   font-size: .9rem; */
 }
 .link-wrap ul li a {
@@ -1865,7 +1865,7 @@ footer .dev--copyright {
   position: fixed;
   top: 50%;
   right: 30px;
-  right: 16px;
+  right: 10px;
   height: 300px;
   width: 2px;
   background: hsl(0, 0%, 35%);
