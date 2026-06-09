@@ -585,7 +585,7 @@ button:is(:focus-visible, :hover) {
   margin-inline: 6px auto;
   font-family: 'Lato';
   font-family: "raleway", sans-serif;
-  font-size: 0.725rem;
+  font-size: 0.755rem;
 /*   font-size: .9rem; */
 }
 .link-wrap ul li a {
@@ -1391,6 +1391,7 @@ span.title-large:first-word {
 .abs--title {
   position: absolute;
   top: 40px;
+  top: 0;
   left: 0;
   width: 100%;
   padding-block: 3rem;
@@ -1442,6 +1443,11 @@ span.title-large:first-word {
     left: 0;*/
     /*padding-inline-start: 1.5rem;*/
 }
+
+:is(.s2, .s3, .s5) .abs--heading {
+  margin-block-start: 0;
+}
+
 
 @media (width > 484px) {
   .abs--heading {
@@ -1683,7 +1689,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
     background: radial-gradient(
       ellipse at right top,
       #107667ed 0%,
-      #151419 47%,
+      #151419 27%,
       #151419 100%
     );
     padding-top: 1rem;
@@ -1808,6 +1814,14 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   .footer-content .article--content {
     grid-column: 7 / -1;
   }
+  .footer--container {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #151419 47%,
+      #151419 100%
+    );
+  }
 }
  
 .footer-content .article--content h3 {
@@ -1847,3 +1861,20 @@ footer .dev--copyright {
   }
 }
 
+.progress-container {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  right: 16px;
+  height: 300px;
+  width: 2px;
+  background: hsl(0, 0%, 35%);
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.progress-bar {
+  background: hsl(0, 0%, 85%);
+  width: 100%;
+  height: 20%;  
+}

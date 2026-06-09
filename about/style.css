@@ -816,12 +816,25 @@ main {
 
 footer {
   position: relative;
+  font-family: 'Jockey One', sans-serif;
 /*   bottom: 0;
   width: 100%;
   z-index: 1;
   height: 400px; */
 /*   padding-top: 4rem; */
-/*   border: 1px solid #c0c0c0; */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+footer nav {
+  grid-template-rows: 30px;
+}
+
+footer nav h3 {
+  margin-inline-start: 182px;
+}
+
+footer .logo-text {
+  font-size: 1rem;
 }
 
 .footer--container {
@@ -841,7 +854,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
     background: radial-gradient(
       ellipse at right top,
       #107667ed 0%,
-      #151419 47%,
+      #151419 27%,
       #151419 100%
     );
     padding-top: 1rem;
@@ -867,8 +880,7 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 /*   grid-template-columns: 22rem 1fr; */
   grid-template-columns: 1fr; 
-  gap: 10rem;
-  gap: 20px;
+  gap: 16px;
   align-items: start;
   justify-content: start;
 /*   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -893,8 +905,10 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   position: relative;
   width: 100%;
   grid-column: 1 / -1;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
+  padding-block-end: 1rem;
 /*   overflow: hidden; */
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* .meta--content p {
@@ -914,15 +928,18 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   line-height: 1.1;
   color: hsl(43.8, 0%, 75.3%);
   width: 90%;
+  width: max(50%, 380px);
   max-width: 100%;
 /*   display: none; */
-  margin-bottom: 1.3rem;
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
 }
 
 .meta--content-icons {
   display: flex;
 /*   justify-content: center; */
-  gap: 1.5rem;
+  gap: 1rem;
+  margin-block-start: 1.3rem;
 }
 
 .link--content {
@@ -930,13 +947,12 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   display: flex;
   gap: 2.6rem;
   gap: 1.6rem;
-/*   border: 1px solid firebrick; */
-/*   grid-row: 2; */
   align-self: center;
 }
 
 .link--content ul li a, 
 .article--content ul li a {
+  /*font-family: 'Jockey One';*/
   text-decoration: none;
   color: hsl(43.8, 0%, 75.3%);
   transition: color 300ms ease-in-out;
@@ -955,12 +971,27 @@ radial-gradient(at 71% 58%, hsla(41,62%,55%,1) 0px, transparent 50%); */
   width: max-content;
   margin-right: 2rem;
   padding-inline: 0;
+  grid-column: 1 / -1;
 /*   border: 1px solid firebrick; */
+}
+
+@media (width >= 720px) {
+  .footer-content .article--content {
+    grid-column: 7 / -1;
+  }
+  .footer--container {
+    background: radial-gradient(
+      ellipse at right top,
+      #107667ed 0%,
+      #151419 47%,
+      #151419 100%
+    );
+  }
 }
  
 .footer-content .article--content h3 {
-  margin-bottom: .75rem;
-  font-size: 1.2rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
   color: hsl(42, 62.5%, 55.9%);
   text-transform: uppercase;
   letter-spacing: 0.050rem;
@@ -987,6 +1018,7 @@ footer .dev--copyright {
   }
   .meta--content {
     grid-column: 1 / 5;
+    border: 0;
   }
   
   .link--content {
@@ -1167,11 +1199,15 @@ footer .dev--copyright {
 
 .s3 {
     view-timeline-name: --s3;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(240 28% 19% / 0.85) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/IMG-20190403-clp-0045_84htQuLKh_VH-lUd9hyx10_Hnh6n9p-z.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 20%, hsl(240 28% 19% / 0.95) 50%, rgba(0, 0, 0, 0.9) 80%), url(https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/3bbb3af86c874527b5d68a98f4f38ad8_TPuQ-IuaI1.jpg);
     background-position: center;
     background-size: 110%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
+}
+
+.s2, .s3 {
+    margin-top: -10rem;  
 }
 
 @media (width > 48rem) {
@@ -1197,11 +1233,11 @@ footer .dev--copyright {
 
 .description {
     font-family: "raleway", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: hsl(0, 0%, 95%);
     margin-top: 1.5rem;
     max-width: 420px;
-    line-height: 1.7;
+    line-height: 1.5;
     font-weight: 300;
     border-left: 2px solid hsl(42, 62.5%, 39.2%);
     padding-left: 1.5rem;

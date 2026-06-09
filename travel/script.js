@@ -4,6 +4,50 @@ let bodyStyles = window.getComputedStyle(document.body);
 const root = document.documentElement;
 const themeBtn = document.querySelector('header nav button');
 const mainContent = document.querySelector('.main--content'); console.log(themeBtn);
+let counters = document.querySelectorAll('.counter');
+// let count = counters[1].dataset.count;
+
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+ // const target = document.querySelector(qSelector);
+ let startTimestamp = null;
+ 
+ const step = (timestamp) => {
+  
+  if (!startTimestamp) startTimestamp = timestamp;
+  const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+  qSelector.querySelector('p').textContent = Math.floor(progress * (end - start) + start);
+  if (progress < 1) {
+   window.requestAnimationFrame(step);
+  }
+
+ }
+
+ window.requestAnimationFrame(step);
+}
+
+// document.addEventListener("DOMContentLoaded", () => {
+//  // counterAnim("#count1", 10, 300, 1000);
+//  // counterAnim("#count2", 5000, 250, 1500);
+//  // counterAnim("#count3", -1000, -150, 2000);
+//  // counterAnim("#count4", 500, -100, 2500);
+//  counters.forEach((counter) => {
+//   let ttl = counters.length;
+//   count = counter.dataset.count;
+//   // console.log(count);
+//   // console.log(ttl);
+//   counterAnim(counter, 0, count, 3000);
+//  })
+// });
+
+function setupCounterAnimation() {
+ counters.forEach((counter) => {
+  let ttl = counters.length;
+  count = counter.dataset.count;
+  // console.log(count);
+  // console.log(ttl);
+  counterAnim(counter, 0, count, 3000);
+ });
+}
 
 // const themeBtns = document.querySelectorAll('.theme > button');
 // let fooBar = bodyStyles.getPropertyValue('--clr-intu-accent-1');
@@ -94,6 +138,7 @@ function progressIndicator() {
 
 window.addEventListener("scroll", function () {
     progressIndicator();
+    showIt();
     var position = window.scrollY || document.documentElement.scrollTop;
     
     if (position > threshold && position > lastScroll) {
@@ -108,8 +153,29 @@ window.addEventListener("scroll", function () {
     }
 
     lastScroll = position <= 0 ? 0 : position;
-
+    // setupCounterAnimation();
 });
+
+function showIt() {
+  const toBeShown = document.querySelectorAll(".impact"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
+
+  // consider taking this outside of the loop and resetting it on window resize to optimize the loop
+  // const halfScreen = window.innerHeight / 2;
+  const halfScreen = window.innerHeight / 1.5;
+  
+  toBeShown.forEach((item, i) => {
+    const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
+
+    if (item.offsetTop - window.scrollY < halfScreen) {
+      item.classList.add('scrolled');
+    } else {
+      item.classList.remove('scrolled');
+    }
+  })
+  setupCounterAnimation();
+}
+
+// window.addEventListener('scroll', showIt);
 
 
 // window.addEventListener('scroll', function(){

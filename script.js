@@ -130,3 +130,33 @@ function initializeTicker() {
 }
 
 const animationRef = window.requestAnimationFrame(initializeTicker);
+
+function showIt() {
+  const toBeShown = document.querySelectorAll(".artist_display__card"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
+
+  // consider taking this outside of the loop and resetting it on window resize to optimize the loop
+  // const halfScreen = window.innerHeight / 2;
+  const halfScreen = window.innerHeight / 1.5;
+  
+  toBeShown.forEach((item, i) => {
+    const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
+
+    if (item.offsetTop - window.scrollY < halfScreen) {
+      item.classList.add('scrolled');
+    } else {
+      item.classList.remove('scrolled');
+    }
+  })
+
+}
+
+
+function progressIndicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.height = scrolled + "%";
+}
+
+
+window.addEventListener('scroll', progressIndicator);
