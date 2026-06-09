@@ -1865,7 +1865,7 @@ footer .dev--copyright {
   position: fixed;
   top: 50%;
   right: 30px;
-  right: 16px;
+  right: 10px;
   height: 300px;
   width: 2px;
   background: hsl(0, 0%, 35%);
