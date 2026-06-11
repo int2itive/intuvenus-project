@@ -1047,6 +1047,7 @@ span.title-large:first-word {
   /*border-left: 2px solid var(--accent);*/
   /*border-left: 2px solid var(--clr-intu-accent-1);*/
   padding-left: 1rem;
+  padding-left: .25rem;
   position: relative;
   /* Sync with Header */
   animation: content-focus linear both;
