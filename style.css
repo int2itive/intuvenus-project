@@ -1401,7 +1401,7 @@ span.title-large:first-word {
   background-image: radial-gradient(
     circle at left 70px,
     #107667ed 0%,
-    #000000 72px,
+    #000000 64px,
     #000000 10%
   );  
   background-repeat: no-repeat;
