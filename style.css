@@ -1872,6 +1872,11 @@ footer .dev--copyright {
   background: hsl(0, 0%, 35%);
   transform: translateY(-50%);
   z-index: 100;
+  opacity: 0;
+}
+
+.progress-container.onDisplay {  
+  animation: showProgress .3s ease-in-out forwards;
 }
 
 .progress-bar {
@@ -1879,3 +1884,10 @@ footer .dev--copyright {
   width: 100%;
   height: 20%;  
 }
+
+@keyframes showProgress {
+  to {
+    opacity: 1;
+  }
+}
+
