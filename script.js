@@ -7,6 +7,12 @@ let btn = document.querySelector('.meta--social-icon li:nth-of-type(2)');
 const animTime = 5000; // Animation time (ms)
 let pos = 30;
 
+let threshold = 130,
+  uBound = 7, 
+  position = 0, 
+  lastScroll = 0, 
+  n_event = 0
+
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   // alert("Hwllo!");
@@ -158,5 +164,18 @@ function progressIndicator() {
   document.getElementById("progressBar").style.height = scrolled + "%";
 }
 
+let showState = "onDisplay";
 
-window.addEventListener('scroll', progressIndicator);
+// window.addEventListener('scroll', progressIndicator);
+
+window.addEventListener('scroll', function() {
+  let position = window.scrollY || document.documentElement.scrollTop;
+  let progressBar = document.getElementById("progressBar");
+
+  if (position > threshold) {
+    document.querySelector('.progress-container').classList.add(showState);
+  } else {
+    document.querySelector('.progress-container').classList.remove(showState);
+  }
+  progressIndicator();
+});
