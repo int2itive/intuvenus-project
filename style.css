@@ -1399,6 +1399,7 @@ span.title-large:first-word {
   padding-block: 3rem;
   padding-block-end: 4rem;
   padding-inline-start: 1.5rem;
+  padding-inline-start: 1rem;
   background-image: radial-gradient(
     circle at left 70px,
     #107667ed 0%,
