@@ -8,7 +8,11 @@ const animTime = 5000; // Animation time (ms)
 let pos = 30;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 let threshold = 130,
+=======
+var threshold = 130,
+>>>>>>> Stashed changes
 =======
 var threshold = 130,
 >>>>>>> Stashed changes
