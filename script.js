@@ -18,12 +18,17 @@ menuBtn.addEventListener('click', () => {
   // alert("Hwllo!");
   if (!menuOpen) {
     menuBtn.classList.add('open');
-    menuSlider.classList.add('showing');
+    menuSlider.classList.toggle('showing');
     gsap.from('.mbl--list-items .item a', { duration: 1, opacity: 0, delay: .75, stagger: 0.3 });
+    // document.body.style.position = 'fixed';
+    // document.body.style.top = `-${window.scrollY}px`;
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
     menuSlider.classList.remove('showing');
+    // document.body.style.position = '';
+    // document.body.style.top = '';
+    // window.scrollTo(0, parseInt(scrollY || '0') * -1);
     menuOpen = false;
   }
 });

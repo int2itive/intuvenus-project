@@ -213,6 +213,15 @@ body {
   z-index: -1;
 }
 
+.headerDown {
+  position: relative;
+  /*position: fixed;*/
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(0px);
+}
+
 nav {
   position: relative;
   z-index: 100;
@@ -743,7 +752,7 @@ header::after {
 
 .creatives h1 {
     font-family: "raleway", sans-serif;
-    font-family: "Jockey One", sans-serif;
+    /*font-family: "Jockey One", sans-serif;*/
     font-size: clamp(1.5rem, (1rem + 5vw), 3.775rem);
     font-weight: 300;
     color: var(--clr-intu-gold-1);
@@ -778,11 +787,12 @@ header::after {
   position: absolute;
   content: '';
   bottom: 0;
-  left: 50%;
+  left: 1.25rem;
+  left: calc(var(--gap) / 2);
   height: 2px;
   width: 60px;
   background-color: hsl(0 0% 75% / 0.3);
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
 }
 
 /* Section IDs */
@@ -1101,7 +1111,7 @@ span.title-large:first-word {
 }
 .closer strong {
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-light);
   margin-bottom: 1rem;
 }
@@ -1418,9 +1428,9 @@ span.title-large:first-word {
 .footnote {
   position: absolute;
   bottom: 5px;
-  left: 50%;
+  left: calc(var(--gap) / 2);
   width: max-content;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
 }
 
 .footnote p {
@@ -1428,7 +1438,7 @@ span.title-large:first-word {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: hsl(0 0% 75% / 0.4);
-  padding-inline-start: 0.25rem;
+  /*padding-inline-start: 0.25rem;*/
 }
 
 .abs--heading {
@@ -1487,6 +1497,8 @@ span.title-large:first-word {
 
 .test--grid_text p {
   font-family: "raleway", sans-serif;
+  font-size: .9rem;
+  line-height: 1.2;
   grid-column: full;
 }
 
@@ -1584,6 +1596,7 @@ span.title-large:first-word {
     }
     .test--grid_text p {
       grid-column: wide;
+      font-size: 1rem;
     }
 }
 
@@ -1616,6 +1629,7 @@ span.title-large:first-word {
 .btn--lg {
   font-size: 1.2rem;
   font-weight: bold;
+  font-weight: 300;
   padding-inline: 1.5rem;
 }
 
@@ -1647,7 +1661,7 @@ span.title-large:first-word {
 .cta-link {
   text-decoration: none;
   color: currentColor;
-  font-family: 'Jockey One', sans-serif;
+  /*font-family: 'Jockey One', sans-serif;*/
   line-height: 1.2;
 }
 
@@ -1843,7 +1857,7 @@ footer .dev--copyright {
   font-family: 'DM Sans', serif, 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
       'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;  
   font-size: .65rem;
-  color: hsl(0, 0%, 75%);
+  color: hsl(0, 0%, 55%);
   padding: .25rem .6rem;
 }
 
