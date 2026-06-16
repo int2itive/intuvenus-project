@@ -7,7 +7,11 @@ let btn = document.querySelector('.meta--social-icon li:nth-of-type(2)');
 const animTime = 5000; // Animation time (ms)
 let pos = 30;
 
+<<<<<<< Updated upstream
 let threshold = 130,
+=======
+var threshold = 130,
+>>>>>>> Stashed changes
   uBound = 7, 
   position = 0, 
   lastScroll = 0, 

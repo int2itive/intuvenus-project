@@ -1036,6 +1036,7 @@ span.title-large:first-word {
     /* position: relative; */
     align-self: flex-start;
 }
+
 .description {
   font-family: "raleway", sans-serif;
   font-size: 1rem;
@@ -1345,7 +1346,7 @@ span.title-large:first-word {
 */
   /* Adjust Typography */
   .focus-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     
   }
   .focus-text::before {
@@ -1398,12 +1399,20 @@ span.title-large:first-word {
   width: 100%;
   padding-block: 3rem;
   padding-block-end: 4rem;
+<<<<<<< Updated upstream
   padding-inline-start: 1.5rem;
   padding-inline-start: 1rem;
+=======
+  padding-inline-start: 1.25rem;
+>>>>>>> Stashed changes
   background-image: radial-gradient(
-    circle at left 70px,
+    circle at left 72px,
     #107667ed 0%,
+<<<<<<< Updated upstream
     #000000 64px,
+=======
+    #000000 72px,
+>>>>>>> Stashed changes
     #000000 10%
   );  
   background-repeat: no-repeat;
@@ -1892,4 +1901,7 @@ footer .dev--copyright {
     opacity: 1;
   }
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
