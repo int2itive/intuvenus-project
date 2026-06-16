@@ -792,6 +792,7 @@ header::after {
   height: 2px;
   width: 60px;
   background-color: hsl(0 0% 75% / 0.3);
+  background-color: oklch(0.509 0.089 179.41);
   /*transform: translateX(-50%);*/
 }
 
