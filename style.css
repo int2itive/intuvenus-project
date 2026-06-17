@@ -1441,7 +1441,7 @@ span.title-large:first-word {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: hsl(0 0% 75% / 0.4);
-  /*padding-inline-start: 0.25rem;*/
+  padding-inline-start: 0.25rem
 }
 
 .abs--heading {
