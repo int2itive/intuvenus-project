@@ -789,10 +789,12 @@ header::after {
   bottom: 0;
   left: 1.25rem;
   left: calc(var(--gap) / 2);
+  left: 0;
   height: 2px;
   width: 60px;
+  width: 90px;
   background-color: hsl(0 0% 75% / 0.3);
-  background-color: hsl(171 76% 26% / 0.5);
+  background-color: hsl(171 76% 26% / 0.4);
   /*transform: translateX(-50%);*/
 }
 
