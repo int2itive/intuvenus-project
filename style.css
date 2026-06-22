@@ -1452,7 +1452,7 @@ span.title-large:first-word {
 
 .fn__side-based .fn--quote {
   /*transform: translateX(16px);*/
-  /* opacity: 0; */
+  opacity: 0;
   transform: translate3d(10px, 0, 0);
   color: hsl(0, 0%, 98%);
 }
