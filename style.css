@@ -881,7 +881,7 @@ header::after {
     hsl(240 28% 19% / 0.85) 50%, 
     rgba(0, 0, 0, 0.9) 76%), 
     /*url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/hqv-amzn-auth-media__lYlN275Vc.png');*/
-    /*url('https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/intUVenus_fade__img_AVwnx4g9b.png');*/
+    /*url('https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/intUVenus_fade__img_AVwnx4g9b.png');*
     url('https://ik.imagekit.io/ghow2otb3rc/Projects/intUVenus/MekAhStep/intUVenus_frame-3__img_3LeSlEd6Q.png');
     background-position: center center;
     background-size: 110%;
@@ -1419,7 +1419,7 @@ span.title-large:first-word {
   background-image: radial-gradient(
     circle at left 72px,
     #107667ed 0%,
-    #000000 72px,
+    #000000 68px,
     #000000 10%
   );  
   background-repeat: no-repeat;
