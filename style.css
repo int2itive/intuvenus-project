@@ -1265,6 +1265,7 @@ span.title-large:first-word {
   padding: 5px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+  visibility: hidden;
 }
 
 .mobile-progress svg {
