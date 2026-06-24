@@ -139,27 +139,55 @@ function initializeTicker() {
     
   }, 5000);
 }
+const toBeShown = Array.from(document.querySelectorAll('.fn__side-based .fn--quote')); 
+console.log(toBeShown);
+let windowHeight = window.innerHeight;
+console.log(windowHeight);
 
-const animationRef = window.requestAnimationFrame(initializeTicker);
+// toBeShown.forEach((item, i) => {
+//   initialPos = 
+// });
 
-function showIt() {
-  const toBeShown = document.querySelectorAll(".artist_display__card"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
+
+function checkPosition() {
+  const halfScreen = window.innerHeight / 1.5 + pos; 
+  console.log(halfScreen);
+  for (var i = 0; i < toBeShown.length; i++) {
+    let element = toBeShown[i];
+    let positionFromTop = toBeShown[i].getBoundingClientRect().top; 
+    console.log(`${toBeShown[i]} is at: ${positionFromTop}`);
+
+    // if (positionFromTop - windowHeight <= halfScreen) {
+    if (positionFromTop <= halfScreen) {
+      element.classList.add('scrolled');
+    } else {
+      element.classList.remove('scrolled');
+    }
+  }
+}
+
+window.addEventListener('scroll', checkPosition);
+
+// const animationRef = window.requestAnimationFrame(initializeTicker);
+
+// function showIt() {
+  // const toBeShown = document.querySelectorAll(".artist_display__card"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
 
   // consider taking this outside of the loop and resetting it on window resize to optimize the loop
   // const halfScreen = window.innerHeight / 2;
   const halfScreen = window.innerHeight / 1.5;
   
-  toBeShown.forEach((item, i) => {
-    const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
+//   toBeShown.forEach((item, i) => {
+//     const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);
 
-    if (item.offsetTop - window.scrollY < halfScreen) {
-      item.classList.add('scrolled');
-    } else {
-      item.classList.remove('scrolled');
-    }
-  })
+//     if (item.offsetTop - window.scrollY < halfScreen) {
+//       item.classList.add('scrolled');
+//     } else {
+//       item.classList.remove('scrolled');
+//     }
+//   })
 
-}
+// }
 
 
 function progressIndicator() {

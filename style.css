@@ -794,7 +794,7 @@ header::after {
   width: 60px;
   width: 90px;
   background-color: hsl(0 0% 75% / 0.3);
-  background-color: hsl(171 76% 26% / 0.4);
+  background-color: hsl(171 76% 26% / 0.0);
   /*transform: translateX(-50%);*/
 }
 
@@ -1443,7 +1443,7 @@ span.title-large:first-word {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: hsl(0 0% 75% / 0.4);
-  padding-inline-start: 0.25rem
+  padding-inline-start: calc(var(--gap) / 2 + 4px);
 }
 
 .fn__side-based {
@@ -1452,9 +1452,10 @@ span.title-large:first-word {
 
 .fn__side-based .fn--quote {
   /*transform: translateX(16px);*/
-  /* opacity: 0; */
+  opacity: 0; 
   transform: translate3d(10px, 0, 0);
   color: hsl(0, 0%, 98%);
+  will-change: transform, opacity;
 }
 
 .fn__side-based .fn--quote.scrolled {
