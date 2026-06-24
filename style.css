@@ -702,6 +702,7 @@ button:is(:focus-visible, :hover) {
   }
   .link-wrap {
     transform: translateY(-108px);    
+    transform: translateY(-68px);    
   }
 }
 
