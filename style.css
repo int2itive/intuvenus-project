@@ -812,6 +812,7 @@ header::after {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     /*background-attachment: fixed;*/
+    margin-block-start: 4rem;
 }
 .s2 {
   view-timeline-name: --s2;
@@ -937,6 +938,10 @@ header::after {
   padding-left: 6vw;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 10vh;
+}
+
+.cta {
+  margin-block: 4.5rem;
 }
 
 /* Components: Typography */
@@ -1311,7 +1316,7 @@ span.title-large:first-word {
     border-color: transparent;
   }
   45%,
-  55% {
+  65% {
     filter: blur(0);
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -1432,7 +1437,7 @@ span.title-large:first-word {
 
 .footnote {
   position: absolute;
-  bottom: 105px;
+  bottom: 5px;
   left: calc(var(--gap) / 2);
   width: max-content;
   /*transform: translateX(-50%);*/
@@ -1564,7 +1569,7 @@ span.title-large:first-word {
   overflow: hidden;
 */    position: relative;
     grid-column: margin;
-    grid-column: wide;
+    grid-column: full;
     place-self: start end;
     border-radius: 8px;
     overflow: hidden;    
@@ -1591,6 +1596,7 @@ span.title-large:first-word {
 
 .test--grid figure + * {
   grid-column: wide;
+  grid-column: full;
   padding-inline-start: 0.25rem;
 }
 
@@ -1607,7 +1613,7 @@ span.title-large:first-word {
 
 .test--grid.mg-lrg {
   /*margin-block: 4.5rem;*/
-  padding-block: 4.5rem;
+  padding-block-start: 4.5rem;
   background-color: hsl(0, 0%, 0% / 1.0);
 }
 

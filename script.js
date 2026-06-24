@@ -39,26 +39,6 @@ document.querySelectorAll(".mbl--list-items .item a").forEach(n => n.addEventLis
     menuSlider.classList.remove('showing');
 }));
 
-gsap.from('.item a', { duration: 1, opacity: 0, delay: 1, stagger: 0.4 });
-
-    gsap.fromTo(text.chars, {
-      scaleY: 0.1,
-      scaleX: 1.8,
-      filter: 'blur(10px) brightness(50%)',
-      willChange: 'filter, transform'
-    }, {
-        ease: 'none', 
-        scaleY: 1,
-        scaleX: 1,
-        filter: 'blur(0px) brightness(100%)',
-        stagger: 0.03, 
-        scrollTrigger: {
-          trigger: text,
-          start: 'top bottom-=15%', 
-          end: 'bottom center+=15%',
-          scrub: true, 
-        },
-    });
 
 
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
@@ -140,9 +120,9 @@ function initializeTicker() {
   }, 5000);
 }
 const toBeShown = Array.from(document.querySelectorAll('.fn__side-based .fn--quote')); 
-console.log(toBeShown);
+// console.log(toBeShown);
 let windowHeight = window.innerHeight;
-console.log(windowHeight);
+// console.log(windowHeight);
 
 // toBeShown.forEach((item, i) => {
 //   initialPos = 
@@ -151,12 +131,10 @@ console.log(windowHeight);
 
 function checkPosition() {
   const halfScreen = window.innerHeight / 1.5 + pos; 
-  console.log(halfScreen);
+  // console.log(halfScreen);
   for (var i = 0; i < toBeShown.length; i++) {
     let element = toBeShown[i];
     let positionFromTop = toBeShown[i].getBoundingClientRect().top; 
-    console.log(`${toBeShown[i]} is at: ${positionFromTop}`);
-
     // if (positionFromTop - windowHeight <= halfScreen) {
     if (positionFromTop <= halfScreen) {
       element.classList.add('scrolled');
