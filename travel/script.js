@@ -4,8 +4,9 @@ let bodyStyles = window.getComputedStyle(document.body);
 const root = document.documentElement;
 const themeBtn = document.querySelector('header nav button');
 const mainContent = document.querySelector('.main--content'); console.log(themeBtn);
-let counters = document.querySelectorAll('.counter');
+let counters = document.querySelectorAll('.counter'); console.log(counters)
 // let count = counters[1].dataset.count;
+let initial = null;
 
 const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
  // const target = document.querySelector(qSelector);
@@ -14,6 +15,7 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
  const step = (timestamp) => {
   
   if (!startTimestamp) startTimestamp = timestamp;
+  // if (!initial && !startTimestamp) startTimestamp = timestamp;
   const progress = Math.min((timestamp - startTimestamp) / duration, 1);
   qSelector.querySelector('p').textContent = Math.floor(progress * (end - start) + start);
   if (progress < 1) {
@@ -21,7 +23,7 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
   }
 
  }
-
+ initial = true;
  window.requestAnimationFrame(step);
 }
 
@@ -41,11 +43,18 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
 
 function setupCounterAnimation() {
  counters.forEach((counter) => {
+  counter.classList.add('inview');
+  console.log(counter)
   let ttl = counters.length;
   count = counter.dataset.count;
   // console.log(count);
   // console.log(ttl);
-  counterAnim(counter, 0, count, 3000);
+  // counters.forEach(counter => {
+  //   counter.classList.add('inview');
+  // });
+  if (!initial) {
+    counterAnim(counter, 0, count, 3000);
+  }
  });
 }
 
@@ -153,15 +162,14 @@ window.addEventListener("scroll", function () {
     }
 
     lastScroll = position <= 0 ? 0 : position;
-    // setupCounterAnimation();
+    setupCounterAnimation();
 });
 
 function showIt() {
   const toBeShown = document.querySelectorAll(".impact"); // consider adding :not(.scrolled) to selector to reduce the number of iterations if you don't want to support scrolling up
 
   // consider taking this outside of the loop and resetting it on window resize to optimize the loop
-  // const halfScreen = window.innerHeight / 2;
-  const halfScreen = window.innerHeight / 1.5;
+  const halfScreen = window.innerHeight / 2; // - 50;
   
   toBeShown.forEach((item, i) => {
     const scrolled = (window.scrollY + window.innerHeight);// - (item.offsetHeight/2);

@@ -1481,8 +1481,13 @@ position: absolute;
   opacity: 0;
   transform: translate3d(-16px, 0, 0);
   background: radial-gradient(ellipse at right top, #107667ed 0%, #151419 47%, #151419 100%);
+}
+
+.counter.inview{
   animation: moveIn .8s ease-in-out forwards;
 }
+
+
 /*  */
 .counter:nth-of-type(2) {
   animation-delay: .4s;

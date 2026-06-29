@@ -890,7 +890,7 @@ header::after {
     background-size: 110%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    /*background-attachment: fixed;    
+    /*background-attachment: fixed;  */  
 }
 
 
@@ -1427,7 +1427,7 @@ span.title-large:first-word {
   background-image: radial-gradient(
     circle at left 72px,
     #107667ed 0%,
-    #000000 68px,
+    #000000 min(16%, 72px),
     #000000 10%
   );  
   background-repeat: no-repeat;
@@ -1532,7 +1532,7 @@ span.title-large:first-word {
 .test--grid_text {
   display: grid;
   row-gap: 1lh;
-  padding: .75rem;
+  padding: .25rem;
   margin-block-end: 0rem;
   grid-template-columns:
       [full-start] calc(var(--gap) / 2)
@@ -1551,7 +1551,7 @@ span.title-large:first-word {
 .test--grid_text p {
   font-family: "raleway", sans-serif;
   font-size: .9rem;
-  line-height: 1.2;
+  line-height: 1.4;
   grid-column: full;
 }
 

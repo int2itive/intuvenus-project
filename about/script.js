@@ -5,7 +5,6 @@ const banner = document.querySelector('.header');
 const menuSlider = document.querySelector('.mbl--list-items');
 // const para = document.querySelector('.header--content-grid p');
 const main = document.querySelector('.headerDown');
-
 let hiddenState = "-hidden", nav_dark = "intuvenus--header";
 
 var threshold = 10,
@@ -92,22 +91,3 @@ window.addEventListener("scroll", function () {
 //   stagger: { amount: 0.8 },
 // });
 
-gsap.fromTo(text.chars, {
-  scaleY: 0.1,
-  scaleX: 1.8,
-  filter: 'blur(10px) brightness(50%)',
-  willChange: 'filter, transform'
-}, {
-  ease: 'none', 
-  scaleY: 1,
-  scaleX: 1,
-  filter: 'blur(0px) brightness(100%)',
-  stagger: 0.05,
-  delay: 1, // 1.6
-  scrollTrigger: {
-    trigger: text,
-    start: 'top bottom-=15%', 
-    end: 'bottom center+=15%',
-    scrub: true, 
-  },
-});
