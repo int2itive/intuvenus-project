@@ -14,6 +14,7 @@ let threshold = 130,
   n_event = 0
 
 let menuOpen = false;
+
 menuBtn.addEventListener('click', () => {
   // alert("Hwllo!");
   if (!menuOpen) {

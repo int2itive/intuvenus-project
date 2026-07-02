@@ -210,22 +210,22 @@ function showIt() {
 //   stagger: { amount: 0.8 },
 // });
 
-gsap.fromTo(text.chars, {
-  scaleY: 0.1,
-  scaleX: 1.8,
-  filter: 'blur(10px) brightness(50%)',
-  willChange: 'filter, transform'
-}, {
-  ease: 'none', 
-  scaleY: 1,
-  scaleX: 1,
-  filter: 'blur(0px) brightness(100%)',
-  stagger: 0.05,
-  delay: 1, // 1.6
-  scrollTrigger: {
-    trigger: text,
-    start: 'top bottom-=15%', 
-    end: 'bottom center+=15%',
-    scrub: true, 
-  },
-});
+// gsap.fromTo(text.chars, {
+//   scaleY: 0.1,
+//   scaleX: 1.8,
+//   filter: 'blur(10px) brightness(50%)',
+//   willChange: 'filter, transform'
+// }, {
+//   ease: 'none', 
+//   scaleY: 1,
+//   scaleX: 1,
+//   filter: 'blur(0px) brightness(100%)',
+//   stagger: 0.05,
+//   delay: 1, // 1.6
+//   scrollTrigger: {
+//     trigger: text,
+//     start: 'top bottom-=15%', 
+//     end: 'bottom center+=15%',
+//     scrub: true, 
+//   },
+// });
