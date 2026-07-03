@@ -4,6 +4,8 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuSlider = document.querySelector('.mbl--list-items');
 let ul = document.querySelector(".triggers");
 let btn = document.querySelector('.meta--social-icon li:nth-of-type(2)');
+const underQuotes = document.querySelectorAll('.fn__side-based .under__quote'); 
+
 const animTime = 5000; // Animation time (ms)
 let pos = 30;
 
@@ -139,8 +141,10 @@ function checkPosition() {
     // if (positionFromTop - windowHeight <= halfScreen) {
     if (positionFromTop <= halfScreen) {
       element.classList.add('scrolled');
+      underQuotes[i].classList.add('expanded');
     } else {
       element.classList.remove('scrolled');
+      underQuotes[i].classList.remove('expanded');
     }
   }
 }

@@ -937,8 +937,9 @@ header::after {
 .closing-section {
   height: 40vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 6vw;
+  /*padding-left: 6vw;*/
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 10vh;
 }
@@ -1488,10 +1489,22 @@ span.title-large:first-word {
 }
 
 .under__quote {
-  width: 100%;
+  /*width: 100%;*/
+  width: 0;
   height: 2px;
   background-color: hsl(171 76% 26% / 0.6);
   margin-block-start: 4px;
+  will-change: width;
+}
+
+.under__quote.expanded {
+  animation: expandWidth 1.5s ease-in-out forwards;
+}
+
+@keyframes expandWidth {
+  to {
+    width: 100%;
+  }
 }
 
 .abs--heading {
@@ -1508,6 +1521,11 @@ span.title-large:first-word {
     top: 0;
     left: 0;*/
     /*padding-inline-start: 1.5rem;*/
+}
+
+.abs--heading.abs--step-1 {
+  margin-inline-start: calc(var(--gap) - 4px);
+  margin-block-end: 4rem;
 }
 
 :is(.s2, .s3, .s5) .abs--heading {
@@ -1573,10 +1591,11 @@ span.title-large:first-word {
   overflow: hidden;
 */    position: relative;
     grid-column: margin;
-    grid-column: full;
+    grid-column: full-start / wide-end;
     place-self: start end;
     border-radius: 8px;
-    overflow: hidden;    
+    overflow: hidden;
+    padding-left: .75rem;  
 }
 
 .test--grid figure img {
@@ -1584,6 +1603,13 @@ span.title-large:first-word {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
+}
+
+.test--grid figure + * {
+  grid-column: full;
+  grid-column: wide;
+  padding-inline-start: 0.25rem;
 }
 
 .test--grid figcaption {
@@ -1596,12 +1622,7 @@ span.title-large:first-word {
     line-height: 1.4;
     place-self: start;
     transform: translate3d(0, -110%, 0px);
-}
-
-.test--grid figure + * {
-  grid-column: wide;
-  grid-column: full;
-  padding-inline-start: 0.25rem;
+    padding-inline-start: 0;
 }
 
 .test--grid figure::after {
@@ -1651,6 +1672,10 @@ span.title-large:first-word {
     .test--grid_text p {
       grid-column: wide;
       font-size: 1rem;
+    }
+
+    .test--grid.para--row-2 .row-2 {
+        grid-row: 3;
     }
 }
 
