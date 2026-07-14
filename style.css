@@ -854,15 +854,16 @@ header::after {
     180deg,
     rgba(0, 0, 0, 0.95) 20%,
     hsl(240 28% 19% / 0.85) 50%, 
-    rgba(0, 0, 0, 0.9)), 
-    url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/cdn/clp--ayanna-web-billboard__Fz_Vo8kpv.png');
+    rgba(0, 0, 0, 0.3)), 
+    url('https://ik.imagekit.io/ghow2otb3rc/Projects/SoM/Artists/c7109178ab6a49f792495d1ae679683e__i-ohUrA1Rk.png');
     background-position: center center;
-    background-size: 200%;
+    background-size: 140%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     /*background-attachment: fixed;*/
     position: relative;
 }
+
 .s3 > * {
   position: relative;
   z-index: 1;
