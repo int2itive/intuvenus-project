@@ -402,7 +402,7 @@ button:is(:focus-visible, :hover) {
 }
 
 /* Layout: Content (Left) */
-.content {
+.site--hero {
   /*width: 50%;*/
   /*padding-bottom: 20vh;*/
   position: relative;
@@ -417,14 +417,14 @@ button:is(:focus-visible, :hover) {
     /*margin-top: -80px;*/
 }
 
-.content .container {
+.site--hero .container {
     position: relative;
     overflow: hidden;
     width: 100%;
     /* position: absolute; */
 }
 
-.content .container::after {
+.site--hero .container::after {
     position: absolute;
     content: '';
     top: 0;
@@ -437,31 +437,31 @@ button:is(:focus-visible, :hover) {
 
 
 @media (min-width: 37.5rem) {
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to left, #000 30%, transparent 70%);
   }
 }
 
 @media (min-width: 48rem) {
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to left, #000 40%, transparent 80%);
   }
 }
 
 @media (min-width: 56.25rem) {
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to left, #000 50%, transparent 80%);
   }
 }
 
 @media (min-width: 67rem) {
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to left, #000 60%, transparent 80%);
   }
 }
 
 @media (min-width: 80rem) {
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to left, #000 70%, transparent 90%);
   }
 }
@@ -1358,7 +1358,7 @@ span.title-large:first-word {
     border-left: none;
   }
 
-  .content {
+  .site--hero {
     width: 100%;
   }
   .scroll-section {
@@ -1393,25 +1393,25 @@ span.title-large:first-word {
 }
 
 @media (max-width: 470px) {
-  .content .container img {
+  .site--hero .container img {
     object-fit: cover;
     object-position: center;
     transform: translateX(-40px);
   }
-  .content .container::after {
+  .site--hero .container::after {
     background-image: linear-gradient(to top, #000 25%, transparent 80%);  
   }
 }
 
 @media (max-width: 440px) {
-  .content .container img {
+  .site--hero .container img {
     transform: translateX(-60px);
   }  
 }
 
 
 @media (max-width: 380px) {
-  .content .container img {
+  .site--hero .container img {
     transform: translateX(-80px);
   }  
 }
