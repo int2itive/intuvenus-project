@@ -43,6 +43,26 @@ document.querySelectorAll(".mbl--list-items .item a").forEach(n => n.addEventLis
 }));
 
 
+gsap.from('.item a', { duration: 1, opacity: 0, delay: 1, stagger: 0.4 });
+
+// gsap.fromTo(text.chars, {
+//   scaleY: 0.1,
+//   scaleX: 1.8,
+//   filter: 'blur(10px) brightness(50%)',
+//   willChange: 'filter, transform'
+// }, {
+//   ease: 'none', 
+//   scaleY: 1,
+//   scaleX: 1,
+//   filter: 'blur(0px) brightness(100%)',
+//   stagger: 0.03, 
+//   scrollTrigger: {
+//     trigger: text,
+//     start: 'top bottom-=15%', 
+//     end: 'bottom center+=15%',
+//     scrub: true, 
+//   },
+// });
 
 function setTextAnimation(delay, duration, strokeWidth, timingFunction, strokeColor,repeat) {
       let paths = document.querySelectorAll(".creative-header path");
