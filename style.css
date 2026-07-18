@@ -980,6 +980,7 @@ span.title-large:first-word {
 .focus-text {
   position: relative;
   font-size: 3.5rem;
+  font-size: clamp(2.5rem, 0.722rem + 3.704vw, 3.5rem);
   font-weight: 600;
   line-height: 1.1;
   color: var(--text-muted);
